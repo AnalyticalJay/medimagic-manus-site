@@ -13,11 +13,11 @@ export default function UserDashboard() {
   const [, setLocation] = useLocation();
   const [activeTab, setActiveTab] = useState<"bookings" | "profile">("bookings");
 
-  // Fetch user bookings
-  const { data: bookings = [], isLoading: bookingsLoading } = trpc.bookings.getUserBookings.useQuery(
-    { userId: user?.id || 0 },
-    { enabled: !!user?.id }
-  );
+  // Fetch user bookings - using list for now since getUserBookings requires userId
+  const { data: allBookings = [], isLoading: bookingsLoading } = trpc.bookings.list.useQuery();
+  
+  // Filter bookings by user email
+  const bookings = allBookings.filter((booking: any) => booking.email === user?.email);
 
   // Logout mutation
   const logoutMutation = trpc.auth.logout.useMutation({

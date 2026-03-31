@@ -2,12 +2,14 @@ import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { useAuth } from "@/_core/hooks/useAuth";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const [, setLocation] = useLocation();
+  const { user } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -112,12 +114,31 @@ export default function Navigation() {
               Contact
             </button>
 
-            <button
-              onClick={() => handleNavigation("/portal")}
-              className="ml-4 px-6 py-2 bg-white text-[#5DBB63] hover:bg-gray-100 rounded-full font-semibold transition-colors"
-            >
-              Login
-            </button>
+            {user ? (
+              <>
+                {user.role === "admin" && (
+                  <button
+                    onClick={() => handleNavigation("/admin")}
+                    className="ml-2 px-4 py-2 bg-yellow-500 text-white hover:bg-yellow-600 rounded-full font-semibold transition-colors"
+                  >
+                    Admin
+                  </button>
+                )}
+                <button
+                  onClick={() => handleNavigation("/dashboard")}
+                  className="ml-4 px-6 py-2 bg-white text-[#5DBB63] hover:bg-gray-100 rounded-full font-semibold transition-colors"
+                >
+                  Dashboard
+                </button>
+              </>
+            ) : (
+              <button
+                onClick={() => handleNavigation("/portal")}
+                className="ml-4 px-6 py-2 bg-white text-[#5DBB63] hover:bg-gray-100 rounded-full font-semibold transition-colors"
+              >
+                Login
+              </button>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -207,12 +228,31 @@ export default function Navigation() {
               Contact
             </button>
 
-            <button
-              onClick={() => handleNavigation("/portal")}
-              className="w-full mt-4 px-6 py-2 bg-white text-[#5DBB63] hover:bg-gray-100 rounded-full font-semibold transition-colors"
-            >
-              Login
-            </button>
+            {user ? (
+              <>
+                {user.role === "admin" && (
+                  <button
+                    onClick={() => handleNavigation("/admin")}
+                    className="w-full mt-2 px-6 py-2 bg-yellow-500 text-white hover:bg-yellow-600 rounded-full font-semibold transition-colors"
+                  >
+                    Admin
+                  </button>
+                )}
+                <button
+                  onClick={() => handleNavigation("/dashboard")}
+                  className="w-full mt-4 px-6 py-2 bg-white text-[#5DBB63] hover:bg-gray-100 rounded-full font-semibold transition-colors"
+                >
+                  Dashboard
+                </button>
+              </>
+            ) : (
+              <button
+                onClick={() => handleNavigation("/portal")}
+                className="w-full mt-4 px-6 py-2 bg-white text-[#5DBB63] hover:bg-gray-100 rounded-full font-semibold transition-colors"
+              >
+                Login
+              </button>
+            )}
           </div>
         )}
       </div>

@@ -1,12 +1,15 @@
 import { useState, useMemo } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
+import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Filter, RefreshCw } from "lucide-react";
+import { Calendar, Filter, RefreshCw, ChevronLeft, LogOut } from "lucide-react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const SERVICE_TYPES = [
   "Divorce Settlement Agreements",
@@ -28,10 +31,18 @@ const STATUS_COLORS: Record<string, string> = {
 
 export default function AdminDashboard() {
   const { user, loading } = useAuth();
+  const [, setLocation] = useLocation();
   const [filterService, setFilterService] = useState<string>("");
   const [filterStatus, setFilterStatus] = useState<string>("");
   const [selectedBookingId, setSelectedBookingId] = useState<number | null>(null);
   const [newStatus, setNewStatus] = useState<string>("");
+  
+  // Logout mutation
+  const logoutMutation = trpc.auth.logout.useMutation({
+    onSuccess: () => {
+      setLocation("/");
+    },
+  });
 
   // Query all bookings
   const { data: allBookings = [], isLoading: loadingBookings, refetch } = trpc.bookings.list.useQuery();
@@ -61,24 +72,61 @@ export default function AdminDashboard() {
   }, [allBookings, filterStatus, filterService]);
 
   if (loading) {
-    return <div className="flex justify-center items-center min-h-screen">Loading...</div>;
+    return (
+      <div className="min-h-screen bg-gray-50">
+        <Navigation />
+        <div className="flex justify-center items-center min-h-[60vh]">Loading...</div>
+        <Footer />
+      </div>
+    );
   }
 
   if (!user || user.role !== "admin") {
     return (
-      <div className="flex justify-center items-center min-h-screen">
-        <Card className="p-8 text-center">
-          <h1 className="text-2xl font-bold text-foreground mb-4">Access Denied</h1>
-          <p className="text-muted-foreground">You do not have permission to access this page.</p>
-        </Card>
+      <div className="min-h-screen bg-gray-50">
+        <Navigation />
+        <div className="flex justify-center items-center min-h-[60vh]">
+          <Card className="p-8 text-center">
+            <h1 className="text-2xl font-bold text-[#0F3D4C] mb-4">Access Denied</h1>
+            <p className="text-gray-600 mb-6">You do not have permission to access this page.</p>
+            <Button onClick={() => setLocation("/")} className="bg-[#5DBB63] hover:bg-[#4a9a52]">
+              Return to Home
+            </Button>
+          </Card>
+        </div>
+        <Footer />
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-background py-8">
-      <div className="container max-w-6xl">
-        <h1 className="text-4xl font-bold text-foreground mb-8">Admin Dashboard</h1>
+    <div className="min-h-screen bg-gray-50">
+      <Navigation />
+      <div className="py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="mb-8">
+            <button
+              onClick={() => setLocation("/")}
+              className="flex items-center text-[#5DBB63] hover:text-[#4a9a52] mb-4 transition-colors"
+            >
+              <ChevronLeft className="w-5 h-5 mr-2" />
+              Back to Home
+            </button>
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className="text-4xl font-bold text-[#0F3D4C] mb-2">Admin Dashboard</h1>
+                <p className="text-gray-600">Manage bookings and view analytics</p>
+              </div>
+              <button
+                onClick={() => logoutMutation.mutate()}
+                className="flex items-center gap-2 px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+              >
+                <LogOut className="w-4 h-4" />
+                Logout
+              </button>
+            </div>
+          </div>
 
         {/* Filters Section */}
         <Card className="p-6 mb-8">
@@ -248,7 +296,9 @@ export default function AdminDashboard() {
             </div>
           )}
         </Card>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }
