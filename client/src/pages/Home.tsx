@@ -42,10 +42,10 @@ export default function Home() {
   ];
 
   const socialWorkServices = [
-    { name: "Adult Divorce Preparation", path: "/services/adult-divorce-prep", desc: "Emotional and practical support for adults navigating the complexities of divorce and separation." },
-    { name: "Illness & Disability Support", path: "/services/illness-disability", desc: "Compassionate guidance for individuals and families coping with illness, disability, and life transitions." },
-    { name: "Palliative & End-of-Life Care", path: "/services/palliative-care", desc: "Holistic support for patients, families, and caregivers during end-of-life journeys." },
-    { name: "Health Education & Promotion", path: "/services/health-education", desc: "Educational programs promoting mental health, wellbeing, and healthy life transitions." },
+    { name: "Adult Divorce Preparation", path: "/services/adult-divorce-prep", desc: "Emotional and practical support for adults navigating the complexities of divorce and separation.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/adult-divorce-prep-hdiAXYVUZdPW3m8urReFKL.webp" },
+    { name: "Illness & Disability Support", path: "/services/illness-disability", desc: "Compassionate guidance for individuals and families coping with illness, disability, and life transitions.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/illness-disability-BUDZwUcbhbA5Z3fUUjjZHQ.webp" },
+    { name: "Palliative & End-of-Life Care", path: "/services/palliative-care", desc: "Holistic support for patients, families, and caregivers during end-of-life journeys.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/palliative-care-8v5vkQgC9LPzGCeQSk3dJY.webp" },
+    { name: "Health Education & Promotion", path: "/services/health-education", desc: "Educational programs promoting mental health, wellbeing, and healthy life transitions.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/health-education-JaYkB6NtYHP2RzBMhjfDNE.webp" },
   ];
 
   const faqs = [
@@ -249,9 +249,13 @@ export default function Home() {
                 className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition cursor-pointer flex flex-col h-full"
                 onClick={() => setLocation(service.path)}
               >
-                {/* Placeholder Image with Green Border */}
-                <div className="border-4 border-[#5DBB63] overflow-hidden h-48 flex-shrink-0 bg-gray-300 flex items-center justify-center">
-                  <span className="text-4xl">🤝</span>
+                {/* Image with Green Border */}
+                <div className="border-4 border-[#5DBB63] overflow-hidden h-48 flex-shrink-0">
+                  <img 
+                    src={service.image} 
+                    alt={service.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 
                 {/* Content */}
