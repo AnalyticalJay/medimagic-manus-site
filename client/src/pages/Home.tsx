@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Shield, Heart, Star } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
@@ -16,10 +15,30 @@ export default function Home() {
   };
 
   const mediationServices = [
-    { name: "Divorce Settlement Agreements", path: "/services/divorce-settlement", desc: "Structured mediation to help couples reach fair, legally sound divorce agreements." },
-    { name: "Parenting Plan", path: "/services/parenting-plans", desc: "Child-centred co-parenting frameworks prioritising children's wellbeing." },
-    { name: "Maintenance Agreements", path: "/services/maintenance-agreements", desc: "Structured mediation to help couples reach fair, legally sound divorce agreements." },
-    { name: "Voice of the Child Assessments", path: "/services/voice-of-child", desc: "Structured mediation to help couples reach fair, legally sound divorce agreements." },
+    { 
+      name: "Divorce Settlement Agreements", 
+      path: "/services/divorce-settlement", 
+      desc: "Structured mediation to help couples reach fair, legally sound divorce agreements.",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_fcM4sa_divorce-settleent_e4ada8cb.png"
+    },
+    { 
+      name: "Parenting Plan", 
+      path: "/services/parenting-plans", 
+      desc: "Child-centred co-parenting frameworks prioritising children's wellbeing.",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_onhlOo_ParentingPLans_c3fa36c8.png"
+    },
+    { 
+      name: "Maintenance Agreements", 
+      path: "/services/maintenance-agreements", 
+      desc: "Structured mediation to help couples reach fair, legally sound divorce agreements.",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_zQexNL_MaintenanceAgreements_32fcc08a.png"
+    },
+    { 
+      name: "Voice of the Child Assessments", 
+      path: "/services/voice-of-child", 
+      desc: "Structured mediation to help couples reach fair, legally sound divorce agreements.",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_Nj9mcO_Voiceofchildinterviews_d8b25c08.png"
+    },
   ];
 
   const socialWorkServices = [
@@ -99,91 +118,177 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Philosophy Section */}
+      {/* Tagline Section */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white rounded-3xl px-8 py-6 border-4 border-white shadow-md text-center relative">
+            <div className="absolute -left-6 top-1/2 transform -translate-y-1/2 text-5xl text-[#5DBB63]">★</div>
+            <div className="absolute -right-6 top-1/2 transform -translate-y-1/2 text-5xl text-[#5DBB63]">★</div>
+            <p className="text-2xl md:text-3xl font-bold text-[#5DBB63]">
+              Changing SCARS into STARS - One BATTLE at a time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Welcome Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0F3D4C]">Why Choose MediMagic?</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-[#5DBB63]">
-              <div className="text-4xl mb-4">🤝</div>
-              <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Professional Expertise</h3>
-              <p className="text-gray-600">FAMAC Accredited Mediator and SASW Registered Social Worker with 20+ years of experience.</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Left Column */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0F3D4C] mb-6">Welcome to MediMagic</h2>
+              <p className="text-gray-600 mb-4">
+                MediMagic is a uniquely integrated practice combining family law mediation and professional social work support. Our approach addresses both the <strong>practical decisions</strong> and the <strong>emotional realities</strong> that arise during conflict, separation, illness, or major life change.
+              </p>
+              <p className="text-gray-600 mb-8">
+                We focus on helping individuals move forward with clarity, dignity, and stability through structured, ethical, and client-centred care.
+              </p>
+              <button 
+                onClick={() => setLocation("/about")}
+                className="text-[#5DBB63] font-semibold hover:underline"
+              >
+                Learn About Cornelia →
+              </button>
             </div>
-            
-            <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-[#5DBB63]">
-              <div className="text-4xl mb-4">💚</div>
-              <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Compassionate Approach</h3>
-              <p className="text-gray-600">We understand the emotional complexity of life transitions and provide empathetic, non-judgmental support.</p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-[#5DBB63]">
-              <div className="text-4xl mb-4">✨</div>
-              <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Holistic Support</h3>
-              <p className="text-gray-600">From legal mediation to emotional support, we address all aspects of your wellbeing.</p>
+
+            {/* Right Column - Feature Boxes */}
+            <div className="space-y-6">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-[#5DBB63]">
+                    <span className="text-white text-xl">🛡️</span>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-[#0F3D4C]">Confidential & Safe</h3>
+                  <p className="text-gray-600">All sessions are conducted with strict confidentiality and professional ethics.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-[#5DBB63]">
+                    <span className="text-white text-xl">✓</span>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-[#0F3D4C]">Emotionally Intelligent</h3>
+                  <p className="text-gray-600">We address both practical decisions and emotional wellbeing throughout your journey.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-[#5DBB63]">
+                    <span className="text-white text-xl">✓</span>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-[#0F3D4C]">Highly Qualified</h3>
+                  <p className="text-gray-600">FAMAC Accredited Mediator and SASW Registered Social Worker with 20+ years experience.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section - Mediation */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      {/* Mediation Services Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#0F3D4C]">Mediation Services</h2>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Professional family law mediation to help you reach fair, sustainable agreements.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0F3D4C] uppercase">Mediation Services</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {mediationServices.map((service, idx) => (
               <div 
                 key={idx}
+                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition cursor-pointer"
                 onClick={() => setLocation(service.path)}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer border-t-4 border-[#5DBB63]"
               >
-                <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">{service.name}</h3>
-                <p className="text-gray-600">{service.desc}</p>
-                <div className="mt-4 text-[#5DBB63] font-semibold">Learn More →</div>
+                {/* Image with Green Border */}
+                <div className="border-4 border-[#5DBB63] overflow-hidden h-64">
+                  <img 
+                    src={service.image} 
+                    alt={service.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-3">{service.name}</h3>
+                  <p className="text-gray-200 mb-4">{service.desc}</p>
+                  <div className="text-[#5DBB63] font-semibold hover:text-[#7FD17F] transition">Learn More →</div>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Services Section - Social Work */}
+      {/* Social Work Services Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#0F3D4C]">Social Work Services</h2>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Compassionate support for life's most challenging transitions.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0F3D4C] uppercase">Social Work Services</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {socialWorkServices.map((service, idx) => (
               <div 
                 key={idx}
+                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer border-l-4 border-[#5DBB63]"
                 onClick={() => setLocation(service.path)}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer border-t-4 border-[#2F6F73]"
               >
                 <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">{service.name}</h3>
-                <p className="text-gray-600">{service.desc}</p>
-                <div className="mt-4 text-[#2F6F73] font-semibold">Learn More →</div>
+                <p className="text-gray-600 mb-4">{service.desc}</p>
+                <div className="text-[#5DBB63] font-semibold hover:text-[#7FD17F] transition">Learn More →</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Why Choose MediMagic Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0F3D4C] uppercase">Why Choose MediMagic</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
+              <div className="text-5xl mb-4">🛡️</div>
+              <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Confidential & Safe</h3>
+              <p className="text-gray-600">All sessions are conducted with strict confidentiality and professional ethics.</p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
+              <div className="text-5xl mb-4">❤️</div>
+              <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Emotionally Intelligent</h3>
+              <p className="text-gray-600">We address both practical decisions and emotional wellbeing throughout your journey.</p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
+              <div className="text-5xl mb-4">⭐</div>
+              <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Highly Qualified</h3>
+              <p className="text-gray-600">FAMAC Accredited Mediator and SASW Registered Social Worker with 20+ years experience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0F3D4C]">Frequently Asked Questions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0F3D4C] uppercase">Frequently Asked Questions</h2>
           
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden">
+              <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden bg-white">
                 <button
                   onClick={() => setExpandedFAQ(expandedFAQ === idx ? null : idx)}
                   className="w-full px-6 py-4 bg-white hover:bg-gray-50 text-left font-semibold text-[#0F3D4C] flex justify-between items-center transition"
                 >
                   {faq.q}
-                  <span className="text-[#5DBB63]">{expandedFAQ === idx ? "−" : "+"}</span>
+                  <span className="text-[#5DBB63] text-2xl">{expandedFAQ === idx ? "−" : "+"}</span>
                 </button>
                 {expandedFAQ === idx && (
                   <div className="px-6 py-4 bg-gray-50 text-gray-700 border-t border-gray-200">
@@ -199,9 +304,9 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0F3D4C]">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Start Your Journey?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Move Forward?</h2>
           <p className="text-lg text-gray-200 mb-8">
-            Contact us today for a free consultation to discuss how we can support you through life's transitions.
+            Take the first step towards clarity and resolution. Book a consultation with Cornelia today.
           </p>
           <button 
             onClick={handleBooking}
