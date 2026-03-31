@@ -18,6 +18,7 @@ import PalliativeCare from "./pages/services/PalliativeCare";
 import HealthEducation from "./pages/services/HealthEducation";
 import AdminDashboard from "./pages/AdminDashboard";
 import ClientPortal from "./pages/ClientPortal";
+import UserDashboard from "./pages/UserDashboard";
 
 function Router() {
   return (
@@ -36,6 +37,7 @@ function Router() {
       <Route path={"/services/health-education"} component={HealthEducation} />
       <Route path={"/admin"} component={AdminDashboard} />
       <Route path={"/portal"} component={ClientPortal} />
+      <Route path={"/dashboard"} component={UserDashboard} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>

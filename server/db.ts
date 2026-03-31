@@ -116,12 +116,36 @@ export async function getBookingById(id: number) {
   return result.length > 0 ? result[0] : null;
 }
 
+export async function getUserBookings(userId: number) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.select().from(bookings).where(eq(bookings.userId, userId));
+}
+
 export async function updateBookingStatus(id: number, status: string) {
   const db = await getDb();
   if (!db) {
     throw new Error("Database not available");
   }
   return db.update(bookings).set({ status: status as any }).where(eq(bookings.id, id));
+}
+
+export async function getAllUsers() {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.select().from(users);
+}
+
+export async function getBookingStats() {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.select().from(bookings);
 }
 
 // Availability queries
