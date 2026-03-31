@@ -193,7 +193,12 @@ export default function Home() {
       {/* Mediation Services Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0F3D4C] uppercase">Mediation Services</h2>
+          {/* Section Title with Green Line and Navy Bar */}
+          <div className="border-t-2 border-[#5DBB63] mb-12">
+            <div className="bg-[#0F3D4C] py-6 px-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Mediation Services</h2>
+            </div>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {mediationServices.map((service, idx) => (
@@ -228,23 +233,36 @@ export default function Home() {
       </section>
 
       {/* Social Work Services Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0F3D4C] uppercase">Social Work Services</h2>
+          {/* Section Title with Green Line and Navy Bar */}
+          <div className="border-t-2 border-[#5DBB63] mb-12">
+            <div className="bg-[#0F3D4C] py-6 px-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Social Work Services</h2>
+            </div>
+          </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {socialWorkServices.map((service, idx) => (
               <div 
                 key={idx}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer border-l-4 border-[#5DBB63] flex flex-col h-full"
+                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition cursor-pointer flex flex-col h-full"
                 onClick={() => setLocation(service.path)}
               >
-                <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">{service.name}</h3>
-                <p className="text-gray-600 mb-6 flex-grow">{service.desc}</p>
-                <div className="flex justify-center">
-                  <button className="bg-[#5DBB63] hover:bg-[#7FD17F] text-white font-semibold py-2 px-6 rounded-full transition shadow-lg hover:shadow-xl">
-                    Learn More
-                  </button>
+                {/* Placeholder Image with Green Border */}
+                <div className="border-4 border-[#5DBB63] overflow-hidden h-48 flex-shrink-0 bg-gray-300 flex items-center justify-center">
+                  <span className="text-4xl">🤝</span>
+                </div>
+                
+                {/* Content */}
+                <div className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-lg font-bold text-white mb-3 text-center">{service.name}</h3>
+                  <p className="text-gray-200 mb-6 text-center text-sm flex-grow">{service.desc}</p>
+                  <div className="flex justify-center">
+                    <button className="bg-[#5DBB63] hover:bg-[#7FD17F] text-white font-semibold py-2 px-6 rounded-full transition shadow-lg hover:shadow-xl">
+                      Learn More
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
@@ -255,7 +273,12 @@ export default function Home() {
       {/* Why Choose MediMagic Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0F3D4C] uppercase">Why Choose MediMagic</h2>
+          {/* Section Title with Green Line and Navy Bar */}
+          <div className="border-t-2 border-[#5DBB63] mb-12">
+            <div className="bg-[#0F3D4C] py-6 px-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Why Choose MediMagic</h2>
+            </div>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
@@ -282,7 +305,12 @@ export default function Home() {
       {/* FAQ Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0F3D4C] uppercase">Frequently Asked Questions</h2>
+          {/* Section Title with Green Line and Navy Bar */}
+          <div className="border-t-2 border-[#5DBB63] mb-12">
+            <div className="bg-[#0F3D4C] py-6 px-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Frequently Asked Questions</h2>
+            </div>
+          </div>
           
           <div className="space-y-4">
             {faqs.map((faq, idx) => (

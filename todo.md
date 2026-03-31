@@ -68,6 +68,10 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Ensure responsive design for mobile and desktop
 - [x] Implement SCARS to STARS branding prominently on homepage
 - [x] Add professional typography and spacing
+- [ ] Create section title component with green line and navy background styling
+- [ ] Update Social Worker services to display 4 cards in one row matching Mediation card layout
+- [ ] Apply section title styling to all section titles on Home page
+- [ ] Apply section title styling to About, Contact, and other pages
 
 ## Testing & Quality Assurance
 - [ ] Write vitest tests for all backend procedures
