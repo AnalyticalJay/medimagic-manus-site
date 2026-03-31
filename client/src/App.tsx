@@ -5,31 +5,47 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Booking from "./pages/Booking";
+import DivorceSettlement from "./pages/services/DivorceSettlement";
+import MaintenanceAgreements from "./pages/services/MaintenanceAgreements";
+import ParentingPlans from "./pages/services/ParentingPlans";
+import VoiceOfChild from "./pages/services/VoiceOfChild";
+import AdultDivorcPrep from "./pages/services/AdultDivorcePrep";
+import IllnessDisability from "./pages/services/IllnessDisability";
+import PalliativeCare from "./pages/services/PalliativeCare";
+import HealthEducation from "./pages/services/HealthEducation";
+import AdminDashboard from "./pages/AdminDashboard";
+import ClientPortal from "./pages/ClientPortal";
 
 function Router() {
-  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/about"} component={About} />
+      <Route path={"/contact"} component={Contact} />
+      <Route path={"/booking"} component={Booking} />
+      <Route path={"/services/divorce-settlement"} component={DivorceSettlement} />
+      <Route path={"/services/maintenance-agreements"} component={MaintenanceAgreements} />
+      <Route path={"/services/parenting-plans"} component={ParentingPlans} />
+      <Route path={"/services/voice-of-child"} component={VoiceOfChild} />
+      <Route path={"/services/adult-divorce-prep"} component={AdultDivorcPrep} />
+      <Route path={"/services/illness-disability"} component={IllnessDisability} />
+      <Route path={"/services/palliative-care"} component={PalliativeCare} />
+      <Route path={"/services/health-education"} component={HealthEducation} />
+      <Route path={"/admin"} component={AdminDashboard} />
+      <Route path={"/portal"} component={ClientPortal} />
       <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
           <Router />

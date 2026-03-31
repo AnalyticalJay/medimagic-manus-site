@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { InsertUser, users, bookings, InsertBooking, availability, InsertAvailability } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,71 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+// Booking queries
+export async function createBooking(booking: InsertBooking) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  const result = await db.insert(bookings).values(booking);
+  return result;
+}
+
+export async function getBookings() {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.select().from(bookings);
+}
+
+export async function getBookingById(id: number) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  const result = await db.select().from(bookings).where(eq(bookings.id, id)).limit(1);
+  return result.length > 0 ? result[0] : null;
+}
+
+export async function updateBookingStatus(id: number, status: string) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.update(bookings).set({ status: status as any }).where(eq(bookings.id, id));
+}
+
+// Availability queries
+export async function getAvailability() {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.select().from(availability);
+}
+
+export async function getAvailabilityByDate(date: string) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  const result = await db.select().from(availability).where(eq(availability.date, date));
+  return result;
+}
+
+export async function createAvailability(slot: InsertAvailability) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.insert(availability).values(slot);
+}
+
+export async function updateAvailability(id: number, isAvailable: boolean) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.update(availability).set({ isAvailable: isAvailable ? 1 : 0 }).where(eq(availability.id, id));
+}
