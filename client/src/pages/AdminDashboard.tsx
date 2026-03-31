@@ -102,25 +102,25 @@ export default function AdminDashboard() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
-      <div className="py-12 px-4 sm:px-6 lg:px-8">
+      <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="mb-8">
             <button
               onClick={() => setLocation("/")}
-              className="flex items-center text-[#5DBB63] hover:text-[#4a9a52] mb-4 transition-colors"
+              className="flex items-center text-[#5DBB63] hover:text-[#4a9a52] mb-4 transition-colors text-sm sm:text-base"
             >
               <ChevronLeft className="w-5 h-5 mr-2" />
               Back to Home
             </button>
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
               <div>
-                <h1 className="text-4xl font-bold text-[#0F3D4C] mb-2">Admin Dashboard</h1>
-                <p className="text-gray-600">Manage bookings and view analytics</p>
+                <h1 className="text-3xl sm:text-4xl font-bold text-[#0F3D4C] mb-2">Admin Dashboard</h1>
+                <p className="text-gray-600 text-sm sm:text-base">Manage bookings and view analytics</p>
               </div>
               <button
                 onClick={() => logoutMutation.mutate()}
-                className="flex items-center gap-2 px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                className="flex items-center gap-2 px-3 sm:px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors text-sm sm:text-base whitespace-nowrap"
               >
                 <LogOut className="w-4 h-4" />
                 Logout
@@ -129,16 +129,16 @@ export default function AdminDashboard() {
           </div>
 
         {/* Filters Section */}
-        <Card className="p-6 mb-8">
+        <Card className="p-4 sm:p-6 mb-8">
           <div className="flex items-center gap-2 mb-6">
             <Filter className="w-5 h-5 text-accent" />
-            <h2 className="text-xl font-bold text-foreground">Filters</h2>
+            <h2 className="text-lg sm:text-xl font-bold text-foreground">Filters</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             {/* Service Filter */}
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Service Type</label>
+              <label className="block text-xs sm:text-sm font-medium text-foreground mb-2">Service Type</label>
               <Select value={filterService} onValueChange={setFilterService}>
                 <SelectTrigger>
                   <SelectValue placeholder="All Services" />
@@ -156,7 +156,7 @@ export default function AdminDashboard() {
 
             {/* Status Filter */}
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Status</label>
+              <label className="block text-xs sm:text-sm font-medium text-foreground mb-2">Status</label>
               <Select value={filterStatus} onValueChange={setFilterStatus}>
                 <SelectTrigger>
                   <SelectValue placeholder="All Statuses" />
@@ -172,14 +172,15 @@ export default function AdminDashboard() {
             </div>
           </div>
 
-          <div className="mt-4 flex gap-2">
+          <div className="mt-4 flex flex-wrap gap-2">
             <Button
               onClick={() => refetch()}
               variant="outline"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 text-xs sm:text-sm"
             >
               <RefreshCw className="w-4 h-4" />
-              Refresh
+              <span className="hidden sm:inline">Refresh</span>
+              <span className="sm:hidden">Refresh</span>
             </Button>
             <Button
               onClick={() => {
@@ -187,6 +188,7 @@ export default function AdminDashboard() {
                 setFilterStatus("");
               }}
               variant="ghost"
+              className="text-xs sm:text-sm"
             >
               Clear Filters
             </Button>
@@ -194,8 +196,8 @@ export default function AdminDashboard() {
         </Card>
 
         {/* Bookings Table */}
-        <Card className="p-6">
-          <h2 className="text-xl font-bold text-foreground mb-4">Bookings ({displayBookings.length})</h2>
+        <Card className="p-4 sm:p-6">
+          <h2 className="text-lg sm:text-xl font-bold text-foreground mb-4">Bookings ({displayBookings.length})</h2>
 
           {loadingBookings ? (
             <div className="text-center py-8 text-muted-foreground">Loading bookings...</div>

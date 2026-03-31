@@ -99,28 +99,28 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <div className="bg-[#5DBB63] rounded-3xl px-3 py-2 inline-block mb-8">
-                <h1 className="text-2xl md:text-3xl font-bold text-white">MEDI MAGIC</h1>
+              <div className="bg-[#5DBB63] rounded-2xl sm:rounded-3xl px-3 py-2 inline-block mb-4 sm:mb-8">
+                <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">MEDI MAGIC</h1>
               </div>
               
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                 STEADY SUPPORT THROUGH LIFE'S MOST DIFFICULT TRANSITIONS
               </h2>
               
-              <p className="text-lg text-gray-100 mb-8">
+              <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
                 Medi Magic offers Professional Family Law Mediation and Social Work Services, bringing structure, fairness and calm direction to times of change.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <button 
                   onClick={handleBooking}
-                  className="medimagic-button"
+                  className="medimagic-button text-sm sm:text-base"
                 >
                   Book a Consultation
                 </button>
                 <button 
                   onClick={() => setLocation("/about")}
-                  className="medimagic-button-outline"
+                  className="medimagic-button-outline text-sm sm:text-base"
                 >
                   Learn More
                 </button>
@@ -128,20 +128,20 @@ export default function Home() {
             </div>
 
             {/* Right Illustration - SCARS to STARS Image */}
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-8 lg:mt-0">
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/ChatGPTImageMar23,2026,10_49_26AM_eb0483f5.png" 
                 alt="SCARS to STARS Illustration" 
-                className="w-full max-w-md h-auto rounded-3xl shadow-lg border-4 border-[#5DBB63]"
+                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
               />
             </div>
           </div>
 
           {/* SCARS to STARS Tagline - Bottom of Hero */}
-          <div className="mt-12 bg-white rounded-3xl px-8 py-6 border-2 border-[#5DBB63] shadow-md text-center relative">
-            <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 text-6xl text-[#5DBB63]">★</div>
-            <div className="absolute -right-8 top-1/2 transform -translate-y-1/2 text-6xl text-[#5DBB63]">★</div>
-            <p className="text-2xl md:text-3xl font-bold text-[#5DBB63]">
+          <div className="mt-8 sm:mt-12 bg-white rounded-2xl sm:rounded-3xl px-4 sm:px-8 py-4 sm:py-6 border-2 border-[#5DBB63] shadow-md text-center relative">
+            <div className="absolute -left-4 sm:-left-8 top-1/2 transform -translate-y-1/2 text-4xl sm:text-6xl text-[#5DBB63]">★</div>
+            <div className="absolute -right-4 sm:-right-8 top-1/2 transform -translate-y-1/2 text-4xl sm:text-6xl text-[#5DBB63]">★</div>
+            <p className="text-lg sm:text-2xl md:text-3xl font-bold text-[#5DBB63] px-4">
               Changing SCARS into STARS - One BATTLE at a time.
             </p>
           </div>

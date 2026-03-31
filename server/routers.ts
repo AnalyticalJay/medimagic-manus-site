@@ -3,7 +3,7 @@ import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, protectedProcedure, router } from "./_core/trpc";
 import { z } from "zod";
-import { createBooking, getBookings, getBookingById, updateBookingStatus, getAvailability, getAvailabilityByDate, createAvailability, updateAvailability, getUserBookings, getAllUsers, getBookingStats } from "./db";
+import { createBooking, getBookings, getBookingById, updateBookingStatus, getAvailability, getAvailabilityByDate, createAvailability, updateAvailability, getUserBookings, getAllUsers, getBookingStats, updateUser, getUserById } from "./db";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -17,6 +17,17 @@ export const appRouter = router({
         success: true,
       } as const;
     }),
+    updateProfile: protectedProcedure
+      .input(z.object({
+        name: z.string().optional(),
+        email: z.string().email().optional(),
+      }))
+      .mutation(async ({ input, ctx }) => {
+        if (!ctx.user?.id) {
+          throw new Error("User not found");
+        }
+        return updateUser(ctx.user.id, input);
+      }),
   }),
 
   bookings: router({
