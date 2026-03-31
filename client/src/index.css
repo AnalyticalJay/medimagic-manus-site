@@ -43,39 +43,40 @@
 }
 
 :root {
-  --primary: #5DBB63;
-  --primary-foreground: #ffffff;
-  --sidebar-primary: #5DBB63;
-  --sidebar-primary-foreground: #ffffff;
-  --chart-1: #5DBB63;
-  --chart-2: #1a3a52;
-  --chart-3: #2d5a7b;
-  --chart-4: #4a7a9e;
-  --chart-5: #6b9fbf;
-  --radius: 0.65rem;
-  --background: #ffffff;
-  --foreground: #1a3a52;
-  --card: #ffffff;
-  --card-foreground: #1a3a52;
-  --popover: #ffffff;
-  --popover-foreground: #1a3a52;
-  --secondary: #1a3a52;
-  --secondary-foreground: #ffffff;
-  --muted: #f0f0f0;
-  --muted-foreground: #666666;
-  --accent: #5DBB63;
-  --accent-foreground: #ffffff;
-  --destructive: #dc2626;
-  --destructive-foreground: #ffffff;
-  --border: #e5e7eb;
-  --input: #f3f4f6;
-  --ring: #5DBB63;
-  --sidebar: #ffffff;
-  --sidebar-foreground: #1a3a52;
-  --sidebar-accent: #5DBB63;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #e5e7eb;
-  --sidebar-ring: #5DBB63;
+  /* MediMagic Corporate Brand Colors - Playful & Professional */
+  --primary: #0F3D4C; /* Navy blue - authority, trust */
+  --primary-foreground: #FFFFFF;
+  --sidebar-primary: #2F6F73; /* Teal - calm, professional */
+  --sidebar-primary-foreground: #FFFFFF;
+  --chart-1: #8BC34A; /* Bright green - transformation, hope */
+  --chart-2: #0F3D4C;
+  --chart-3: #2F6F73;
+  --chart-4: #1A4D5C;
+  --chart-5: #0D2E38;
+  --radius: 1.25rem; /* 20px - playful, rounded corners */
+  --background: #F8FAFB; /* Very light background */
+  --foreground: #1A2A3A; /* Dark navy text */
+  --card: #FFFFFF; /* Clean white cards */
+  --card-foreground: #1A2A3A;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A2A3A;
+  --secondary: #2F6F73; /* Teal */
+  --secondary-foreground: #FFFFFF;
+  --muted: #D4E5E9; /* Light teal for subtle elements */
+  --muted-foreground: #5A7A7F;
+  --accent: #8BC34A; /* Bright green - CTAs, emphasis */
+  --accent-foreground: #FFFFFF;
+  --destructive: #E74C3C;
+  --destructive-foreground: #FFFFFF;
+  --border: #E0E8EB; /* Soft border */
+  --input: #F5F9FA; /* Very light background */
+  --ring: #0F3D4C; /* Navy focus ring */
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1A2A3A;
+  --sidebar-accent: #8BC34A;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #E0E8EB;
+  --sidebar-ring: #0F3D4C;
 }
 
 .dark {
