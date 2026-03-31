@@ -4,6 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { PageTransition } from "./components/PageTransition";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -20,26 +21,35 @@ import AdminDashboard from "./pages/AdminDashboard";
 import ClientPortal from "./pages/ClientPortal";
 import UserDashboard from "./pages/UserDashboard";
 
+// Wrapper component to add fade-in animation to each page
+function RouteWrapper({ component: Component }: { component: React.ComponentType<any> }) {
+  return (
+    <PageTransition>
+      <Component />
+    </PageTransition>
+  );
+}
+
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/about"} component={About} />
-      <Route path={"/contact"} component={Contact} />
-      <Route path={"/booking"} component={Booking} />
-      <Route path={"/services/divorce-settlement"} component={DivorceSettlement} />
-      <Route path={"/services/maintenance-agreements"} component={MaintenanceAgreements} />
-      <Route path={"/services/parenting-plans"} component={ParentingPlans} />
-      <Route path={"/services/voice-of-child"} component={VoiceOfChild} />
-      <Route path={"/services/adult-divorce-prep"} component={AdultDivorcPrep} />
-      <Route path={"/services/illness-disability"} component={IllnessDisability} />
-      <Route path={"/services/palliative-care"} component={PalliativeCare} />
-      <Route path={"/services/health-education"} component={HealthEducation} />
-      <Route path={"/admin"} component={AdminDashboard} />
-      <Route path={"/portal"} component={ClientPortal} />
-      <Route path={"/dashboard"} component={UserDashboard} />
-      <Route path={"/404"} component={NotFound} />
-      <Route component={NotFound} />
+      <Route path={"/"} component={() => <RouteWrapper component={Home} />} />
+      <Route path={"/about"} component={() => <RouteWrapper component={About} />} />
+      <Route path={"/contact"} component={() => <RouteWrapper component={Contact} />} />
+      <Route path={"/booking"} component={() => <RouteWrapper component={Booking} />} />
+      <Route path={"/services/divorce-settlement"} component={() => <RouteWrapper component={DivorceSettlement} />} />
+      <Route path={"/services/maintenance-agreements"} component={() => <RouteWrapper component={MaintenanceAgreements} />} />
+      <Route path={"/services/parenting-plans"} component={() => <RouteWrapper component={ParentingPlans} />} />
+      <Route path={"/services/voice-of-child"} component={() => <RouteWrapper component={VoiceOfChild} />} />
+      <Route path={"/services/adult-divorce-prep"} component={() => <RouteWrapper component={AdultDivorcPrep} />} />
+      <Route path={"/services/illness-disability"} component={() => <RouteWrapper component={IllnessDisability} />} />
+      <Route path={"/services/palliative-care"} component={() => <RouteWrapper component={PalliativeCare} />} />
+      <Route path={"/services/health-education"} component={() => <RouteWrapper component={HealthEducation} />} />
+      <Route path={"/admin"} component={() => <RouteWrapper component={AdminDashboard} />} />
+      <Route path={"/portal"} component={() => <RouteWrapper component={ClientPortal} />} />
+      <Route path={"/dashboard"} component={() => <RouteWrapper component={UserDashboard} />} />
+      <Route path={"/404"} component={() => <RouteWrapper component={NotFound} />} />
+      <Route component={() => <RouteWrapper component={NotFound} />} />
     </Switch>
   );
 }
