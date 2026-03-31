@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Settings, LayoutDashboard } from "lucide-react";
 import { useAuth } from "@/_core/hooks/useAuth";
 
 export default function Navigation() {
@@ -119,15 +119,17 @@ export default function Navigation() {
                 {user.role === "admin" && (
                   <button
                     onClick={() => handleNavigation("/admin")}
-                    className="ml-2 px-4 py-2 bg-yellow-500 text-white hover:bg-yellow-600 rounded-full font-semibold transition-colors"
+                    className="ml-2 px-4 py-2 bg-[#1a3a52] text-white hover:bg-[#0f2438] rounded-full font-semibold transition-all flex items-center gap-2 shadow-lg hover:shadow-xl hover:scale-105"
                   >
+                    <Settings className="w-4 h-4" />
                     Admin
                   </button>
                 )}
                 <button
                   onClick={() => handleNavigation("/dashboard")}
-                  className="ml-4 px-6 py-2 bg-white text-[#5DBB63] hover:bg-gray-100 rounded-full font-semibold transition-colors"
+                  className="ml-4 px-6 py-2 bg-[#1a3a52] text-white hover:bg-[#0f2438] rounded-full font-semibold transition-all flex items-center gap-2 shadow-lg hover:shadow-xl hover:scale-105"
                 >
+                  <LayoutDashboard className="w-4 h-4" />
                   Dashboard
                 </button>
               </>
@@ -233,15 +235,17 @@ export default function Navigation() {
                 {user.role === "admin" && (
                   <button
                     onClick={() => handleNavigation("/admin")}
-                    className="w-full mt-2 px-6 py-2 bg-yellow-500 text-white hover:bg-yellow-600 rounded-full font-semibold transition-colors"
+                    className="w-full mt-2 px-6 py-2 bg-[#1a3a52] text-white hover:bg-[#0f2438] rounded-full font-semibold transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
                   >
+                    <Settings className="w-4 h-4" />
                     Admin
                   </button>
                 )}
                 <button
                   onClick={() => handleNavigation("/dashboard")}
-                  className="w-full mt-4 px-6 py-2 bg-white text-[#5DBB63] hover:bg-gray-100 rounded-full font-semibold transition-colors"
+                  className="w-full mt-4 px-6 py-2 bg-[#1a3a52] text-white hover:bg-[#0f2438] rounded-full font-semibold transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
                 >
+                  <LayoutDashboard className="w-4 h-4" />
                   Dashboard
                 </button>
               </>
