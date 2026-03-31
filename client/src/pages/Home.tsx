@@ -79,13 +79,13 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <div className="mb-6 inline-block bg-[#5DBB63] text-white px-4 py-2 rounded-full text-sm font-semibold">
+              <div className="mb-6 inline-block bg-[#5DBB63] text-white px-4 py-2 rounded-full text-sm font-semibold drop-shadow-md">
                 Professional Family Law Mediation & Social Work
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0F3D4C] mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                 Steady Support Through Life's Most Difficult Transitions
               </h1>
-              <p className="text-lg text-gray-600 mb-8">
+              <p className="text-lg text-white/90 mb-8 drop-shadow-md">
                 Medi Magic offers Professional Family Law Mediation and Social Work Services, bringing structure, fairness and calm direction to times of change.
               </p>
               <div className="flex gap-4 flex-wrap">
@@ -109,7 +109,10 @@ export default function Home() {
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_7Zr0Ey_hero_illustration_5e7f7d2c.png" 
                 alt="MediMagic Services" 
-                className="w-full max-w-md rounded-2xl shadow-2xl border-4 border-[#5DBB63]"
+                className="w-full max-w-md rounded-2xl shadow-2xl border-4 border-[#5DBB63] object-cover"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
               />
             </div>
           </div>
