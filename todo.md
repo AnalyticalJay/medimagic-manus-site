@@ -153,3 +153,12 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Optimize responsive layouts for desktop and mobile
 - [x] Improve typography and spacing for mobile readability
 - [x] Test all sections on desktop and mobile devices
+
+
+## Welcome Section & Masters Degree Updates
+- [ ] Integrate icons and text into Welcome to MediMagic section on Home page
+- [ ] Remove duplicate feature lists from Home page
+- [ ] Add Masters Degree to Highly Qualified section on Home page
+- [ ] Update About page with Masters Degree information
+- [ ] Update FAQ with Masters Degree and qualifications
+- [ ] Update service pages with Masters Degree references where relevant

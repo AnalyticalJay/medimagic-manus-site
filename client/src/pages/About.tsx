@@ -81,7 +81,7 @@ export default function About() {
               Cornelia Griessel
             </h1>
             <p className="text-xl text-white/90">
-              FAMAC Accredited Mediator & SASW Registered Social Worker with 20+ years of experience in family mediation, medical social work, and child-centred practice.
+              FAMAC Accredited Mediator, SASW Registered Social Worker, Masters Degree holder with 20+ years of experience in family mediation, medical social work, and child-centred practice.
             </p>
           </div>
         </div>
@@ -118,6 +118,13 @@ export default function About() {
                     <div>
                       <h4 className="font-bold text-foreground mb-1">SASW Registered Social Worker</h4>
                       <p className="text-muted-foreground">Registered with the South African Society of Social Workers (SASW) with extensive experience in medical social work and family support.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <Lightbulb className="w-16 h-16 text-accent flex-shrink-0" />
+                    <div>
+                      <h4 className="font-bold text-foreground mb-1">Masters Degree</h4>
+                      <p className="text-muted-foreground">Advanced academic qualification demonstrating expertise and commitment to professional excellence in social work and family support services.</p>
                     </div>
                   </div>
                 </div>

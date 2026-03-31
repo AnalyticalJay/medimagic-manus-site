@@ -77,7 +77,7 @@ export default function Home() {
     { q: "What if we cannot reach agreement through mediation?", a: "If mediation doesn't resolve all issues, you can pursue litigation for remaining matters." },
     { q: "Are online consultations as effective as in-person sessions?", a: "Yes, we offer both online and in-person consultations with equal effectiveness." },
     { q: "How do I know if mediation is right for my situation?", a: "Contact us for a free consultation to discuss your specific circumstances." },
-    { q: "What qualifications does Cornelia hold?", a: "Cornelia is a FAMAC Accredited Mediator and SASW Registered Social Worker with 20+ years experience." },
+    { q: "What qualifications does Cornelia hold?", a: "Cornelia holds a Masters Degree and is a FAMAC Accredited Mediator and SASW Registered Social Worker with 20+ years experience." },
   ];
 
   return (
@@ -169,42 +169,24 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Right Column - Feature Boxes */}
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-[#5DBB63]">
-                    <span className="text-white text-xl">🛡️</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-[#0F3D4C]">Confidential & Safe</h3>
-                  <p className="text-gray-600">All sessions are conducted with strict confidentiality and professional ethics.</p>
-                </div>
+            {/* Right Column - Feature Cards with Icons */}
+            <div className="grid grid-cols-1 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
+                <div className="text-5xl mb-4">🛡️</div>
+                <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Confidential & Safe</h3>
+                <p className="text-gray-600">All sessions are conducted with strict confidentiality and professional ethics.</p>
               </div>
-
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-[#5DBB63]">
-                    <span className="text-white text-xl">✓</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-[#0F3D4C]">Emotionally Intelligent</h3>
-                  <p className="text-gray-600">We address both practical decisions and emotional wellbeing throughout your journey.</p>
-                </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
+                <div className="text-5xl mb-4">❤️</div>
+                <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Emotionally Intelligent</h3>
+                <p className="text-gray-600">We address both practical decisions and emotional wellbeing throughout your journey.</p>
               </div>
-
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-[#5DBB63]">
-                    <span className="text-white text-xl">✓</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-[#0F3D4C]">Highly Qualified</h3>
-                  <p className="text-gray-600">FAMAC Accredited Mediator and SASW Registered Social Worker with 20+ years experience.</p>
-                </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
+                <div className="text-5xl mb-4">⭐</div>
+                <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Highly Qualified</h3>
+                <p className="text-gray-600">FAMAC Accredited Mediator, SASW Registered Social Worker, Masters Degree holder with 20+ years experience.</p>
               </div>
             </div>
           </div>
@@ -299,37 +281,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose MediMagic Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white" data-scroll-animate id="why-choose-section">
-        <div className="max-w-7xl mx-auto">
-          {/* Section Title with Green Line and Navy Bar */}
-          <div className="border-t-8 border-[#5DBB63] mb-12">
-            <div className="bg-[#0F3D4C] py-6 px-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Why Choose MediMagic</h2>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
-              <div className="text-5xl mb-4">🛡️</div>
-              <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Confidential & Safe</h3>
-              <p className="text-gray-600">All sessions are conducted with strict confidentiality and professional ethics.</p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
-              <div className="text-5xl mb-4">❤️</div>
-              <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Emotionally Intelligent</h3>
-              <p className="text-gray-600">We address both practical decisions and emotional wellbeing throughout your journey.</p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
-              <div className="text-5xl mb-4">⭐</div>
-              <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Highly Qualified</h3>
-              <p className="text-gray-600">FAMAC Accredited Mediator and SASW Registered Social Worker with 20+ years experience.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* FAQ Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50" data-scroll-animate id="faq-section">
