@@ -9,17 +9,17 @@ export default function Navigation() {
   const [, setLocation] = useLocation();
 
   const mediationServices = [
-    { name: "Divorce Settlement", path: "/services/divorce-settlement" },
+    { name: "Divorce Settlement Agreements", path: "/services/divorce-settlement" },
+    { name: "Parenting Plan", path: "/services/parenting-plans" },
     { name: "Maintenance Agreements", path: "/services/maintenance-agreements" },
-    { name: "Parenting Plans", path: "/services/parenting-plans" },
-    { name: "Voice of Child", path: "/services/voice-of-child" },
+    { name: "Voice of the Child Assessments", path: "/services/voice-of-child" },
   ];
 
   const socialWorkServices = [
-    { name: "Adult Divorce Prep", path: "/services/adult-divorce-prep" },
-    { name: "Illness & Disability", path: "/services/illness-disability" },
-    { name: "Palliative Care", path: "/services/palliative-care" },
-    { name: "Health Education", path: "/services/health-education" },
+    { name: "Adult Divorce Preparation", path: "/services/adult-divorce-prep" },
+    { name: "Illness & Disability Support", path: "/services/illness-disability" },
+    { name: "Palliative & End-of-Life Care", path: "/services/palliative-care" },
+    { name: "Health Education & Promotion", path: "/services/health-education" },
   ];
 
   const handleNavigation = (path: string) => {
@@ -29,38 +29,45 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white shadow-md">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="medimagic-nav sticky top-0 z-50 shadow-lg">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div 
-            className="flex-shrink-0 font-bold text-2xl text-green-600 cursor-pointer"
+            className="flex-shrink-0 font-bold text-2xl text-white cursor-pointer hover:opacity-80 transition-opacity"
             onClick={() => handleNavigation("/")}
           >
-            MediMagic
+            MEDI MAGIC
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             <button
               onClick={() => handleNavigation("/")}
-              className="px-3 py-2 rounded-md text-gray-700 hover:text-green-600 transition-colors"
+              className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors font-medium"
             >
               Home
             </button>
 
+            <button
+              onClick={() => handleNavigation("/about")}
+              className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors font-medium"
+            >
+              About
+            </button>
+
             {/* Mediation Dropdown */}
             <div className="relative group">
-              <button className="px-3 py-2 rounded-md text-gray-700 hover:text-green-600 transition-colors flex items-center">
-                Mediation Services
+              <button className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors flex items-center font-medium">
+                Mediation
                 <ChevronDown className="w-4 h-4 ml-1" />
               </button>
-              <div className="absolute left-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="absolute left-0 mt-0 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 {mediationServices.map((service) => (
                   <button
                     key={service.path}
                     onClick={() => handleNavigation(service.path)}
-                    className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600 first:rounded-t-md last:rounded-b-md transition-colors"
+                    className="block w-full text-left px-4 py-3 text-[#1a3a52] hover:bg-[#f0f0f0] first:rounded-t-md last:rounded-b-md transition-colors font-medium"
                   >
                     {service.name}
                   </button>
@@ -70,16 +77,16 @@ export default function Navigation() {
 
             {/* Social Work Dropdown */}
             <div className="relative group">
-              <button className="px-3 py-2 rounded-md text-gray-700 hover:text-green-600 transition-colors flex items-center">
-                Social Work Services
+              <button className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors flex items-center font-medium">
+                Social Work
                 <ChevronDown className="w-4 h-4 ml-1" />
               </button>
-              <div className="absolute left-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="absolute left-0 mt-0 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 {socialWorkServices.map((service) => (
                   <button
                     key={service.path}
                     onClick={() => handleNavigation(service.path)}
-                    className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600 first:rounded-t-md last:rounded-b-md transition-colors"
+                    className="block w-full text-left px-4 py-3 text-[#1a3a52] hover:bg-[#f0f0f0] first:rounded-t-md last:rounded-b-md transition-colors font-medium"
                   >
                     {service.name}
                   </button>
@@ -88,32 +95,25 @@ export default function Navigation() {
             </div>
 
             <button
-              onClick={() => handleNavigation("/about")}
-              className="px-3 py-2 rounded-md text-gray-700 hover:text-green-600 transition-colors"
-            >
-              About
-            </button>
-
-            <button
               onClick={() => handleNavigation("/contact")}
-              className="px-3 py-2 rounded-md text-gray-700 hover:text-green-600 transition-colors"
+              className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors font-medium"
             >
               Contact
             </button>
 
-            <Button 
-              onClick={() => handleNavigation("/booking")}
-              className="ml-4 bg-green-600 hover:bg-green-700 text-white"
+            <button
+              onClick={() => handleNavigation("/portal")}
+              className="ml-4 px-6 py-2 bg-white text-[#5DBB63] hover:bg-gray-100 rounded-full font-semibold transition-colors"
             >
-              Get Started
-            </Button>
+              Login
+            </button>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-green-600"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-[#4a9a52]"
             >
               {isOpen ? (
                 <X className="w-6 h-6" />
@@ -129,27 +129,34 @@ export default function Navigation() {
           <div className="md:hidden pb-4">
             <button
               onClick={() => handleNavigation("/")}
-              className="block w-full text-left px-3 py-2 rounded-md text-gray-700 hover:bg-green-50"
+              className="block w-full text-left px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] font-medium"
             >
               Home
+            </button>
+
+            <button
+              onClick={() => handleNavigation("/about")}
+              className="block w-full text-left px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] font-medium"
+            >
+              About
             </button>
 
             {/* Mobile Mediation Dropdown */}
             <div>
               <button
                 onClick={() => setOpenDropdown(openDropdown === "mediation" ? null : "mediation")}
-                className="block w-full text-left px-3 py-2 rounded-md text-gray-700 hover:bg-green-50 flex items-center justify-between"
+                className="block w-full text-left px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] flex items-center justify-between font-medium"
               >
-                Mediation Services
+                Mediation
                 <ChevronDown className={`w-4 h-4 transition-transform ${openDropdown === "mediation" ? "rotate-180" : ""}`} />
               </button>
               {openDropdown === "mediation" && (
-                <div className="pl-4">
+                <div className="pl-4 bg-[#4a9a52]">
                   {mediationServices.map((service) => (
                     <button
                       key={service.path}
                       onClick={() => handleNavigation(service.path)}
-                      className="block w-full text-left px-3 py-2 text-gray-600 hover:text-green-600"
+                      className="block w-full text-left px-3 py-2 text-white hover:bg-[#3d7a42] font-medium"
                     >
                       {service.name}
                     </button>
@@ -162,18 +169,18 @@ export default function Navigation() {
             <div>
               <button
                 onClick={() => setOpenDropdown(openDropdown === "socialwork" ? null : "socialwork")}
-                className="block w-full text-left px-3 py-2 rounded-md text-gray-700 hover:bg-green-50 flex items-center justify-between"
+                className="block w-full text-left px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] flex items-center justify-between font-medium"
               >
-                Social Work Services
+                Social Work
                 <ChevronDown className={`w-4 h-4 transition-transform ${openDropdown === "socialwork" ? "rotate-180" : ""}`} />
               </button>
               {openDropdown === "socialwork" && (
-                <div className="pl-4">
+                <div className="pl-4 bg-[#4a9a52]">
                   {socialWorkServices.map((service) => (
                     <button
                       key={service.path}
                       onClick={() => handleNavigation(service.path)}
-                      className="block w-full text-left px-3 py-2 text-gray-600 hover:text-green-600"
+                      className="block w-full text-left px-3 py-2 text-white hover:bg-[#3d7a42] font-medium"
                     >
                       {service.name}
                     </button>
@@ -183,25 +190,18 @@ export default function Navigation() {
             </div>
 
             <button
-              onClick={() => handleNavigation("/about")}
-              className="block w-full text-left px-3 py-2 rounded-md text-gray-700 hover:bg-green-50"
-            >
-              About
-            </button>
-
-            <button
               onClick={() => handleNavigation("/contact")}
-              className="block w-full text-left px-3 py-2 rounded-md text-gray-700 hover:bg-green-50"
+              className="block w-full text-left px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] font-medium"
             >
               Contact
             </button>
 
-            <Button 
-              onClick={() => handleNavigation("/booking")}
-              className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white"
+            <button
+              onClick={() => handleNavigation("/portal")}
+              className="w-full mt-4 px-6 py-2 bg-white text-[#5DBB63] hover:bg-gray-100 rounded-full font-semibold transition-colors"
             >
-              Get Started
-            </Button>
+              Login
+            </button>
           </div>
         )}
       </div>
