@@ -171,19 +171,25 @@ export default function Home() {
 
             {/* Right Column - Feature Cards with Icons */}
             <div className="grid grid-cols-1 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl hover:drop-shadow-lg transition-all border-t-4 border-[#5DBB63] text-center">
+              <div className="bg-white p-6 rounded-lg shadow-xl active:shadow-lg transition-all border-t-4 border-[#5DBB63] text-center group hover:animate-card-lift-enhanced"
+                onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
+                onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}>
                 <div className="text-5xl mb-4">🛡️</div>
                 <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Confidential & Safe</h3>
                 <p className="text-gray-600">All sessions are conducted with strict confidentiality and professional ethics.</p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl hover:drop-shadow-lg transition-all border-t-4 border-[#5DBB63] text-center">
+              <div className="bg-white p-6 rounded-lg shadow-xl active:shadow-lg transition-all border-t-4 border-[#5DBB63] text-center group hover:animate-card-lift-enhanced"
+                onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
+                onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}>
                 <div className="text-5xl mb-4">❤️</div>
                 <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Emotionally Intelligent</h3>
                 <p className="text-gray-600">We address both practical decisions and emotional wellbeing throughout your journey.</p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl hover:drop-shadow-lg transition-all border-t-4 border-[#5DBB63] text-center">
+              <div className="bg-white p-6 rounded-lg shadow-xl active:shadow-lg transition-all border-t-4 border-[#5DBB63] text-center group hover:animate-card-lift-enhanced"
+                onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
+                onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}>
                 <div className="text-5xl mb-4">⭐</div>
                 <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Highly Qualified</h3>
                 <p className="text-gray-600">FAMAC Accredited Mediator, SASW Registered Social Worker, Masters Degree holder with 20+ years experience.</p>
