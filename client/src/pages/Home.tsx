@@ -115,15 +115,11 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Tagline Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-white rounded-3xl px-8 py-6 border-4 border-white shadow-md text-center relative">
-            <div className="absolute -left-6 top-1/2 transform -translate-y-1/2 text-5xl text-[#5DBB63]">★</div>
-            <div className="absolute -right-6 top-1/2 transform -translate-y-1/2 text-5xl text-[#5DBB63]">★</div>
+          {/* SCARS to STARS Tagline - Bottom of Hero */}
+          <div className="mt-12 bg-white rounded-3xl px-8 py-6 border-2 border-[#5DBB63] shadow-md text-center relative">
+            <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 text-6xl text-[#5DBB63]">★</div>
+            <div className="absolute -right-8 top-1/2 transform -translate-y-1/2 text-6xl text-[#5DBB63]">★</div>
             <p className="text-2xl md:text-3xl font-bold text-[#5DBB63]">
               Changing SCARS into STARS - One BATTLE at a time.
             </p>

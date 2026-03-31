@@ -169,11 +169,11 @@
   }
 
   .medimagic-button {
-    @apply bg-[#5DBB63] hover:bg-[#4a9a52] text-white font-semibold py-3 px-8 rounded-full transition-colors;
+    @apply bg-[#5DBB63] hover:bg-[#4a9a52] text-white font-semibold py-3 px-8 rounded-full transition-colors shadow-lg;
   }
 
   .medimagic-button-outline {
-    @apply bg-white hover:bg-gray-100 text-[#1a3a52] font-semibold py-3 px-8 rounded-full transition-colors border-2 border-dashed border-[#5DBB63];
+    @apply bg-white hover:bg-gray-100 text-[#1a3a52] font-semibold py-3 px-8 rounded-full transition-colors shadow-lg;
   }
 
   .medimagic-section-title {
