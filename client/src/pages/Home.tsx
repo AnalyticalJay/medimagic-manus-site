@@ -3,12 +3,33 @@ import { Button } from "@/components/ui/button";
 import { useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const { user, isAuthenticated } = useAuth();
   const [, setLocation] = useLocation();
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
+  const [visibleSections, setVisibleSections] = useState<string[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setVisibleSections((prev) => {
+            if (!prev.includes(entry.target.id)) {
+              return [...prev, entry.target.id];
+            }
+            return prev;
+          });
+        }
+      });
+    }, { threshold: 0.1 });
+
+    const sections = document.querySelectorAll('[data-scroll-animate]');
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleBooking = () => {
     setLocation("/booking");
@@ -189,10 +210,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Mediation Services Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50" data-scroll-animate id="mediation-section">        <div className="max-w-7xl mx-auto">
           {/* Section Title with Green Line and Navy Bar */}
           <div className="border-t-8 border-[#5DBB63] mb-12">
             <div className="bg-[#0F3D4C] py-6 px-8">
@@ -236,7 +255,7 @@ export default function Home() {
       </section>
 
       {/* Social Work Services Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white" data-scroll-animate id="social-work-section">
         <div className="max-w-7xl mx-auto">
           {/* Section Title with Green Line and Navy Bar */}
           <div className="border-t-8 border-[#5DBB63] mb-12">
@@ -281,7 +300,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose MediMagic Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white" data-scroll-animate id="why-choose-section">
         <div className="max-w-7xl mx-auto">
           {/* Section Title with Green Line and Navy Bar */}
           <div className="border-t-8 border-[#5DBB63] mb-12">
@@ -313,7 +332,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50" data-scroll-animate id="faq-section">
         <div className="max-w-3xl mx-auto">
           {/* Section Title with Green Line and Navy Bar */}
           <div className="border-t-8 border-[#5DBB63] mb-12">

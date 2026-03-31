@@ -68,16 +68,16 @@ export default function Navigation() {
 
             {/* Mediation Dropdown */}
             <div className="relative group">
-              <button className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors flex items-center font-medium">
+              <button className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-all flex items-center font-medium group-hover:scale-105">
                 Mediation
-                <ChevronDown className="w-4 h-4 ml-1" />
+                <ChevronDown className="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" />
               </button>
-              <div className="absolute left-0 mt-0 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="absolute left-0 mt-0 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-50">
                 {mediationServices.map((service) => (
                   <button
                     key={service.path}
                     onClick={() => handleNavigation(service.path)}
-                    className="block w-full text-left px-4 py-3 text-[#1a3a52] hover:bg-[#f0f0f0] first:rounded-t-md last:rounded-b-md transition-colors font-medium"
+                    className="block w-full text-left px-4 py-3 text-[#1a3a52] hover:bg-[#e8f5e9] hover:text-[#5DBB63] first:rounded-t-md last:rounded-b-md transition-all duration-200 font-medium hover:translate-x-1"
                   >
                     {service.name}
                   </button>
@@ -87,16 +87,16 @@ export default function Navigation() {
 
             {/* Social Work Dropdown */}
             <div className="relative group">
-              <button className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors flex items-center font-medium">
+              <button className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-all flex items-center font-medium group-hover:scale-105">
                 Social Work
-                <ChevronDown className="w-4 h-4 ml-1" />
+                <ChevronDown className="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" />
               </button>
-              <div className="absolute left-0 mt-0 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="absolute left-0 mt-0 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-50">
                 {socialWorkServices.map((service) => (
                   <button
                     key={service.path}
                     onClick={() => handleNavigation(service.path)}
-                    className="block w-full text-left px-4 py-3 text-[#1a3a52] hover:bg-[#f0f0f0] first:rounded-t-md last:rounded-b-md transition-colors font-medium"
+                    className="block w-full text-left px-4 py-3 text-[#1a3a52] hover:bg-[#e8f5e9] hover:text-[#5DBB63] first:rounded-t-md last:rounded-b-md transition-all duration-200 font-medium hover:translate-x-1"
                   >
                     {service.name}
                   </button>

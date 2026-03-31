@@ -142,8 +142,8 @@ export default function Booking() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 required
-                className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors ${
-                  errors.name && touched.name ? "border-red-500 bg-red-50" : "border-gray-300"
+                className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 focus:scale-105 focus:shadow-lg ${
+                  errors.name && touched.name ? "border-red-500 bg-red-50 animate-shake" : "border-gray-300"
                 }`}
                 placeholder="Your full name"
                 aria-invalid={!!errors.name && touched.name}
@@ -169,8 +169,8 @@ export default function Booking() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 required
-                className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors ${
-                  errors.email && touched.email ? "border-red-500 bg-red-50" : "border-gray-300"
+                className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 focus:scale-105 focus:shadow-lg ${
+                  errors.email && touched.email ? "border-red-500 bg-red-50 animate-shake" : "border-gray-300"
                 }`}
                 placeholder="your@email.com"
                 aria-invalid={!!errors.email && touched.email}
