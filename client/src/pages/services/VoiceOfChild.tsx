@@ -169,11 +169,11 @@ export default function VoiceOfChild() {
       </ServicePageWithSidebar>
 
       {/* The Process */}
-      <section className="py-16 md:py-24 bg-accent/5">
-        <div className="container max-w-6xl">
-          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Our Voice of the Child Process</h2>
+      <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-accent/5">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 sm:mb-12 text-center">Our Voice of the Child Process</h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-6 md:gap-6 md:gap-8">
             <div className="flex gap-4">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center h-12 w-12 rounded-full bg-accent text-accent-foreground font-bold text-lg">
@@ -228,9 +228,9 @@ export default function VoiceOfChild() {
       {/* Benefits Section */}
       <section className="py-16 md:py-24">
         <div className="container max-w-6xl">
-          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Benefits of Voice of the Child</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 sm:mb-12 text-center">Benefits of Voice of the Child</h2>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-6 md:gap-6 md:gap-8">
             <Card className="p-8">
               <Ear className="w-10 h-10 text-accent mb-4" />
               <h3 className="text-xl font-bold text-foreground mb-3">Children Heard</h3>
@@ -253,7 +253,7 @@ export default function VoiceOfChild() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-accent/10 via-teal-500/5 to-accent/10">
+      <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 medimagic-hero">
         <div className="container max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-foreground mb-6">Ready to Ensure Your Children's Voices Are Heard?</h2>
           <p className="text-lg text-muted-foreground mb-8">

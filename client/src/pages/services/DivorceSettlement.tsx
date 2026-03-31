@@ -65,11 +65,11 @@ export default function DivorceSettlement() {
       </section>
 
       {/* Main Content - Three Column Layout with Sidebar */}
-      <section className="py-16 md:py-24">
-        <div className="container max-w-7xl">
-          <div className="grid md:grid-cols-3 gap-8">
+      <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* Sidebar */}
-            <div className="md:col-span-1 order-2 md:order-1">
+            <div className="md:col-span-1 order-2 md:order-1 overflow-x-auto">
               <ServiceSidebar
                 category="mediation"
                 currentService="Divorce Settlement Agreements"
@@ -83,17 +83,17 @@ export default function DivorceSettlement() {
             </div>
 
             {/* Main Content */}
-            <div className="md:col-span-2 order-1 md:order-2 space-y-8">
+            <div className="md:col-span-2 order-1 md:order-2 space-y-6 md:space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Understanding Divorce Settlement Mediation</h2>
-                <p className="text-lg text-muted-foreground">
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3 sm:mb-4">Understanding Divorce Settlement Mediation</h2>
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground">
                   Divorce is one of life's most significant transitions. Beyond the emotional complexity, there are critical legal and financial decisions that must be made—decisions that will affect your future and that of your children. At MediMagic, we provide structured mediation to help you navigate these decisions with clarity, fairness, and mutual respect.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">What Is Divorce Settlement Mediation?</h3>
-                <p className="text-muted-foreground mb-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3 sm:mb-4">What Is Divorce Settlement Mediation?</h3>
+                <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">
                   Divorce settlement mediation is a structured process in which a neutral, trained mediator helps both spouses communicate effectively and reach agreement on the key issues in their divorce. Rather than adversarial litigation, mediation focuses on collaborative problem-solving—allowing both parties to maintain control over the outcome and preserve dignity throughout the process.
                 </p>
                 <p className="text-muted-foreground">
@@ -181,11 +181,11 @@ export default function DivorceSettlement() {
       </section>
 
       {/* The Mediation Process */}
-      <section className="py-16 md:py-24 bg-accent/5">
-        <div className="container max-w-7xl">
-          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">The Mediation Process</h2>
+      <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-accent/5">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 sm:mb-12 text-center">The Mediation Process</h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <div className="flex gap-4">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center h-12 w-12 rounded-full bg-accent text-accent-foreground font-bold text-lg">
@@ -238,11 +238,11 @@ export default function DivorceSettlement() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 md:py-24">
-        <div className="container max-w-7xl">
-          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Benefits of Our Approach</h2>
+      <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 sm:mb-12 text-center">Benefits of Our Approach</h2>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <Card className="p-8">
               <FileText className="w-10 h-10 text-accent mb-4" />
               <h3 className="text-xl font-bold text-foreground mb-3">Legally Sound Agreements</h3>
@@ -265,14 +265,14 @@ export default function DivorceSettlement() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-accent/10 via-teal-500/5 to-accent/10">
-        <div className="container max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-6">Ready to Move Forward?</h2>
-          <p className="text-lg text-muted-foreground mb-8">
+      <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 medimagic-hero">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6">Ready to Move Forward?</h2>
+          <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
             Take the first step toward a fair, respectful divorce settlement. Book a consultation with Cornelia today.
           </p>
           <Button 
-            className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg"
+            className="bg-[#5DBB63] hover:bg-[#4da852] text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-semibold w-full sm:w-auto transition-all duration-300 transform hover:scale-105"
             onClick={() => navigate("/booking")}
           >
             Book Your Consultation Now

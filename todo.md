@@ -146,3 +146,10 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Optimize service pages for mobile
 - [x] Improve home page mobile layout
 - [x] Test all features on mobile devices
+
+
+## Service Page CTA & Mobile Optimization
+- [x] Update CTA sections to dark navy background on all service pages
+- [x] Optimize responsive layouts for desktop and mobile
+- [x] Improve typography and spacing for mobile readability
+- [x] Test all sections on desktop and mobile devices
