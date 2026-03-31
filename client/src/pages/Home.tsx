@@ -205,7 +205,9 @@ export default function Home() {
             {mediationServices.map((service, idx) => (
               <div 
                 key={idx}
-                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-2xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg transition-all cursor-pointer flex flex-col h-full transform hover:scale-105 active:scale-100"
+                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-2xl active:shadow-lg transition-all cursor-pointer flex flex-col h-full group hover:animate-card-lift-enhanced active:scale-100"
+                onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
+                onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}
                 onClick={() => setLocation(service.path)}
                 role="button"
                 tabIndex={0}
@@ -250,7 +252,9 @@ export default function Home() {
             {socialWorkServices.map((service, idx) => (
               <div 
                 key={idx}
-                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-2xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg transition-all cursor-pointer flex flex-col h-full transform hover:scale-105 active:scale-100"
+                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-2xl active:shadow-lg transition-all cursor-pointer flex flex-col h-full group hover:animate-card-lift-enhanced active:scale-100"
+                onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
+                onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}
                 onClick={() => setLocation(service.path)}
                 role="button"
                 tabIndex={0}
