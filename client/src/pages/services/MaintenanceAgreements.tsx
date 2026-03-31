@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Check, TrendingUp, Scale, Shield } from "lucide-react";
+import { ArrowLeft, Check, AlertCircle, Heart, TrendingUp } from "lucide-react";
 import { useLocation } from "wouter";
 import Breadcrumb from "@/components/Breadcrumb";
 import ServicePageWithSidebar from "@/components/ServicePageWithSidebar";
@@ -31,7 +31,7 @@ export default function MaintenanceAgreements() {
       <Breadcrumb items={[
         { label: 'Home', href: '/' },
         { label: 'Mediation Services', href: '/#mediation' },
-        { label: 'Maintenance Agreements' },
+        { label: 'Child Maintenance Agreements' },
       ]} />
 
       {/* Hero Section */}
@@ -44,11 +44,11 @@ export default function MaintenanceAgreements() {
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                Maintenance Agreements
+                Child Maintenance Agreements
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
-                Fair and sustainable financial support arrangements that adapt to changing circumstances.
+                Ensuring children's financial security and wellbeing through fair, sustainable maintenance arrangements.
               </p>
             </div>
 
@@ -56,7 +56,7 @@ export default function MaintenanceAgreements() {
             <div className="flex justify-center mt-8 lg:mt-0">
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_zQexNL_MaintenanceAgreements_32fcc08a.png" 
-                alt="Maintenance Agreements" 
+                alt="Child Maintenance Agreements" 
                 className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
               />
             </div>
@@ -77,54 +77,66 @@ export default function MaintenanceAgreements() {
       >
         <div className="space-y-8">
           <div>
-            <h2 className="text-3xl font-bold text-foreground mb-4">Understanding Maintenance Agreements</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Understanding Child Maintenance</h2>
             <p className="text-lg text-muted-foreground">
-              Maintenance (also known as alimony or spousal support) is a critical component of many divorce and separation agreements. It addresses the financial support one spouse may provide to the other during or after separation. At MediMagic, we help couples negotiate fair, sustainable maintenance arrangements through structured mediation.
+              Child maintenance is the financial support provided by both parents to ensure children's needs are met after separation or divorce. At MediMagic, we help parents establish fair, sustainable maintenance arrangements that prioritize children's wellbeing and provide the stability they need during family transitions.
+            </p>
+          </div>
+
+          <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded">
+            <div className="flex gap-3">
+              <AlertCircle className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
+              <div>
+                <h3 className="text-xl font-bold text-red-900 mb-2">Understanding the Impact & Consequences</h3>
+                <p className="text-red-800">
+                  Child maintenance decisions have profound, long-lasting effects on children's physical health, emotional development, educational opportunities, and future prospects. Inadequate or disputed maintenance can create financial stress, limit access to essential services, and negatively impact children's sense of security and wellbeing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold text-foreground mb-4">What Is Child Maintenance?</h3>
+            <p className="text-muted-foreground mb-4">
+              Child maintenance is the ongoing financial contribution both parents make toward raising their children. This includes essential expenses such as housing, food, education, healthcare, and other necessities. Unlike spousal maintenance, child maintenance focuses exclusively on meeting children's needs and is a legal obligation of both parents.
+            </p>
+            <p className="text-muted-foreground">
+              Fair child maintenance ensures children maintain a consistent standard of living and have access to the opportunities and support they need to thrive.
             </p>
           </div>
 
           <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">What Is Maintenance?</h3>
-              <p className="text-muted-foreground mb-4">
-                Maintenance is financial support provided by one spouse to another to help maintain a reasonable standard of living after separation or divorce. Unlike child support (which is focused on children's needs), maintenance addresses the financial needs and capacity of each spouse.
-              </p>
-              <p className="text-muted-foreground">
-                The goal is to help the lower-earning spouse achieve financial independence while ensuring fairness to the higher-earning spouse.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">Factors Considered</h3>
-              <div className="space-y-3">
-                <div className="flex gap-3">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h4 className="font-bold text-foreground">Income & Earning Capacity</h4>
-                    <p className="text-sm text-muted-foreground">Current income of both parties and their ability to earn in the future.</p>
-                  </div>
-                </div>
-                <div className="flex gap-3">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h4 className="font-bold text-foreground">Duration of Marriage</h4>
-                    <p className="text-sm text-muted-foreground">Length of the marriage and the financial interdependence established during that time.</p>
-                  </div>
-                </div>
-                <div className="flex gap-3">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h4 className="font-bold text-foreground">Standard of Living</h4>
-                    <p className="text-sm text-muted-foreground">The lifestyle established during the marriage and each party's need to maintain it.</p>
-                  </div>
-                </div>
-                <div className="flex gap-3">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h4 className="font-bold text-foreground">Age & Health</h4>
-                    <p className="text-sm text-muted-foreground">Age, health status, and ability to work or become self-sufficient.</p>
-                  </div>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Key Factors Considered</h3>
+            <div className="space-y-3">
+              <div className="flex gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-foreground">Both Parents' Income & Earning Capacity</h4>
+                  <p className="text-sm text-muted-foreground">Current income of both parents and their ability to earn, ensuring fair contribution from each parent.</p>
                 </div>
               </div>
+              <div className="flex gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-foreground">Children's Actual Needs</h4>
+                  <p className="text-sm text-muted-foreground">Age, health status, education requirements, and special needs of each child.</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-foreground">Parenting Time & Responsibility</h4>
+                  <p className="text-sm text-muted-foreground">How parenting time is shared and direct costs each parent incurs for children's care.</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-foreground">Standard of Living During Marriage</h4>
+                  <p className="text-sm text-muted-foreground">Maintaining children's accustomed lifestyle and opportunities as much as possible.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -132,41 +144,36 @@ export default function MaintenanceAgreements() {
           <div className="rounded-lg overflow-hidden shadow-lg">
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/maintenance-agreements-content-cDvZ8HX2vLRQfqJhBKPXDX.webp" 
-              alt="Financial planning for maintenance" 
+              alt="Children's wellbeing and security" 
               className="w-full h-auto"
             />
           </div>
 
-          <Card className="p-8 bg-accent/5 border border-accent/20">
-            <h3 className="text-xl font-bold text-foreground mb-4">Types of Maintenance</h3>
-            <ul className="space-y-3 mb-6">
+          <Card className="p-8 bg-blue-50 border border-blue-200">
+            <div className="flex gap-3 mb-4">
+              <AlertCircle className="w-6 h-6 text-blue-600 flex-shrink-0" />
+              <h3 className="text-xl font-bold text-blue-900">Consequences of Inadequate Child Maintenance</h3>
+            </div>
+            <ul className="space-y-3 mb-6 text-blue-900">
               <li className="flex gap-2">
-                <span className="text-accent font-bold">•</span>
-                <div>
-                  <strong className="text-foreground">Temporary:</strong>
-                  <p className="text-sm text-muted-foreground">Support during divorce proceedings</p>
-                </div>
+                <span className="font-bold">•</span>
+                <span><strong>Educational Impact:</strong> Limited access to quality education, tutoring, and extracurricular activities</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-accent font-bold">•</span>
-                <div>
-                  <strong className="text-foreground">Rehabilitative:</strong>
-                  <p className="text-sm text-muted-foreground">Short-term to help spouse retrain</p>
-                </div>
+                <span className="font-bold">•</span>
+                <span><strong>Health & Wellbeing:</strong> Reduced access to healthcare, nutrition, and mental health support</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-accent font-bold">•</span>
-                <div>
-                  <strong className="text-foreground">Permanent:</strong>
-                  <p className="text-sm text-muted-foreground">Long-term in long marriages</p>
-                </div>
+                <span className="font-bold">•</span>
+                <span><strong>Emotional Security:</strong> Increased stress and anxiety about family financial stability</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-accent font-bold">•</span>
-                <div>
-                  <strong className="text-foreground">Lump Sum:</strong>
-                  <p className="text-sm text-muted-foreground">One-time payment for finality</p>
-                </div>
+                <span className="font-bold">•</span>
+                <span><strong>Long-term Outcomes:</strong> Reduced educational attainment and economic opportunities in adulthood</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="font-bold">•</span>
+                <span><strong>Family Conflict:</strong> Ongoing disputes and resentment affecting parent-child relationships</span>
               </li>
             </ul>
           </Card>
@@ -183,9 +190,9 @@ export default function MaintenanceAgreements() {
       {/* The Mediation Process */}
       <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-accent/5">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 sm:mb-12 text-center">How We Help You Reach Fair Agreements</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 sm:mb-12 text-center">How We Establish Fair Child Maintenance</h2>
           
-          <div className="grid md:grid-cols-2 gap-6 md:gap-6 md:gap-6 md:gap-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <div className="flex gap-4">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center h-12 w-12 rounded-full bg-accent text-accent-foreground font-bold text-lg">
@@ -193,8 +200,8 @@ export default function MaintenanceAgreements() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Financial Disclosure</h3>
-                <p className="text-muted-foreground">Both parties provide complete financial information, including income, expenses, assets, and liabilities.</p>
+                <h3 className="text-xl font-bold text-foreground mb-2">Complete Financial Disclosure</h3>
+                <p className="text-muted-foreground">Both parents provide comprehensive financial information to ensure accurate assessment of maintenance capacity.</p>
               </div>
             </div>
 
@@ -205,8 +212,8 @@ export default function MaintenanceAgreements() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Analysis & Discussion</h3>
-                <p className="text-muted-foreground">The mediator helps both parties understand the relevant factors and discuss what maintenance arrangement is fair and sustainable.</p>
+                <h3 className="text-xl font-bold text-foreground mb-2">Children's Needs Assessment</h3>
+                <p className="text-muted-foreground">Detailed discussion of children's actual needs, including education, healthcare, and lifestyle requirements.</p>
               </div>
             </div>
 
@@ -217,8 +224,8 @@ export default function MaintenanceAgreements() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Negotiation & Agreement</h3>
-                <p className="text-muted-foreground">Through structured discussion, both parties work toward an agreement on the amount, duration, and terms of maintenance.</p>
+                <h3 className="text-xl font-bold text-foreground mb-2">Fair Contribution Calculation</h3>
+                <p className="text-muted-foreground">Working with both parents to determine fair maintenance amounts based on income and children's needs.</p>
               </div>
             </div>
 
@@ -229,8 +236,8 @@ export default function MaintenanceAgreements() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Documentation</h3>
-                <p className="text-muted-foreground">The agreed maintenance arrangement is documented in a formal agreement that can be incorporated into the divorce decree.</p>
+                <h3 className="text-xl font-bold text-foreground mb-2">Formal Documentation</h3>
+                <p className="text-muted-foreground">Creating a legally binding agreement that ensures children's financial security and can adapt to future changes.</p>
               </div>
             </div>
           </div>
@@ -240,25 +247,25 @@ export default function MaintenanceAgreements() {
       {/* Benefits Section */}
       <section className="py-16 md:py-24">
         <div className="container max-w-6xl">
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 sm:mb-12 text-center">Benefits of Mediated Maintenance Agreements</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 sm:mb-12 text-center">Benefits of Fair Child Maintenance Agreements</h2>
           
-          <div className="grid md:grid-cols-3 gap-6 md:gap-6 md:gap-6 md:gap-8">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+            <Card className="p-8">
+              <Heart className="w-10 h-10 text-accent mb-4" />
+              <h3 className="text-xl font-bold text-foreground mb-3">Children's Security</h3>
+              <p className="text-muted-foreground">Ensures children have stable financial support and access to essential services and opportunities.</p>
+            </Card>
+
             <Card className="p-8">
               <TrendingUp className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-xl font-bold text-foreground mb-3">Fair & Equitable</h3>
-              <p className="text-muted-foreground">Both parties have input into what is fair, rather than having a judge decide.</p>
+              <h3 className="text-xl font-bold text-foreground mb-3">Reduced Conflict</h3>
+              <p className="text-muted-foreground">Clear agreements eliminate ongoing disputes about financial responsibility, protecting children from family conflict.</p>
             </Card>
 
             <Card className="p-8">
-              <Scale className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-xl font-bold text-foreground mb-3">Sustainable</h3>
-              <p className="text-muted-foreground">Agreements reached through mediation are more likely to be followed because both parties agreed to them.</p>
-            </Card>
-
-            <Card className="p-8">
-              <Shield className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-xl font-bold text-foreground mb-3">Flexible & Confidential</h3>
-              <p className="text-muted-foreground">Creative solutions tailored to each couple's unique circumstances with complete privacy.</p>
+              <Check className="w-10 h-10 text-accent mb-4" />
+              <h3 className="text-xl font-bold text-foreground mb-3">Sustainable & Flexible</h3>
+              <p className="text-muted-foreground">Agreements can adapt to changing circumstances while maintaining children's wellbeing and stability.</p>
             </Card>
           </div>
         </div>
@@ -267,9 +274,9 @@ export default function MaintenanceAgreements() {
       {/* CTA Section */}
       <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 medimagic-hero">
         <div className="container max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-6">Ready to Secure Your Financial Future?</h2>
+          <h2 className="text-3xl font-bold text-foreground mb-6">Protect Your Children's Financial Future</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Let us help you negotiate fair maintenance arrangements. Book a consultation with Cornelia today.
+            Let us help you establish fair child maintenance that ensures your children's security and wellbeing. Book a consultation with Cornelia today.
           </p>
           <Button 
             className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg"

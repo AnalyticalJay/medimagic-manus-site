@@ -128,8 +128,15 @@ export default function DivorceSettlement() {
                   <div className="flex gap-3">
                     <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-bold text-foreground">Child Support</h4>
-                      <p className="text-sm text-muted-foreground">Fair determination of financial support for children based on both parents' circumstances.</p>
+                      <h4 className="font-bold text-foreground">Child Maintenance</h4>
+                      <p className="text-sm text-muted-foreground">Fair determination of financial support for children based on both parents' circumstances and capacity to provide.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="font-bold text-foreground">Spousal Maintenance</h4>
+                      <p className="text-sm text-muted-foreground">Fair and sustainable financial support arrangements between spouses that adapt to changing circumstances and promote financial independence.</p>
                     </div>
                   </div>
                 </div>
