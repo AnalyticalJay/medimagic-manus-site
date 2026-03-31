@@ -67,7 +67,7 @@ export default function Home() {
       <section className="medimagic-hero py-20 px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-7xl mx-auto">
           {/* MediMagic Logo Circle - Top Right */}
-          <div className="absolute top-8 right-8 w-32 h-32 rounded-full border-4 border-[#5DBB63] bg-white flex items-center justify-center shadow-lg">
+          <div className="absolute top-8 right-8 w-36 h-36 rounded-full border-4 border-[#5DBB63] bg-white flex items-center justify-center shadow-lg">
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/LogoMedi_a41f255a.png" 
               alt="MediMagic Logo" 
@@ -78,8 +78,8 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <div className="bg-[#5DBB63] rounded-3xl px-8 py-4 inline-block mb-8 border-4 border-dashed border-white">
-                <h1 className="text-4xl md:text-5xl font-bold text-white">MEDI MAGIC</h1>
+              <div className="bg-[#5DBB63] rounded-3xl px-3 py-2 inline-block mb-8 border-4 border-dashed border-white">
+                <h1 className="text-2xl md:text-3xl font-bold text-white">MEDI MAGIC</h1>
               </div>
               
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
