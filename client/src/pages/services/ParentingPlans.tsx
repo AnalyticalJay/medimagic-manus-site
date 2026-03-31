@@ -99,15 +99,15 @@ export default function ParentingPlans() {
               <div className="flex gap-3">
                 <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-foreground">Custody Arrangements</h4>
-                  <p className="text-sm text-muted-foreground">Determination of primary residence and shared custody arrangements that work for the family.</p>
+                  <h4 className="font-bold text-foreground">Single Parents</h4>
+                  <p className="text-sm text-muted-foreground">Support and guidance for single parents establishing parenting arrangements that prioritize children's stability and wellbeing.</p>
                 </div>
               </div>
               <div className="flex gap-3">
                 <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-foreground">Visitation Schedules</h4>
-                  <p className="text-sm text-muted-foreground">Clear, detailed schedules for time with each parent, including weekdays, weekends, holidays, and school breaks.</p>
+                  <h4 className="font-bold text-foreground">Co-Parenting Arrangements</h4>
+                  <p className="text-sm text-muted-foreground">Clear, detailed schedules and agreements for shared parenting responsibilities, including weekdays, weekends, holidays, and school breaks.</p>
                 </div>
               </div>
               <div className="flex gap-3">

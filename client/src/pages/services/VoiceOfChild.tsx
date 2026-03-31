@@ -124,6 +124,13 @@ export default function VoiceOfChild() {
                   <p className="text-sm text-muted-foreground">Findings are presented to parents in a way that respects children's privacy while informing decisions.</p>
                 </div>
               </div>
+              <div className="flex gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-foreground">Prescribed by Law</h4>
+                  <p className="text-sm text-muted-foreground">Our Voice of the Child assessments are conducted in accordance with legal requirements and best practices in family law.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
