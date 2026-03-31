@@ -314,38 +314,22 @@ export default function Home() {
           
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden bg-white">
+              <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden bg-[#0F3D4C]">
                 <button
                   onClick={() => setExpandedFAQ(expandedFAQ === idx ? null : idx)}
-                  className="w-full px-6 py-4 bg-white hover:bg-gray-50 text-left font-semibold text-[#0F3D4C] flex justify-between items-center transition"
+                  className="w-full px-6 py-4 bg-[#0F3D4C] hover:bg-[#1a4d5f] text-left font-semibold text-white flex justify-between items-center transition"
                 >
                   {faq.q}
-                  <span className="text-[#5DBB63] text-2xl">{expandedFAQ === idx ? "−" : "+"}</span>
+                  <span className="text-[#5DBB63] text-2xl font-bold">{expandedFAQ === idx ? "−" : "+"}</span>
                 </button>
                 {expandedFAQ === idx && (
-                  <div className="px-6 py-4 bg-gray-50 text-gray-700 border-t border-gray-200">
+                  <div className="px-6 py-4 bg-[#0a2a33] text-gray-100 border-t border-[#5DBB63]">
                     {faq.a}
                   </div>
                 )}
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0F3D4C]">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Move Forward?</h2>
-          <p className="text-lg text-gray-200 mb-8">
-            Take the first step towards clarity and resolution. Book a consultation with Cornelia today.
-          </p>
-          <button 
-            onClick={handleBooking}
-            className="medimagic-button"
-          >
-            Book a Consultation
-          </button>
         </div>
       </section>
 
