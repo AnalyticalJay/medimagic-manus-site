@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowLeft, Check, Clock, Users, FileText, Heart, ChevronRight } from "lucide-react";
 import { useLocation } from "wouter";
 import Breadcrumb from "@/components/Breadcrumb";
+import ServiceSidebar from "@/components/ServiceSidebar";
 
 export default function DivorceSettlement() {
   const [, navigate] = useLocation();
@@ -51,12 +52,26 @@ export default function DivorceSettlement() {
         </div>
       </section>
 
-      {/* Main Content - Two Column Layout */}
+      {/* Main Content - Three Column Layout with Sidebar */}
       <section className="py-16 md:py-24">
-        <div className="container max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Content */}
-            <div className="space-y-8">
+        <div className="container max-w-7xl">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Sidebar */}
+            <div className="md:col-span-1 order-2 md:order-1">
+              <ServiceSidebar
+                category="mediation"
+                currentService="Divorce Settlement Agreements"
+                services={[
+                  { name: "Divorce Settlement Agreements", path: "/services/divorce-settlement" },
+                  { name: "Parenting Plans", path: "/services/parenting-plans" },
+                  { name: "Maintenance Agreements", path: "/services/maintenance-agreements" },
+                  { name: "Voice of the Child", path: "/services/voice-of-child" },
+                ]}
+              />
+            </div>
+
+            {/* Main Content */}
+            <div className="md:col-span-2 order-1 md:order-2 space-y-8">
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-4">Understanding Divorce Settlement Mediation</h2>
                 <p className="text-lg text-muted-foreground">
@@ -107,10 +122,7 @@ export default function DivorceSettlement() {
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Right Column - Image and CTA */}
-            <div className="space-y-8">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/divorce-settlement-content-DmHrPDmfmbWrYivJ4TUKze.webp" 
@@ -158,7 +170,7 @@ export default function DivorceSettlement() {
 
       {/* The Mediation Process */}
       <section className="py-16 md:py-24 bg-accent/5">
-        <div className="container max-w-6xl">
+        <div className="container max-w-7xl">
           <h2 className="text-3xl font-bold text-foreground mb-12 text-center">The Mediation Process</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -215,20 +227,20 @@ export default function DivorceSettlement() {
 
       {/* Benefits Section */}
       <section className="py-16 md:py-24">
-        <div className="container max-w-6xl">
+        <div className="container max-w-7xl">
           <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Benefits of Our Approach</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-8">
               <FileText className="w-10 h-10 text-accent mb-4" />
               <h3 className="text-xl font-bold text-foreground mb-3">Legally Sound Agreements</h3>
-              <p className="text-muted-foreground">Our mediated agreements are comprehensive, fair, and legally enforceable, protecting both parties' interests long-term.</p>
+              <p className="text-muted-foreground">Our mediated agreements are comprehensive and legally enforceable, protecting your interests and ensuring compliance.</p>
             </Card>
 
             <Card className="p-8">
               <Users className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-xl font-bold text-foreground mb-3">Preserves Relationships</h3>
-              <p className="text-muted-foreground">By avoiding adversarial litigation, mediation helps preserve respect and communication—especially important for co-parenting relationships.</p>
+              <h3 className="text-xl font-bold text-foreground mb-3">Collaborative Approach</h3>
+              <p className="text-muted-foreground">We foster cooperation rather than conflict, creating a foundation for positive post-divorce relationships, especially important when children are involved.</p>
             </Card>
 
             <Card className="p-8">
