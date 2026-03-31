@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowLeft, Check, Menu, X, ChevronDown, Heart, Award, Lightbulb, Users } from "lucide-react";
 import { useLocation } from "wouter";
 import { useState } from "react";
+import { ScrollAnimationWrapper } from "@/components/ScrollAnimationWrapper";
 
 export default function About() {
   const [, navigate] = useLocation();
@@ -165,7 +166,8 @@ export default function About() {
 
       {/* Core Values Section */}
       <section className="py-16 md:py-24 bg-accent/5">
-        <div className="container max-w-6xl">
+        <ScrollAnimationWrapper animationType="slide-up" delay={100}>
+          <div className="container max-w-6xl">
           {/* Section Title with Green Line and Navy Bar */}
           <div className="border-t-8 border-[#5DBB63] mb-12">
             <div className="bg-[#0F3D4C] py-6 px-8">
@@ -215,12 +217,14 @@ export default function About() {
             </Card>
           </div>
         </div>
+        </ScrollAnimationWrapper>
       </section>
 
-      {/* Expertise Section */}
-      <section className="py-16 md:py-24">
-        <div className="container max-w-6xl">
-          {/* Section Title with Green Line and Navy Bar */}
+      {/* Why Choose Cornelia Section */}
+      <section className="py-16 md:py-24 bg-background">
+        <ScrollAnimationWrapper animationType="fade-in" delay={150}>
+          <div className="container max-w-6xl">
+            {/* Section Title with Green Line and Navy Bar */}
           <div className="border-t-8 border-[#5DBB63] mb-12">
             <div className="bg-[#0F3D4C] py-6 px-8">
               <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Areas of Expertise</h2>
@@ -295,6 +299,7 @@ export default function About() {
             </Card>
           </div>
         </div>
+        </ScrollAnimationWrapper>
       </section>
 
       {/* CTA Section */}

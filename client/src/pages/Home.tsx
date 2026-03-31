@@ -3,33 +3,13 @@ import { Button } from "@/components/ui/button";
 import { useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { useState, useEffect } from "react";
+import { ScrollAnimationWrapper } from "@/components/ScrollAnimationWrapper";
+import { useState } from "react";
 
 export default function Home() {
   const { user, isAuthenticated } = useAuth();
   const [, setLocation] = useLocation();
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
-  const [visibleSections, setVisibleSections] = useState<string[]>([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setVisibleSections((prev) => {
-            if (!prev.includes(entry.target.id)) {
-              return [...prev, entry.target.id];
-            }
-            return prev;
-          });
-        }
-      });
-    }, { threshold: 0.1 });
-
-    const sections = document.querySelectorAll('[data-scroll-animate]');
-    sections.forEach((section) => observer.observe(section));
-
-    return () => observer.disconnect();
-  }, []);
 
   const handleBooking = () => {
     setLocation("/booking");
@@ -99,48 +79,43 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <div className="bg-[#5DBB63] rounded-2xl sm:rounded-3xl px-3 py-2 inline-block mb-4 sm:mb-8">
-                <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">MEDI MAGIC</h1>
+              <div className="mb-6 inline-block bg-[#5DBB63] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                Professional Family Law Mediation & Social Work
               </div>
-              
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                STEADY SUPPORT THROUGH LIFE'S MOST DIFFICULT TRANSITIONS
-              </h2>
-              
-              <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0F3D4C] mb-6 leading-tight">
+                Steady Support Through Life's Most Difficult Transitions
+              </h1>
+              <p className="text-lg text-gray-600 mb-8">
                 Medi Magic offers Professional Family Law Mediation and Social Work Services, bringing structure, fairness and calm direction to times of change.
               </p>
-              
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <div className="flex gap-4 flex-wrap">
                 <button 
                   onClick={handleBooking}
-                  className="medimagic-button text-sm sm:text-base"
+                  className="medimagic-button"
                 >
                   Book a Consultation
                 </button>
                 <button 
                   onClick={() => setLocation("/about")}
-                  className="medimagic-button-outline text-sm sm:text-base"
+                  className="medimagic-button-outline"
                 >
                   Learn More
                 </button>
               </div>
             </div>
 
-            {/* Right Illustration - SCARS to STARS Image */}
-            <div className="flex justify-center mt-8 lg:mt-0">
+            {/* Right Content - Illustration */}
+            <div className="flex justify-center">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/ChatGPTImageMar23,2026,10_49_26AM_eb0483f5.png" 
-                alt="SCARS to STARS Illustration" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_7Zr0Ey_hero_illustration_5e7f7d2c.png" 
+                alt="MediMagic Services" 
+                className="w-full max-w-md rounded-2xl shadow-2xl border-4 border-[#5DBB63]"
               />
             </div>
           </div>
 
-          {/* SCARS to STARS Tagline - Bottom of Hero */}
-          <div className="mt-8 sm:mt-12 bg-white rounded-2xl sm:rounded-3xl px-4 sm:px-8 py-4 sm:py-6 border-2 border-[#5DBB63] shadow-md text-center relative">
-            <div className="absolute -left-4 sm:-left-8 top-1/2 transform -translate-y-1/2 text-4xl sm:text-6xl text-[#5DBB63]">★</div>
-            <div className="absolute -right-4 sm:-right-8 top-1/2 transform -translate-y-1/2 text-4xl sm:text-6xl text-[#5DBB63]">★</div>
+          {/* Tagline */}
+          <div className="mt-16 text-center">
             <p className="text-lg sm:text-2xl md:text-3xl font-bold text-[#5DBB63] px-4">
               Changing SCARS into STARS - One BATTLE at a time.
             </p>
@@ -150,178 +125,186 @@ export default function Home() {
 
       {/* Welcome Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Left Column */}
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0F3D4C] mb-6">Welcome to MediMagic</h2>
-              <p className="text-gray-600 mb-4">
-                MediMagic is a uniquely integrated practice combining family law mediation and professional social work support. Our approach addresses both the <strong>practical decisions</strong> and the <strong>emotional realities</strong> that arise during conflict, separation, illness, or major life change.
-              </p>
-              <p className="text-gray-600 mb-8">
-                We focus on helping individuals move forward with clarity, dignity, and stability through structured, ethical, and client-centred care.
-              </p>
-              <button 
-                onClick={() => setLocation("/about")}
-                className="text-[#5DBB63] font-semibold hover:underline"
-              >
-                Learn About Cornelia →
-              </button>
-            </div>
+        <ScrollAnimationWrapper animationType="fade-in">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Left Column */}
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#0F3D4C] mb-6">Welcome to MediMagic</h2>
+                <p className="text-gray-600 mb-4">
+                  MediMagic is a uniquely integrated practice combining family law mediation and professional social work support. Our approach addresses both the <strong>practical decisions</strong> and the <strong>emotional realities</strong> that arise during conflict, separation, illness, or major life change.
+                </p>
+                <p className="text-gray-600 mb-8">
+                  We focus on helping individuals move forward with clarity, dignity, and stability through structured, ethical, and client-centred care.
+                </p>
+                <button 
+                  onClick={() => setLocation("/about")}
+                  className="text-[#5DBB63] font-semibold hover:underline"
+                >
+                  Learn About Cornelia →
+                </button>
+              </div>
 
-            {/* Right Column - Feature Cards with Icons */}
-            <div className="grid grid-cols-1 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-xl active:shadow-lg transition-all border-t-4 border-[#5DBB63] text-center group hover:animate-card-lift-enhanced"
-                onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
-                onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}>
-                <div className="text-5xl mb-4">🛡️</div>
-                <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Confidential & Safe</h3>
-                <p className="text-gray-600">All sessions are conducted with strict confidentiality and professional ethics.</p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-xl active:shadow-lg transition-all border-t-4 border-[#5DBB63] text-center group hover:animate-card-lift-enhanced"
-                onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
-                onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}>
-                <div className="text-5xl mb-4">❤️</div>
-                <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Emotionally Intelligent</h3>
-                <p className="text-gray-600">We address both practical decisions and emotional wellbeing throughout your journey.</p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-xl active:shadow-lg transition-all border-t-4 border-[#5DBB63] text-center group hover:animate-card-lift-enhanced"
-                onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
-                onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}>
-                <div className="text-5xl mb-4">⭐</div>
-                <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Highly Qualified</h3>
-                <p className="text-gray-600">FAMAC Accredited Mediator, SASW Registered Social Worker, Masters Degree holder with 20+ years experience.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Mediation Services Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50" data-scroll-animate id="mediation-section">        <div className="max-w-7xl mx-auto">
-          {/* Section Title with Green Line and Navy Bar */}
-          <div className="border-t-8 border-[#5DBB63] mb-12">
-            <div className="bg-[#0F3D4C] py-6 px-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Mediation Services</h2>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {mediationServices.map((service, idx) => (
-              <div 
-                key={idx}
-                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-2xl active:shadow-lg transition-all cursor-pointer flex flex-col h-full group hover:animate-card-lift-enhanced active:scale-100"
-                onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
-                onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}
-                onClick={() => setLocation(service.path)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => e.key === 'Enter' && setLocation(service.path)}
-              >
-                {/* Image with Green Border */}
-                <div className="border-4 border-[#5DBB63] overflow-hidden h-48 flex-shrink-0">
-                  <img 
-                    src={service.image} 
-                    alt={service.name}
-                    className="w-full h-full object-cover"
-                  />
+              {/* Right Column - Feature Cards with Icons */}
+              <div className="grid grid-cols-1 gap-6">
+                <div className="bg-white p-6 rounded-lg shadow-xl active:shadow-lg transition-all border-t-4 border-[#5DBB63] text-center group hover:animate-card-lift-enhanced"
+                  onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
+                  onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}>
+                  <div className="text-5xl mb-4">🛡️</div>
+                  <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Confidential & Safe</h3>
+                  <p className="text-gray-600">All sessions are conducted with strict confidentiality and professional ethics.</p>
                 </div>
                 
-                {/* Content */}
-                <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-bold text-white mb-3 text-center">{service.name}</h3>
-                  <p className="text-gray-200 mb-6 text-center text-sm flex-grow">{service.desc}</p>
-                  <div className="flex justify-center">
-                    <button className="bg-[#5DBB63] hover:bg-[#7FD17F] active:bg-[#5DBB63] text-white font-semibold py-2 px-6 rounded-full transition-all shadow-2xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0F3D4C]" aria-label={`Learn more about ${service.name}`}>
-                      Learn More
-                    </button>
-                  </div>
+                <div className="bg-white p-6 rounded-lg shadow-xl active:shadow-lg transition-all border-t-4 border-[#5DBB63] text-center group hover:animate-card-lift-enhanced"
+                  onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
+                  onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}>
+                  <div className="text-5xl mb-4">❤️</div>
+                  <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Emotionally Intelligent</h3>
+                  <p className="text-gray-600">We address both practical decisions and emotional wellbeing throughout your journey.</p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg shadow-xl active:shadow-lg transition-all border-t-4 border-[#5DBB63] text-center group hover:animate-card-lift-enhanced"
+                  onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
+                  onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}>
+                  <div className="text-5xl mb-4">⭐</div>
+                  <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Highly Qualified</h3>
+                  <p className="text-gray-600">FAMAC Accredited Mediator, SASW Registered Social Worker, Masters Degree holder with 20+ years experience.</p>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
+        </ScrollAnimationWrapper>
+      </section>
+
+      {/* Mediation Services Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <ScrollAnimationWrapper animationType="slide-up" delay={100}>
+          <div className="max-w-7xl mx-auto">
+            {/* Section Title with Green Line and Navy Bar */}
+            <div className="border-t-8 border-[#5DBB63] mb-12">
+              <div className="bg-[#0F3D4C] py-6 px-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Mediation Services</h2>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+              {mediationServices.map((service, idx) => (
+                <div 
+                  key={idx}
+                  className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-2xl active:shadow-lg transition-all cursor-pointer flex flex-col h-full group hover:animate-card-lift-enhanced active:scale-100"
+                  onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
+                  onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}
+                  onClick={() => setLocation(service.path)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => e.key === 'Enter' && setLocation(service.path)}
+                >
+                  {/* Image with Green Border */}
+                  <div className="border-4 border-[#5DBB63] overflow-hidden h-48 flex-shrink-0">
+                    <img 
+                      src={service.image} 
+                      alt={service.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="p-6 flex flex-col flex-grow">
+                    <h3 className="text-lg font-bold text-white mb-3 text-center">{service.name}</h3>
+                    <p className="text-gray-200 mb-6 text-center text-sm flex-grow">{service.desc}</p>
+                    <div className="flex justify-center">
+                      <button className="bg-[#5DBB63] hover:bg-[#7FD17F] active:bg-[#5DBB63] text-white font-semibold py-2 px-6 rounded-full transition-all shadow-2xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0F3D4C]" aria-label={`Learn more about ${service.name}`}>
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </ScrollAnimationWrapper>
       </section>
 
       {/* Social Work Services Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white" data-scroll-animate id="social-work-section">
-        <div className="max-w-7xl mx-auto">
-          {/* Section Title with Green Line and Navy Bar */}
-          <div className="border-t-8 border-[#5DBB63] mb-12">
-            <div className="bg-[#0F3D4C] py-6 px-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Social Work Services</h2>
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <ScrollAnimationWrapper animationType="slide-up" delay={150}>
+          <div className="max-w-7xl mx-auto">
+            {/* Section Title with Green Line and Navy Bar */}
+            <div className="border-t-8 border-[#5DBB63] mb-12">
+              <div className="bg-[#0F3D4C] py-6 px-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Social Work Services</h2>
+              </div>
             </div>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {socialWorkServices.map((service, idx) => (
-              <div 
-                key={idx}
-                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-2xl active:shadow-lg transition-all cursor-pointer flex flex-col h-full group hover:animate-card-lift-enhanced active:scale-100"
-                onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
-                onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}
-                onClick={() => setLocation(service.path)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => e.key === 'Enter' && setLocation(service.path)}
-              >
-                {/* Image with Green Border */}
-                <div className="border-4 border-[#5DBB63] overflow-hidden h-48 flex-shrink-0">
-                  <img 
-                    src={service.image} 
-                    alt={service.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                
-                {/* Content */}
-                <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg font-bold text-white mb-3 text-center">{service.name}</h3>
-                  <p className="text-gray-200 mb-6 text-center text-sm flex-grow">{service.desc}</p>
-                  <div className="flex justify-center">
-                    <button className="bg-[#5DBB63] hover:bg-[#7FD17F] active:bg-[#5DBB63] text-white font-semibold py-2 px-6 rounded-full transition-all shadow-2xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0F3D4C]" aria-label={`Learn more about ${service.name}`}>
-                      Learn More
-                    </button>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+              {socialWorkServices.map((service, idx) => (
+                <div 
+                  key={idx}
+                  className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-2xl active:shadow-lg transition-all cursor-pointer flex flex-col h-full group hover:animate-card-lift-enhanced active:scale-100"
+                  onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
+                  onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}
+                  onClick={() => setLocation(service.path)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => e.key === 'Enter' && setLocation(service.path)}
+                >
+                  {/* Image with Green Border */}
+                  <div className="border-4 border-[#5DBB63] overflow-hidden h-48 flex-shrink-0">
+                    <img 
+                      src={service.image} 
+                      alt={service.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="p-6 flex flex-col flex-grow">
+                    <h3 className="text-lg font-bold text-white mb-3 text-center">{service.name}</h3>
+                    <p className="text-gray-200 mb-6 text-center text-sm flex-grow">{service.desc}</p>
+                    <div className="flex justify-center">
+                      <button className="bg-[#5DBB63] hover:bg-[#7FD17F] active:bg-[#5DBB63] text-white font-semibold py-2 px-6 rounded-full transition-all shadow-2xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0F3D4C]" aria-label={`Learn more about ${service.name}`}>
+                        Learn More
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        </ScrollAnimationWrapper>
       </section>
 
-
-
       {/* FAQ Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50" data-scroll-animate id="faq-section">
-        <div className="max-w-3xl mx-auto">
-          {/* Section Title with Green Line and Navy Bar */}
-          <div className="border-t-8 border-[#5DBB63] mb-12">
-            <div className="bg-[#0F3D4C] py-6 px-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Frequently Asked Questions</h2>
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <ScrollAnimationWrapper animationType="fade-in" delay={200}>
+          <div className="max-w-3xl mx-auto">
+            {/* Section Title with Green Line and Navy Bar */}
+            <div className="border-t-8 border-[#5DBB63] mb-12">
+              <div className="bg-[#0F3D4C] py-6 px-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Frequently Asked Questions</h2>
+              </div>
+            </div>
+            
+            <div className="space-y-4">
+              {faqs.map((faq, idx) => (
+                <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden bg-[#0F3D4C]">
+                  <button
+                    onClick={() => setExpandedFAQ(expandedFAQ === idx ? null : idx)}
+                    className="w-full px-6 py-4 bg-[#0F3D4C] hover:bg-[#1a4d5f] text-left font-semibold text-white flex justify-between items-center transition"
+                  >
+                    {faq.q}
+                    <span className="text-[#5DBB63] text-2xl font-bold">{expandedFAQ === idx ? "−" : "+"}</span>
+                  </button>
+                  {expandedFAQ === idx && (
+                    <div className="px-6 py-4 bg-[#0a2a33] text-gray-100 border-t border-[#5DBB63]">
+                      {faq.a}
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
-          
-          <div className="space-y-4">
-            {faqs.map((faq, idx) => (
-              <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden bg-[#0F3D4C]">
-                <button
-                  onClick={() => setExpandedFAQ(expandedFAQ === idx ? null : idx)}
-                  className="w-full px-6 py-4 bg-[#0F3D4C] hover:bg-[#1a4d5f] text-left font-semibold text-white flex justify-between items-center transition"
-                >
-                  {faq.q}
-                  <span className="text-[#5DBB63] text-2xl font-bold">{expandedFAQ === idx ? "−" : "+"}</span>
-                </button>
-                {expandedFAQ === idx && (
-                  <div className="px-6 py-4 bg-[#0a2a33] text-gray-100 border-t border-[#5DBB63]">
-                    {faq.a}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+        </ScrollAnimationWrapper>
       </section>
 
       <Footer />
