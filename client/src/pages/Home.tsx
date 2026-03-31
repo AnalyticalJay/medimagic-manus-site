@@ -78,7 +78,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <div className="bg-[#5DBB63] rounded-3xl px-3 py-2 inline-block mb-8 border-4 border-dashed border-white">
+              <div className="bg-[#5DBB63] rounded-3xl px-3 py-2 inline-block mb-8">
                 <h1 className="text-2xl md:text-3xl font-bold text-white">MEDI MAGIC</h1>
               </div>
               

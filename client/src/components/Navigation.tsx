@@ -37,7 +37,6 @@ export default function Navigation() {
             className="flex-shrink-0 font-bold text-2xl text-white cursor-pointer hover:opacity-80 transition-opacity"
             onClick={() => handleNavigation("/")}
           >
-            MEDI MAGIC
           </div>
 
           {/* Desktop Navigation */}
