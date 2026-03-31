@@ -199,15 +199,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0F3D4C] uppercase">Mediation Services</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {mediationServices.map((service, idx) => (
               <div 
                 key={idx}
-                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition cursor-pointer"
+                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition cursor-pointer flex flex-col h-full"
                 onClick={() => setLocation(service.path)}
               >
                 {/* Image with Green Border */}
-                <div className="border-4 border-[#5DBB63] overflow-hidden h-64">
+                <div className="border-4 border-[#5DBB63] overflow-hidden h-48 flex-shrink-0">
                   <img 
                     src={service.image} 
                     alt={service.name}
@@ -216,10 +216,14 @@ export default function Home() {
                 </div>
                 
                 {/* Content */}
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-3">{service.name}</h3>
-                  <p className="text-gray-200 mb-4">{service.desc}</p>
-                  <div className="text-[#5DBB63] font-semibold hover:text-[#7FD17F] transition">Learn More →</div>
+                <div className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-lg font-bold text-white mb-3 text-center">{service.name}</h3>
+                  <p className="text-gray-200 mb-6 text-center text-sm flex-grow">{service.desc}</p>
+                  <div className="flex justify-center">
+                    <button className="bg-[#5DBB63] hover:bg-[#7FD17F] text-white font-semibold py-2 px-6 rounded-full transition shadow-lg hover:shadow-xl">
+                      Learn More
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
@@ -236,12 +240,16 @@ export default function Home() {
             {socialWorkServices.map((service, idx) => (
               <div 
                 key={idx}
-                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer border-l-4 border-[#5DBB63]"
+                className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer border-l-4 border-[#5DBB63] flex flex-col h-full"
                 onClick={() => setLocation(service.path)}
               >
                 <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">{service.name}</h3>
-                <p className="text-gray-600 mb-4">{service.desc}</p>
-                <div className="text-[#5DBB63] font-semibold hover:text-[#7FD17F] transition">Learn More →</div>
+                <p className="text-gray-600 mb-6 flex-grow">{service.desc}</p>
+                <div className="flex justify-center">
+                  <button className="bg-[#5DBB63] hover:bg-[#7FD17F] text-white font-semibold py-2 px-6 rounded-full transition shadow-lg hover:shadow-xl">
+                    Learn More
+                  </button>
+                </div>
               </div>
             ))}
           </div>
