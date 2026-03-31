@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -6,7 +6,16 @@ import { Menu, X, ChevronDown } from "lucide-react";
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
   const [, setLocation] = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const mediationServices = [
     { name: "Divorce Settlement Agreements", path: "/services/divorce-settlement" },
@@ -29,7 +38,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="medimagic-nav sticky top-0 z-50 shadow-lg">
+    <nav className={`medimagic-nav sticky top-0 z-50 transition-all duration-300 ${scrolled ? "shadow-xl" : "shadow-lg"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -43,14 +52,16 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-1">
             <button
               onClick={() => handleNavigation("/")}
-              className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors font-medium"
+              className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#5DBB63]"
+              aria-label="Home"
             >
               Home
             </button>
 
             <button
               onClick={() => handleNavigation("/about")}
-              className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors font-medium"
+              className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#5DBB63]"
+              aria-label="About"
             >
               About
             </button>
@@ -95,7 +106,8 @@ export default function Navigation() {
 
             <button
               onClick={() => handleNavigation("/contact")}
-              className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors font-medium"
+              className="px-3 py-2 rounded-md text-white hover:bg-[#4a9a52] transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#5DBB63]"
+              aria-label="Contact"
             >
               Contact
             </button>

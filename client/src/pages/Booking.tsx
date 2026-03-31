@@ -5,9 +5,12 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
+import { AlertCircle, CheckCircle } from "lucide-react";
 
 export default function Booking() {
   const [, setLocation] = useLocation();
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,13 +32,62 @@ export default function Booking() {
     },
   });
 
+  const validateField = (name: string, value: string): string => {
+    switch (name) {
+      case "name":
+        return value.trim().length < 2 ? "Name must be at least 2 characters" : "";
+      case "email":
+        return !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ? "Please enter a valid email" : "";
+      case "phone":
+        return value && !/^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/.test(value) ? "Please enter a valid phone number" : "";
+      case "preferredDate":
+        return !value ? "Please select a date" : new Date(value) < new Date() ? "Please select a future date" : "";
+      default:
+        return "";
+    }
+  };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+    if (touched[name]) {
+      const error = validateField(name, value);
+      setErrors(prev => ({
+        ...prev,
+        [name]: error,
+      }));
+    }
+  };
+
+  const handleBlur = (e: React.FocusEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setTouched(prev => ({ ...prev, [name]: true }));
+    const error = validateField(name, value);
+    setErrors(prev => ({
+      ...prev,
+      [name]: error,
+    }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate all fields
+    const newErrors: Record<string, string> = {};
+    Object.keys(formData).forEach(key => {
+      if (key !== "message" && key !== "phone") {
+        const value = formData[key as keyof typeof formData];
+        const error = validateField(key, String(value));
+        if (error) newErrors[key] = error;
+      }
+    });
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      toast.error("Please fix the errors in the form");
+      return;
+    }
+
     createBooking.mutate({
       ...formData,
       consultationType: formData.consultationType as "online" | "in-person",
@@ -88,10 +140,21 @@ export default function Booking() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
+                onBlur={handleBlur}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors ${
+                  errors.name && touched.name ? "border-red-500 bg-red-50" : "border-gray-300"
+                }`}
                 placeholder="Your full name"
+                aria-invalid={!!errors.name && touched.name}
+                aria-describedby={errors.name && touched.name ? "name-error" : undefined}
               />
+              {errors.name && touched.name && (
+                <div id="name-error" className="flex items-center mt-2 text-red-600 text-sm">
+                  <AlertCircle className="w-4 h-4 mr-2" />
+                  {errors.name}
+                </div>
+              )}
             </div>
 
             {/* Email */}
@@ -104,10 +167,21 @@ export default function Booking() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
+                onBlur={handleBlur}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors ${
+                  errors.email && touched.email ? "border-red-500 bg-red-50" : "border-gray-300"
+                }`}
                 placeholder="your@email.com"
+                aria-invalid={!!errors.email && touched.email}
+                aria-describedby={errors.email && touched.email ? "email-error" : undefined}
               />
+              {errors.email && touched.email && (
+                <div id="email-error" className="flex items-center mt-2 text-red-600 text-sm">
+                  <AlertCircle className="w-4 h-4 mr-2" />
+                  {errors.email}
+                </div>
+              )}
             </div>
 
             {/* Phone */}
@@ -183,9 +257,21 @@ export default function Booking() {
                 name="preferredDate"
                 value={formData.preferredDate}
                 onChange={handleChange}
+                onBlur={handleBlur}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                min={new Date().toISOString().split('T')[0]}
+                className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors ${
+                  errors.preferredDate && touched.preferredDate ? "border-red-500 bg-red-50" : "border-gray-300"
+                }`}
+                aria-invalid={!!errors.preferredDate && touched.preferredDate}
+                aria-describedby={errors.preferredDate && touched.preferredDate ? "date-error" : undefined}
               />
+              {errors.preferredDate && touched.preferredDate && (
+                <div id="date-error" className="flex items-center mt-2 text-red-600 text-sm">
+                  <AlertCircle className="w-4 h-4 mr-2" />
+                  {errors.preferredDate}
+                </div>
+              )}
             </div>
 
             {/* Preferred Time */}
@@ -223,10 +309,20 @@ export default function Booking() {
             {/* Submit Button */}
             <Button
               type="submit"
-              disabled={createBooking.isPending}
-              className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-lg font-semibold"
+              disabled={createBooking.isPending || Object.keys(errors).length > 0}
+              className="w-full bg-green-600 hover:bg-green-700 disabled:bg-gray-400 text-white py-3 text-lg font-semibold transition-colors flex items-center justify-center gap-2"
             >
-              {createBooking.isPending ? "Submitting..." : "Submit Booking Request"}
+              {createBooking.isPending ? (
+                <>
+                  <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                  Submitting...
+                </>
+              ) : (
+                <>
+                  <CheckCircle className="w-5 h-5" />
+                  Submit Booking Request
+                </>
+              )}
             </Button>
           </form>
         </div>

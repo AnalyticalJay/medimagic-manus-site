@@ -200,12 +200,15 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {mediationServices.map((service, idx) => (
               <div 
                 key={idx}
-                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition cursor-pointer flex flex-col h-full"
+                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-lg hover:shadow-xl active:shadow-md transition-all cursor-pointer flex flex-col h-full transform hover:scale-105 active:scale-100"
                 onClick={() => setLocation(service.path)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => e.key === 'Enter' && setLocation(service.path)}
               >
                 {/* Image with Green Border */}
                 <div className="border-4 border-[#5DBB63] overflow-hidden h-48 flex-shrink-0">
@@ -221,7 +224,7 @@ export default function Home() {
                   <h3 className="text-lg font-bold text-white mb-3 text-center">{service.name}</h3>
                   <p className="text-gray-200 mb-6 text-center text-sm flex-grow">{service.desc}</p>
                   <div className="flex justify-center">
-                    <button className="bg-[#5DBB63] hover:bg-[#7FD17F] text-white font-semibold py-2 px-6 rounded-full transition shadow-lg hover:shadow-xl">
+                    <button className="bg-[#5DBB63] hover:bg-[#7FD17F] active:bg-[#5DBB63] text-white font-semibold py-2 px-6 rounded-full transition-all shadow-lg hover:shadow-xl active:shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0F3D4C]" aria-label={`Learn more about ${service.name}`}>
                       Learn More
                     </button>
                   </div>
@@ -242,12 +245,15 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {socialWorkServices.map((service, idx) => (
               <div 
                 key={idx}
-                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition cursor-pointer flex flex-col h-full"
+                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-lg hover:shadow-xl active:shadow-md transition-all cursor-pointer flex flex-col h-full transform hover:scale-105 active:scale-100"
                 onClick={() => setLocation(service.path)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => e.key === 'Enter' && setLocation(service.path)}
               >
                 {/* Image with Green Border */}
                 <div className="border-4 border-[#5DBB63] overflow-hidden h-48 flex-shrink-0">
@@ -263,7 +269,7 @@ export default function Home() {
                   <h3 className="text-lg font-bold text-white mb-3 text-center">{service.name}</h3>
                   <p className="text-gray-200 mb-6 text-center text-sm flex-grow">{service.desc}</p>
                   <div className="flex justify-center">
-                    <button className="bg-[#5DBB63] hover:bg-[#7FD17F] text-white font-semibold py-2 px-6 rounded-full transition shadow-lg hover:shadow-xl">
+                    <button className="bg-[#5DBB63] hover:bg-[#7FD17F] active:bg-[#5DBB63] text-white font-semibold py-2 px-6 rounded-full transition-all shadow-lg hover:shadow-xl active:shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0F3D4C]" aria-label={`Learn more about ${service.name}`}>
                       Learn More
                     </button>
                   </div>

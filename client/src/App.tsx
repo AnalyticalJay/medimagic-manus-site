@@ -47,8 +47,18 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
+          {/* Skip to main content link for accessibility */}
+          <a
+            href="#main-content"
+            className="fixed top-0 left-0 z-[9999] px-4 py-2 bg-[#5DBB63] text-white font-semibold rounded-br-lg transform -translate-y-full focus:translate-y-0 transition-transform"
+            aria-label="Skip to main content"
+          >
+            Skip to main content
+          </a>
           <Toaster />
-          <Router />
+          <main id="main-content" role="main">
+            <Router />
+          </main>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
