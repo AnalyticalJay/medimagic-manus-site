@@ -35,19 +35,31 @@ export default function IllnessDisability() {
       ]} />
 
       {/* Hero Section */}
-      <section className="relative py-16 md:py-24 bg-cover bg-center" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/illness-disability-hero-85DJ9LTpRzR7zEqFX2fsgd.webp)'}}>
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="container relative z-10">
-          <div className="max-w-3xl">
-            <div className="inline-block px-3 py-1 bg-accent/20 rounded-full text-sm font-medium text-accent mb-4">
-              SOCIAL WORK SERVICE
+      <section className="medimagic-hero py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div>
+              <div className="bg-[#5DBB63] rounded-2xl sm:rounded-3xl px-3 py-2 inline-block mb-4 sm:mb-8">
+                <h3 className="text-sm sm:text-base font-bold text-white">SOCIAL WORK SERVICE</h3>
+              </div>
+              
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                Illness & Disability Support
+              </h1>
+              
+              <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
+                Compassionate support helping individuals and families navigate the challenges of illness and disability.
+              </p>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Illness & Disability Support
-            </h1>
-            <p className="text-xl text-white/90">
-              Compassionate support helping individuals and families navigate the challenges of illness and disability.
-            </p>
+
+            {/* Service Image */}
+            <div className="flex justify-center mt-8 lg:mt-0">
+              <img 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/illness-disability-BUDZwUcbhbA5Z3fUUjjZHQ.webp" 
+                alt="Illness & Disability Support" 
+                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
+              />
+            </div>
           </div>
         </div>
       </section>
