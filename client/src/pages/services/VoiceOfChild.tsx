@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowLeft, Check, Ear, Shield, Heart } from "lucide-react";
 import { useLocation } from "wouter";
 import Breadcrumb from "@/components/Breadcrumb";
+import ServicePageWithSidebar from "@/components/ServicePageWithSidebar";
 
 export default function VoiceOfChild() {
   const [, navigate] = useLocation();
@@ -51,106 +52,109 @@ export default function VoiceOfChild() {
         </div>
       </section>
 
-      {/* Main Content - Two Column Layout */}
-      <section className="py-16 md:py-24">
-        <div className="container max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Content */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Ensuring Children's Voices Are Heard</h2>
-                <p className="text-lg text-muted-foreground">
-                  When parents separate or divorce, children are often affected by decisions made about their future. At MediMagic, we believe children's perspectives matter. Our "Voice of the Child" service ensures that children's wishes, concerns, and needs are professionally gathered and considered in mediation and decision-making processes.
-                </p>
-              </div>
+      {/* Main Content with Sidebar */}
+      <ServicePageWithSidebar
+        category="mediation"
+        currentService="Voice of the Child"
+        services={[
+          { name: "Divorce Settlement Agreements", path: "/services/divorce-settlement" },
+          { name: "Parenting Plans", path: "/services/parenting-plans" },
+          { name: "Maintenance Agreements", path: "/services/maintenance-agreements" },
+          { name: "Voice of the Child", path: "/services/voice-of-child" },
+        ]}
+      >
+        <div className="space-y-8">
+          <div>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Ensuring Children's Voices Are Heard</h2>
+            <p className="text-lg text-muted-foreground">
+              When parents separate or divorce, children are often affected by decisions made about their future. At MediMagic, we believe children's perspectives matter. Our "Voice of the Child" service ensures that children's wishes, concerns, and needs are professionally gathered and considered in mediation and decision-making processes.
+            </p>
+          </div>
 
-              <div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">What Is Voice of the Child?</h3>
-                <p className="text-muted-foreground mb-4">
-                  Voice of the Child is a professional service where a trained mediator or social worker meets with children in a safe, neutral environment to understand their perspectives, preferences, and concerns regarding family arrangements. This information is then shared with parents and incorporated into mediation discussions.
-                </p>
-                <p className="text-muted-foreground">
-                  The process is age-appropriate, non-directive, and designed to empower children while protecting their emotional wellbeing.
-                </p>
-              </div>
+          <div>
+            <h3 className="text-2xl font-bold text-foreground mb-4">What Is Voice of the Child?</h3>
+            <p className="text-muted-foreground mb-4">
+              Voice of the Child is a professional service where a trained mediator or social worker meets with children in a safe, neutral environment to understand their perspectives, preferences, and concerns regarding family arrangements. This information is then shared with parents and incorporated into mediation discussions.
+            </p>
+            <p className="text-muted-foreground">
+              The process is age-appropriate, non-directive, and designed to empower children while protecting their emotional wellbeing.
+            </p>
+          </div>
 
-              <div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">How We Listen to Children</h3>
-                <div className="space-y-3">
-                  <div className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-bold text-foreground">Safe & Confidential Meetings</h4>
-                      <p className="text-sm text-muted-foreground">Individual sessions with children in a comfortable, neutral environment where they feel safe to express themselves.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-bold text-foreground">Age-Appropriate Communication</h4>
-                      <p className="text-sm text-muted-foreground">Tailored conversations using language and methods appropriate to each child's developmental stage.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-bold text-foreground">Non-Directive Approach</h4>
-                      <p className="text-sm text-muted-foreground">We don't influence children's views—we listen to their authentic perspectives and concerns.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-bold text-foreground">Professional Reporting</h4>
-                      <p className="text-sm text-muted-foreground">Findings are presented to parents in a way that respects children's privacy while informing decisions.</p>
-                    </div>
-                  </div>
+          <div>
+            <h3 className="text-2xl font-bold text-foreground mb-4">How We Listen to Children</h3>
+            <div className="space-y-3">
+              <div className="flex gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-foreground">Safe & Confidential Meetings</h4>
+                  <p className="text-sm text-muted-foreground">Individual sessions with children in a comfortable, neutral environment where they feel safe to express themselves.</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-foreground">Age-Appropriate Communication</h4>
+                  <p className="text-sm text-muted-foreground">Tailored conversations using language and methods appropriate to each child's developmental stage.</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-foreground">Non-Directive Approach</h4>
+                  <p className="text-sm text-muted-foreground">We don't influence children's views—we listen to their authentic perspectives and concerns.</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-foreground">Professional Reporting</h4>
+                  <p className="text-sm text-muted-foreground">Findings are presented to parents in a way that respects children's privacy while informing decisions.</p>
                 </div>
               </div>
             </div>
-
-            {/* Right Column - Image and CTA */}
-            <div className="space-y-8">
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/voice-of-child-content-2kYjisopVkY6KkiQVGSH2T.webp" 
-                  alt="Child empowerment and advocacy" 
-                  className="w-full h-auto"
-                />
-              </div>
-
-              <Card className="p-8 bg-accent/5 border border-accent/20">
-                <h3 className="text-xl font-bold text-foreground mb-4">Why Voice of the Child Matters</h3>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span className="text-muted-foreground"><strong>Empowerment:</strong> Children feel heard and valued in decisions affecting them</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span className="text-muted-foreground"><strong>Better outcomes:</strong> Arrangements that consider children's needs are more successful</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span className="text-muted-foreground"><strong>Emotional wellbeing:</strong> Children feel their concerns matter to their parents</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span className="text-muted-foreground"><strong>Reduced conflict:</strong> Understanding children's needs helps parents cooperate better</span>
-                  </li>
-                </ul>
-              </Card>
-
-              <Button 
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-6 text-lg"
-                onClick={() => navigate("/booking")}
-              >
-                Book a Consultation
-              </Button>
-            </div>
           </div>
         </div>
-      </section>
+
+        <div className="space-y-8">
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <img 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/voice-of-child-content-2kYjisopVkY6KkiQVGSH2T.webp" 
+              alt="Child empowerment and advocacy" 
+              className="w-full h-auto"
+            />
+          </div>
+
+          <Card className="p-8 bg-accent/5 border border-accent/20">
+            <h3 className="text-xl font-bold text-foreground mb-4">Why Voice of the Child Matters</h3>
+            <ul className="space-y-3 mb-6">
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Empowerment:</strong> Children feel heard and valued in decisions affecting them</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Better outcomes:</strong> Arrangements that consider children's needs are more successful</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Emotional wellbeing:</strong> Children feel their concerns matter to their parents</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Reduced conflict:</strong> Understanding children's needs helps parents cooperate better</span>
+              </li>
+            </ul>
+          </Card>
+
+          <Button 
+            className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-6 text-lg"
+            onClick={() => navigate("/booking")}
+          >
+            Book a Consultation
+          </Button>
+        </div>
+      </ServicePageWithSidebar>
 
       {/* The Process */}
       <section className="py-16 md:py-24 bg-accent/5">

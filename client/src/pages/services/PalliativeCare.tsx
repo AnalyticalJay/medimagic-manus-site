@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowLeft, Check, Heart, Users, Lightbulb } from "lucide-react";
 import { useLocation } from "wouter";
 import Breadcrumb from "@/components/Breadcrumb";
+import ServicePageWithSidebar from "@/components/ServicePageWithSidebar";
 
 export default function PalliativeCare() {
   const [, navigate] = useLocation();
@@ -51,13 +52,19 @@ export default function PalliativeCare() {
         </div>
       </section>
 
-      {/* Main Content - Two Column Layout */}
-      <section className="py-16 md:py-24">
-        <div className="container max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Content */}
-            <div className="space-y-8">
-              <div>
+      {/* Main Content with Sidebar */}
+      <ServicePageWithSidebar
+        category="social-work"
+        currentService="Palliative Care"
+        services={[
+          { name: "Adult Divorce Prep", path: "/services/adult-divorce-prep" },
+          { name: "Illness & Disability", path: "/services/illness-disability" },
+          { name: "Palliative Care", path: "/services/palliative-care" },
+          { name: "Health Education", path: "/services/health-education" },
+        ]}
+      >
+        <div className="space-y-8">
+          <div>
                 <h2 className="text-3xl font-bold text-foreground mb-4">Supporting Dignity in Life's Final Chapter</h2>
                 <p className="text-lg text-muted-foreground">
                   Facing a terminal diagnosis or end-of-life journey is profoundly challenging—not just medically, but emotionally, spiritually, and relationally. At MediMagic, our Palliative & End-of-Life Care service provides compassionate support to help individuals and families navigate this sacred time with dignity, peace, and meaningful connection.
@@ -106,53 +113,50 @@ export default function PalliativeCare() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Right Column - Image and CTA */}
-            <div className="space-y-8">
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/palliative-care-content-kMKPDW7XnLk7CZZp3hyUZV.webp" 
-                  alt="Peaceful family gathering and dignified end-of-life care" 
-                  className="w-full h-auto"
-                />
-              </div>
-
-              <Card className="p-8 bg-accent/5 border border-accent/20">
-                <h3 className="text-xl font-bold text-foreground mb-4">Our Compassionate Philosophy</h3>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span className="text-muted-foreground"><strong>Dignity-centered:</strong> Honoring individual autonomy and values</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span className="text-muted-foreground"><strong>Family-focused:</strong> Supporting loved ones through this journey</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span className="text-muted-foreground"><strong>Holistic:</strong> Addressing physical, emotional, and spiritual needs</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span className="text-muted-foreground"><strong>Peaceful:</strong> Creating comfort and meaningful connection</span>
-                  </li>
-                </ul>
-              </Card>
-
-              <Button 
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-6 text-lg"
-                onClick={() => navigate("/booking")}
-              >
-                Book a Consultation
-              </Button>
-            </div>
           </div>
         </div>
-      </section>
 
-      {/* The Support Process */}
+        <div className="space-y-8">
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <img 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/palliative-care-content-kMKPDW7XnLk7CZZp3hyUZV.webp" 
+              alt="Peaceful family gathering and dignified end-of-life care" 
+              className="w-full h-auto"
+            />
+          </div>
+
+          <Card className="p-8 bg-accent/5 border border-accent/20">
+            <h3 className="text-xl font-bold text-foreground mb-4">Our Compassionate Approach</h3>
+            <ul className="space-y-3 mb-6">
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Dignified:</strong> Honoring individual values and wishes</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Holistic:</strong> Addressing physical, emotional, and spiritual needs</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Family-centered:</strong> Supporting loved ones throughout the journey</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Peaceful:</strong> Creating comfort and meaningful moments</span>
+              </li>
+            </ul>
+          </Card>
+
+          <Button 
+            className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-6 text-lg"
+            onClick={() => navigate("/booking")}
+          >
+            Book a Consultation
+          </Button>
+        </div>
+      </ServicePageWithSidebar>
+
+      {/* The Care Process */}
       <section className="py-16 md:py-24 bg-accent/5">
         <div className="container max-w-6xl">
           <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Your End-of-Life Support Journey</h2>

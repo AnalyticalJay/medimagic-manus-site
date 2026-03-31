@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowLeft, Check, Heart, Users, Lightbulb } from "lucide-react";
 import { useLocation } from "wouter";
 import Breadcrumb from "@/components/Breadcrumb";
+import ServicePageWithSidebar from "@/components/ServicePageWithSidebar";
 
 export default function HealthEducation() {
   const [, navigate] = useLocation();
@@ -51,14 +52,20 @@ export default function HealthEducation() {
         </div>
       </section>
 
-      {/* Main Content - Two Column Layout */}
-      <section className="py-16 md:py-24">
-        <div className="container max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Content */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Empowering Health Through Knowledge & Skills</h2>
+      {/* Main Content with Sidebar */}
+      <ServicePageWithSidebar
+        category="social-work"
+        currentService="Health Education"
+        services={[
+          { name: "Adult Divorce Prep", path: "/services/adult-divorce-prep" },
+          { name: "Illness & Disability", path: "/services/illness-disability" },
+          { name: "Palliative Care", path: "/services/palliative-care" },
+          { name: "Health Education", path: "/services/health-education" },
+        ]}
+      >
+        <div className="space-y-8">
+          <div>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Empowering Health Through Knowledge & Skills</h2>
                 <p className="text-lg text-muted-foreground">
                   Health is not just the absence of illness—it's a state of physical, mental, and social wellbeing. At MediMagic, our Health Education & Promotion service empowers individuals and communities with knowledge, skills, and resources to make informed health decisions and build healthier, more resilient lives.
                 </p>
@@ -106,53 +113,50 @@ export default function HealthEducation() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Right Column - Image and CTA */}
-            <div className="space-y-8">
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/health-education-content-5Hc3Rvq8VXgSZYnGz4XYQH.webp" 
-                  alt="Health education and wellness resources" 
-                  className="w-full h-auto"
-                />
-              </div>
-
-              <Card className="p-8 bg-accent/5 border border-accent/20">
-                <h3 className="text-xl font-bold text-foreground mb-4">Our Evidence-Based Approach</h3>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span className="text-muted-foreground"><strong>Evidence-based:</strong> Grounded in research and best practices</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span className="text-muted-foreground"><strong>Empowering:</strong> Building knowledge and agency for health</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span className="text-muted-foreground"><strong>Practical:</strong> Actionable skills and resources you can use</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">✓</span>
-                    <span className="text-muted-foreground"><strong>Inclusive:</strong> Respectful of diverse backgrounds and beliefs</span>
-                  </li>
-                </ul>
-              </Card>
-
-              <Button 
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-6 text-lg"
-                onClick={() => navigate("/booking")}
-              >
-                Book a Consultation
-              </Button>
-            </div>
           </div>
         </div>
-      </section>
 
-      {/* The Support Process */}
+        <div className="space-y-8">
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <img 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/health-education-content-5Hc3Rvq8VXgSZYnGz4XYQH.webp" 
+              alt="Health education and wellness resources" 
+              className="w-full h-auto"
+            />
+          </div>
+
+          <Card className="p-8 bg-accent/5 border border-accent/20">
+            <h3 className="text-xl font-bold text-foreground mb-4">Our Empowering Approach</h3>
+            <ul className="space-y-3 mb-6">
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Evidence-based:</strong> Information grounded in current research</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Practical:</strong> Actionable strategies for real-world application</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Inclusive:</strong> Culturally sensitive and accessible to all</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Empowering:</strong> Building confidence and agency in health decisions</span>
+              </li>
+            </ul>
+          </Card>
+
+          <Button 
+            className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-6 text-lg"
+            onClick={() => navigate("/booking")}
+          >
+            Book a Consultation
+          </Button>
+        </div>
+      </ServicePageWithSidebar>
+
+      {/* The Education Process */}
       <section className="py-16 md:py-24 bg-accent/5">
         <div className="container max-w-6xl">
           <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Your Health Education Journey</h2>

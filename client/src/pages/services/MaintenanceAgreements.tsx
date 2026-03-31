@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowLeft, Check, TrendingUp, Scale, Shield } from "lucide-react";
 import { useLocation } from "wouter";
 import Breadcrumb from "@/components/Breadcrumb";
+import ServicePageWithSidebar from "@/components/ServicePageWithSidebar";
 
 export default function MaintenanceAgreements() {
   const [, navigate] = useLocation();
@@ -51,118 +52,121 @@ export default function MaintenanceAgreements() {
         </div>
       </section>
 
-      {/* Main Content - Two Column Layout */}
-      <section className="py-16 md:py-24">
-        <div className="container max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Content */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Understanding Maintenance Agreements</h2>
-                <p className="text-lg text-muted-foreground">
-                  Maintenance (also known as alimony or spousal support) is a critical component of many divorce and separation agreements. It addresses the financial support one spouse may provide to the other during or after separation. At MediMagic, we help couples negotiate fair, sustainable maintenance arrangements through structured mediation.
-                </p>
-              </div>
+      {/* Main Content with Sidebar */}
+      <ServicePageWithSidebar
+        category="mediation"
+        currentService="Maintenance Agreements"
+        services={[
+          { name: "Divorce Settlement Agreements", path: "/services/divorce-settlement" },
+          { name: "Parenting Plans", path: "/services/parenting-plans" },
+          { name: "Maintenance Agreements", path: "/services/maintenance-agreements" },
+          { name: "Voice of the Child", path: "/services/voice-of-child" },
+        ]}
+      >
+        <div className="space-y-8">
+          <div>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Understanding Maintenance Agreements</h2>
+            <p className="text-lg text-muted-foreground">
+              Maintenance (also known as alimony or spousal support) is a critical component of many divorce and separation agreements. It addresses the financial support one spouse may provide to the other during or after separation. At MediMagic, we help couples negotiate fair, sustainable maintenance arrangements through structured mediation.
+            </p>
+          </div>
 
-              <div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">What Is Maintenance?</h3>
-                <p className="text-muted-foreground mb-4">
-                  Maintenance is financial support provided by one spouse to another to help maintain a reasonable standard of living after separation or divorce. Unlike child support (which is focused on children's needs), maintenance addresses the financial needs and capacity of each spouse.
-                </p>
-                <p className="text-muted-foreground">
-                  The goal is to help the lower-earning spouse achieve financial independence while ensuring fairness to the higher-earning spouse.
-                </p>
-              </div>
+          <div>
+              <h3 className="text-2xl font-bold text-foreground mb-4">What Is Maintenance?</h3>
+              <p className="text-muted-foreground mb-4">
+                Maintenance is financial support provided by one spouse to another to help maintain a reasonable standard of living after separation or divorce. Unlike child support (which is focused on children's needs), maintenance addresses the financial needs and capacity of each spouse.
+              </p>
+              <p className="text-muted-foreground">
+                The goal is to help the lower-earning spouse achieve financial independence while ensuring fairness to the higher-earning spouse.
+              </p>
+            </div>
 
-              <div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">Factors Considered</h3>
-                <div className="space-y-3">
-                  <div className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-bold text-foreground">Income & Earning Capacity</h4>
-                      <p className="text-sm text-muted-foreground">Current income of both parties and their ability to earn in the future.</p>
-                    </div>
+            <div>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Factors Considered</h3>
+              <div className="space-y-3">
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-bold text-foreground">Income & Earning Capacity</h4>
+                    <p className="text-sm text-muted-foreground">Current income of both parties and their ability to earn in the future.</p>
                   </div>
-                  <div className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-bold text-foreground">Duration of Marriage</h4>
-                      <p className="text-sm text-muted-foreground">Length of the marriage and the financial interdependence established during that time.</p>
-                    </div>
+                </div>
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-bold text-foreground">Duration of Marriage</h4>
+                    <p className="text-sm text-muted-foreground">Length of the marriage and the financial interdependence established during that time.</p>
                   </div>
-                  <div className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-bold text-foreground">Standard of Living</h4>
-                      <p className="text-sm text-muted-foreground">The lifestyle established during the marriage and each party's need to maintain it.</p>
-                    </div>
+                </div>
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-bold text-foreground">Standard of Living</h4>
+                    <p className="text-sm text-muted-foreground">The lifestyle established during the marriage and each party's need to maintain it.</p>
                   </div>
-                  <div className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-bold text-foreground">Age & Health</h4>
-                      <p className="text-sm text-muted-foreground">Age, health status, and ability to work or become self-sufficient.</p>
-                    </div>
+                </div>
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-bold text-foreground">Age & Health</h4>
+                    <p className="text-sm text-muted-foreground">Age, health status, and ability to work or become self-sufficient.</p>
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Right Column - Image and CTA */}
-            <div className="space-y-8">
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/maintenance-agreements-content-cDvZ8HX2vLRQfqJhBKPXDX.webp" 
-                  alt="Financial planning for maintenance" 
-                  className="w-full h-auto"
-                />
-              </div>
-
-              <Card className="p-8 bg-accent/5 border border-accent/20">
-                <h3 className="text-xl font-bold text-foreground mb-4">Types of Maintenance</h3>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">•</span>
-                    <div>
-                      <strong className="text-foreground">Temporary:</strong>
-                      <p className="text-sm text-muted-foreground">Support during divorce proceedings</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">•</span>
-                    <div>
-                      <strong className="text-foreground">Rehabilitative:</strong>
-                      <p className="text-sm text-muted-foreground">Short-term to help spouse retrain</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">•</span>
-                    <div>
-                      <strong className="text-foreground">Permanent:</strong>
-                      <p className="text-sm text-muted-foreground">Long-term in long marriages</p>
-                    </div>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent font-bold">•</span>
-                    <div>
-                      <strong className="text-foreground">Lump Sum:</strong>
-                      <p className="text-sm text-muted-foreground">One-time payment for finality</p>
-                    </div>
-                  </li>
-                </ul>
-              </Card>
-
-              <Button 
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-6 text-lg"
-                onClick={() => navigate("/booking")}
-              >
-                Book a Consultation
-              </Button>
-            </div>
           </div>
         </div>
-      </section>
+
+        <div className="space-y-8">
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <img 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/maintenance-agreements-content-cDvZ8HX2vLRQfqJhBKPXDX.webp" 
+              alt="Financial planning for maintenance" 
+              className="w-full h-auto"
+            />
+          </div>
+
+          <Card className="p-8 bg-accent/5 border border-accent/20">
+            <h3 className="text-xl font-bold text-foreground mb-4">Types of Maintenance</h3>
+            <ul className="space-y-3 mb-6">
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">•</span>
+                <div>
+                  <strong className="text-foreground">Temporary:</strong>
+                  <p className="text-sm text-muted-foreground">Support during divorce proceedings</p>
+                </div>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">•</span>
+                <div>
+                  <strong className="text-foreground">Rehabilitative:</strong>
+                  <p className="text-sm text-muted-foreground">Short-term to help spouse retrain</p>
+                </div>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">•</span>
+                <div>
+                  <strong className="text-foreground">Permanent:</strong>
+                  <p className="text-sm text-muted-foreground">Long-term in long marriages</p>
+                </div>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">•</span>
+                <div>
+                  <strong className="text-foreground">Lump Sum:</strong>
+                  <p className="text-sm text-muted-foreground">One-time payment for finality</p>
+                </div>
+              </li>
+            </ul>
+          </Card>
+
+          <Button 
+            className="w-full bg-accent hover:bg-accent/90 text-accent-foreground py-6 text-lg"
+            onClick={() => navigate("/booking")}
+          >
+            Book a Consultation
+          </Button>
+        </div>
+      </ServicePageWithSidebar>
 
       {/* The Mediation Process */}
       <section className="py-16 md:py-24 bg-accent/5">
