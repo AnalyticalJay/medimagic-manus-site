@@ -194,7 +194,7 @@ export default function Home() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           {/* Section Title with Green Line and Navy Bar */}
-          <div className="border-t-2 border-[#5DBB63] mb-12">
+          <div className="border-t-8 border-[#5DBB63] mb-12">
             <div className="bg-[#0F3D4C] py-6 px-8">
               <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Mediation Services</h2>
             </div>
@@ -236,7 +236,7 @@ export default function Home() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           {/* Section Title with Green Line and Navy Bar */}
-          <div className="border-t-2 border-[#5DBB63] mb-12">
+          <div className="border-t-8 border-[#5DBB63] mb-12">
             <div className="bg-[#0F3D4C] py-6 px-8">
               <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Social Work Services</h2>
             </div>
@@ -274,7 +274,7 @@ export default function Home() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           {/* Section Title with Green Line and Navy Bar */}
-          <div className="border-t-2 border-[#5DBB63] mb-12">
+          <div className="border-t-8 border-[#5DBB63] mb-12">
             <div className="bg-[#0F3D4C] py-6 px-8">
               <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Why Choose MediMagic</h2>
             </div>
@@ -306,7 +306,7 @@ export default function Home() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-3xl mx-auto">
           {/* Section Title with Green Line and Navy Bar */}
-          <div className="border-t-2 border-[#5DBB63] mb-12">
+          <div className="border-t-8 border-[#5DBB63] mb-12">
             <div className="bg-[#0F3D4C] py-6 px-8">
               <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Frequently Asked Questions</h2>
             </div>

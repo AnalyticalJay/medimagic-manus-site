@@ -159,7 +159,12 @@ export default function About() {
       {/* Core Values Section */}
       <section className="py-16 md:py-24 bg-accent/5">
         <div className="container max-w-6xl">
-          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Core Values & Approach</h2>
+          {/* Section Title with Green Line and Navy Bar */}
+          <div className="border-t-8 border-[#5DBB63] mb-12">
+            <div className="bg-[#0F3D4C] py-6 px-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Core Values & Approach</h2>
+            </div>
+          </div>
           
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-8">
@@ -208,7 +213,12 @@ export default function About() {
       {/* Expertise Section */}
       <section className="py-16 md:py-24">
         <div className="container max-w-6xl">
-          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Areas of Expertise</h2>
+          {/* Section Title with Green Line and Navy Bar */}
+          <div className="border-t-8 border-[#5DBB63] mb-12">
+            <div className="bg-[#0F3D4C] py-6 px-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Areas of Expertise</h2>
+            </div>
+          </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-8 border-l-4 border-l-accent">

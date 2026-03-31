@@ -172,9 +172,12 @@ export default function Contact() {
 
           {/* FAQ Section */}
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
-              Frequently Asked Questions
-            </h2>
+            {/* Section Title with Green Line and Navy Bar */}
+            <div className="border-t-8 border-[#5DBB63] mb-12">
+              <div className="bg-[#0F3D4C] py-6 px-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Frequently Asked Questions</h2>
+              </div>
+            </div>
 
             <div className="space-y-4">
               <div className="border border-border rounded-lg p-6 hover:border-accent/50 transition-colors">

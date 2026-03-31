@@ -45,9 +45,12 @@ export default function ServicePageTemplate({
       {/* Benefits Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Key Benefits
-          </h2>
+          {/* Section Title with Green Line and Navy Bar */}
+          <div className="border-t-8 border-[#5DBB63] mb-12">
+            <div className="bg-[#0F3D4C] py-6 px-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Key Benefits</h2>
+            </div>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {benefits.map((benefit, index) => (
               <div key={index} className="flex items-start">
@@ -68,9 +71,12 @@ export default function ServicePageTemplate({
       {/* Process Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Our Process
-          </h2>
+          {/* Section Title with Green Line and Navy Bar */}
+          <div className="border-t-8 border-[#5DBB63] mb-12">
+            <div className="bg-[#0F3D4C] py-6 px-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Our Process</h2>
+            </div>
+          </div>
           <div className="space-y-6">
             {process.map((step, index) => (
               <div key={index} className="flex items-start">
@@ -92,9 +98,12 @@ export default function ServicePageTemplate({
       {faq && faq.length > 0 && (
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Frequently Asked Questions
-            </h2>
+            {/* Section Title with Green Line and Navy Bar */}
+            <div className="border-t-8 border-[#5DBB63] mb-12">
+              <div className="bg-[#0F3D4C] py-6 px-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Frequently Asked Questions</h2>
+              </div>
+            </div>
             <div className="space-y-6">
               {faq.map((item, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-6">
