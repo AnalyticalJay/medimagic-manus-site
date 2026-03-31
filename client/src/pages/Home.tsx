@@ -171,19 +171,19 @@ export default function Home() {
 
             {/* Right Column - Feature Cards with Icons */}
             <div className="grid grid-cols-1 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
+              <div className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl hover:drop-shadow-lg transition-all border-t-4 border-[#5DBB63] text-center">
                 <div className="text-5xl mb-4">🛡️</div>
                 <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Confidential & Safe</h3>
                 <p className="text-gray-600">All sessions are conducted with strict confidentiality and professional ethics.</p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
+              <div className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl hover:drop-shadow-lg transition-all border-t-4 border-[#5DBB63] text-center">
                 <div className="text-5xl mb-4">❤️</div>
                 <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Emotionally Intelligent</h3>
                 <p className="text-gray-600">We address both practical decisions and emotional wellbeing throughout your journey.</p>
               </div>
               
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#5DBB63] text-center">
+              <div className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl hover:drop-shadow-lg transition-all border-t-4 border-[#5DBB63] text-center">
                 <div className="text-5xl mb-4">⭐</div>
                 <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Highly Qualified</h3>
                 <p className="text-gray-600">FAMAC Accredited Mediator, SASW Registered Social Worker, Masters Degree holder with 20+ years experience.</p>
@@ -205,7 +205,7 @@ export default function Home() {
             {mediationServices.map((service, idx) => (
               <div 
                 key={idx}
-                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-lg hover:shadow-xl active:shadow-md transition-all cursor-pointer flex flex-col h-full transform hover:scale-105 active:scale-100"
+                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-2xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg transition-all cursor-pointer flex flex-col h-full transform hover:scale-105 active:scale-100"
                 onClick={() => setLocation(service.path)}
                 role="button"
                 tabIndex={0}
@@ -225,7 +225,7 @@ export default function Home() {
                   <h3 className="text-lg font-bold text-white mb-3 text-center">{service.name}</h3>
                   <p className="text-gray-200 mb-6 text-center text-sm flex-grow">{service.desc}</p>
                   <div className="flex justify-center">
-                    <button className="bg-[#5DBB63] hover:bg-[#7FD17F] active:bg-[#5DBB63] text-white font-semibold py-2 px-6 rounded-full transition-all shadow-lg hover:shadow-xl active:shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0F3D4C]" aria-label={`Learn more about ${service.name}`}>
+                    <button className="bg-[#5DBB63] hover:bg-[#7FD17F] active:bg-[#5DBB63] text-white font-semibold py-2 px-6 rounded-full transition-all shadow-2xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0F3D4C]" aria-label={`Learn more about ${service.name}`}>
                       Learn More
                     </button>
                   </div>
@@ -250,7 +250,7 @@ export default function Home() {
             {socialWorkServices.map((service, idx) => (
               <div 
                 key={idx}
-                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-lg hover:shadow-xl active:shadow-md transition-all cursor-pointer flex flex-col h-full transform hover:scale-105 active:scale-100"
+                className="bg-[#0F3D4C] rounded-lg overflow-hidden shadow-2xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg transition-all cursor-pointer flex flex-col h-full transform hover:scale-105 active:scale-100"
                 onClick={() => setLocation(service.path)}
                 role="button"
                 tabIndex={0}
@@ -270,7 +270,7 @@ export default function Home() {
                   <h3 className="text-lg font-bold text-white mb-3 text-center">{service.name}</h3>
                   <p className="text-gray-200 mb-6 text-center text-sm flex-grow">{service.desc}</p>
                   <div className="flex justify-center">
-                    <button className="bg-[#5DBB63] hover:bg-[#7FD17F] active:bg-[#5DBB63] text-white font-semibold py-2 px-6 rounded-full transition-all shadow-lg hover:shadow-xl active:shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0F3D4C]" aria-label={`Learn more about ${service.name}`}>
+                    <button className="bg-[#5DBB63] hover:bg-[#7FD17F] active:bg-[#5DBB63] text-white font-semibold py-2 px-6 rounded-full transition-all shadow-2xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0F3D4C]" aria-label={`Learn more about ${service.name}`}>
                       Learn More
                     </button>
                   </div>

@@ -28,7 +28,7 @@ export default function About() {
                 Mediation
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute left-0 mt-0 w-56 bg-background border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="absolute left-0 mt-0 w-56 bg-background border border-border rounded-lg shadow-2xl hover:drop-shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div className="py-2">
                   <a href="/services/divorce-settlement" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Divorce Settlement Agreements</a>
                   <a href="/services/maintenance-agreements" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Maintenance Agreements</a>
@@ -42,7 +42,7 @@ export default function About() {
                 Social Work
                 <ChevronDown className="w-4 h-4" />
               </button>
-              <div className="absolute left-0 mt-0 w-56 bg-background border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="absolute left-0 mt-0 w-56 bg-background border border-border rounded-lg shadow-2xl hover:drop-shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div className="py-2">
                   <a href="/services/adult-divorce-preparation" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Adult Divorce Preparation</a>
                   <a href="/services/illness-disability" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Illness & Disability Support</a>
@@ -133,7 +133,7 @@ export default function About() {
 
             {/* Right Column: Image and Key Stats */}
             <div className="space-y-8">
-              <div className="rounded-lg overflow-hidden shadow-lg">
+              <div className="rounded-lg overflow-hidden shadow-2xl hover:shadow-2xl hover:drop-shadow-lg transition-all">
                 <img 
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/CorneliaGrissel_58ab5064.png"
                   alt="Cornelia Griessel - Professional Portrait"

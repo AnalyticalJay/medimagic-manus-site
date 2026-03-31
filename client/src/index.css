@@ -344,11 +344,11 @@
   }
 
   .medimagic-button {
-    @apply bg-[#5DBB63] hover:bg-[#4a9a52] active:bg-[#3d8a3f] text-white font-semibold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl active:shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#5DBB63];
+    @apply bg-[#5DBB63] hover:bg-[#4a9a52] active:bg-[#3d8a3f] text-white font-semibold py-3 px-8 rounded-full transition-all shadow-2xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#5DBB63];
   }
 
   .medimagic-button-outline {
-    @apply bg-white hover:bg-gray-100 active:bg-white text-[#1a3a52] font-semibold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl active:shadow-md focus:outline-none focus:ring-2 focus:ring-[#1a3a52] focus:ring-offset-2;
+    @apply bg-white hover:bg-gray-100 active:bg-white text-[#1a3a52] font-semibold py-3 px-8 rounded-full transition-all shadow-2xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#1a3a52] focus:ring-offset-2;
   }
 
   .medimagic-section-title {
@@ -356,7 +356,7 @@
   }
 
   .medimagic-card {
-    @apply bg-white rounded-lg shadow-md hover:shadow-lg active:shadow-md transition-all border border-gray-200 hover:border-[#5DBB63];
+    @apply bg-white rounded-lg shadow-xl hover:shadow-2xl hover:drop-shadow-lg active:shadow-lg transition-all border border-gray-200 hover:border-[#5DBB63];
   }
 
   .medimagic-nav {
