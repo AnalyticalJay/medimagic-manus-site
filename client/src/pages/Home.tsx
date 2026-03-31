@@ -277,6 +277,50 @@ export default function Home() {
         </ScrollAnimationWrapper>
       </section>
 
+      {/* Online Consultation Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#5DBB63] to-[#4a9d52]">
+        <ScrollAnimationWrapper animationType="fade-in">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Online Consultations</h2>
+              <p className="text-white/90 text-lg mb-6">
+                Access professional mediation and social work support from the comfort of your home. Nationwide service delivery via secure online consultations.
+              </p>
+              <div className="inline-block bg-white px-6 py-2 rounded-full">
+                <p className="text-[#5DBB63] font-semibold">Available for all service types</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-white">
+                <div className="text-3xl mb-3">🌐</div>
+                <h3 className="text-lg font-bold mb-2">Nationwide Access</h3>
+                <p className="text-white/80">Receive professional support regardless of your location in South Africa.</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-white">
+                <div className="text-3xl mb-3">🔒</div>
+                <h3 className="text-lg font-bold mb-2">Secure & Private</h3>
+                <p className="text-white/80">All consultations are confidential and conducted through secure platforms.</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-white">
+                <div className="text-3xl mb-3">⏰</div>
+                <h3 className="text-lg font-bold mb-2">Flexible Scheduling</h3>
+                <p className="text-white/80">Choose from available time slots that work with your schedule.</p>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <button 
+                onClick={() => setLocation("/online-consultation")}
+                className="bg-white text-[#5DBB63] hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
+              >
+                Request an Online Consultation
+              </button>
+            </div>
+          </div>
+        </ScrollAnimationWrapper>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <ScrollAnimationWrapper animationType="fade-in" delay={200}>

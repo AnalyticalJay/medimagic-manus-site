@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users, bookings, InsertBooking, availability, InsertAvailability } from "../drizzle/schema";
+import { InsertUser, users, bookings, InsertBooking, availability, InsertAvailability, onlineConsultationSubmissions, InsertOnlineConsultationSubmission, OnlineConsultationSubmission, consultationTimeSlots, InsertConsultationTimeSlot, ConsultationTimeSlot } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -198,4 +198,76 @@ export async function updateAvailability(id: number, isAvailable: boolean) {
     throw new Error("Database not available");
   }
   return db.update(availability).set({ isAvailable: isAvailable ? 1 : 0 }).where(eq(availability.id, id));
+}
+
+// Online Consultation Submission queries
+export async function createOnlineConsultationSubmission(submission: InsertOnlineConsultationSubmission) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  const result = await db.insert(onlineConsultationSubmissions).values(submission);
+  return result;
+}
+
+export async function getOnlineConsultationSubmissions() {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.select().from(onlineConsultationSubmissions).orderBy(onlineConsultationSubmissions.createdAt);
+}
+
+export async function getOnlineConsultationSubmissionById(id: number) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  const result = await db.select().from(onlineConsultationSubmissions).where(eq(onlineConsultationSubmissions.id, id)).limit(1);
+  return result.length > 0 ? result[0] : null;
+}
+
+export async function updateOnlineConsultationSubmissionStatus(id: number, status: string, adminNotes?: string) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  const updateData: any = { status: status as any };
+  if (adminNotes !== undefined) {
+    updateData.adminNotes = adminNotes;
+  }
+  return db.update(onlineConsultationSubmissions).set(updateData).where(eq(onlineConsultationSubmissions.id, id));
+}
+
+// Consultation Time Slots queries
+export async function createConsultationTimeSlot(slot: InsertConsultationTimeSlot) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.insert(consultationTimeSlots).values(slot);
+}
+
+export async function getConsultationTimeSlotsBySubmissionId(submissionId: number) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.select().from(consultationTimeSlots).where(eq(consultationTimeSlots.submissionId, submissionId));
+}
+
+export async function updateConsultationTimeSlotStatus(id: number, isBooked: boolean) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.update(consultationTimeSlots).set({ isBooked: isBooked ? 1 : 0 }).where(eq(consultationTimeSlots.id, id));
+}
+
+export async function deleteConsultationTimeSlots(submissionId: number) {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  return db.delete(consultationTimeSlots).where(eq(consultationTimeSlots.submissionId, submissionId));
 }

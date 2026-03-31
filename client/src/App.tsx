@@ -20,6 +20,7 @@ import HealthEducation from "./pages/services/HealthEducation";
 import AdminDashboard from "./pages/AdminDashboard";
 import ClientPortal from "./pages/ClientPortal";
 import UserDashboard from "./pages/UserDashboard";
+import OnlineConsultation from "./pages/OnlineConsultation";
 
 // Wrapper component to add fade-in animation to each page
 function RouteWrapper({ component: Component }: { component: React.ComponentType<any> }) {
@@ -37,6 +38,7 @@ function Router() {
       <Route path={"/about"} component={() => <RouteWrapper component={About} />} />
       <Route path={"/contact"} component={() => <RouteWrapper component={Contact} />} />
       <Route path={"/booking"} component={() => <RouteWrapper component={Booking} />} />
+      <Route path={"/online-consultation"} component={() => <RouteWrapper component={OnlineConsultation} />} />
       <Route path={"/services/divorce-settlement"} component={() => <RouteWrapper component={DivorceSettlement} />} />
       <Route path={"/services/maintenance-agreements"} component={() => <RouteWrapper component={MaintenanceAgreements} />} />
       <Route path={"/services/parenting-plans"} component={() => <RouteWrapper component={ParentingPlans} />} />
