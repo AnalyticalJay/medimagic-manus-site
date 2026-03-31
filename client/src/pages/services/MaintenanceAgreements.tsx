@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, Check, TrendingUp, Scale, Shield } from "lucide-react";
 import { useLocation } from "wouter";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export default function MaintenanceAgreements() {
   const [, navigate] = useLocation();
@@ -24,6 +25,13 @@ export default function MaintenanceAgreements() {
           </Button>
         </div>
       </nav>
+
+      {/* Breadcrumb Navigation */}
+      <Breadcrumb items={[
+        { label: 'Home', href: '/' },
+        { label: 'Mediation Services', href: '/#mediation' },
+        { label: 'Maintenance Agreements' },
+      ]} />
 
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 bg-cover bg-center" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/maintenance-agreements-hero-3J2LjXmKPqEQfYNvWjXNXX.webp)'}}>

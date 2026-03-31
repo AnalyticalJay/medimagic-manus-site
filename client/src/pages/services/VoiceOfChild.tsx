@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, Check, Ear, Shield, Heart } from "lucide-react";
 import { useLocation } from "wouter";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export default function VoiceOfChild() {
   const [, navigate] = useLocation();
@@ -24,6 +25,13 @@ export default function VoiceOfChild() {
           </Button>
         </div>
       </nav>
+
+      {/* Breadcrumb Navigation */}
+      <Breadcrumb items={[
+        { label: 'Home', href: '/' },
+        { label: 'Mediation Services', href: '/#mediation' },
+        { label: 'Voice of the Child Assessments' },
+      ]} />
 
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 bg-cover bg-center" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/voice-of-child-hero-JzZEFUeCT6m8iMpWQd4YXJ.webp)'}}>

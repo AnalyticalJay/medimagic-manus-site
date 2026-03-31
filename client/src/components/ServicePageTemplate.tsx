@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 
 interface ServicePageTemplateProps {
   title: string;
@@ -9,6 +10,8 @@ interface ServicePageTemplateProps {
   benefits: string[];
   process: string[];
   faq?: { question: string; answer: string }[];
+  serviceType?: 'mediation' | 'social-work';
+  breadcrumbLabel?: string;
 }
 
 export default function ServicePageTemplate({
@@ -17,12 +20,21 @@ export default function ServicePageTemplate({
   benefits,
   process,
   faq,
+  serviceType = 'mediation',
+  breadcrumbLabel = title,
 }: ServicePageTemplateProps) {
   const [, setLocation] = useLocation();
+
+  const breadcrumbItems = [
+    { label: 'Home', href: '/' },
+    { label: serviceType === 'mediation' ? 'Mediation Services' : 'Social Work Services', href: serviceType === 'mediation' ? '/#mediation' : '/#social-work' },
+    { label: breadcrumbLabel },
+  ];
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navigation />
+      <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero Section */}
       <section className="relative py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-50 to-green-50">

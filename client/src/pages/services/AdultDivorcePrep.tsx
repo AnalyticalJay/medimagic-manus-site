@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, Check, Heart, Lightbulb, Users } from "lucide-react";
 import { useLocation } from "wouter";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export default function AdultDivorcePrep() {
   const [, navigate] = useLocation();
@@ -24,6 +25,13 @@ export default function AdultDivorcePrep() {
           </Button>
         </div>
       </nav>
+
+      {/* Breadcrumb Navigation */}
+      <Breadcrumb items={[
+        { label: 'Home', href: '/' },
+        { label: 'Social Work Services', href: '/#social-work' },
+        { label: 'Adult Divorce Preparation' },
+      ]} />
 
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 bg-cover bg-center" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/adult-divorce-prep-hero-DLtr8v98TVjnZq76hFx7Ls.webp)'}}>
