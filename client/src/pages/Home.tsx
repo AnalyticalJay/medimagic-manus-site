@@ -296,7 +296,7 @@ export default function Home() {
       </section>
 
       {/* Online Consultation Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#5DBB63] to-[#4a9d52]">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#1a3a52] to-[#0f2438]">
         <ScrollAnimationWrapper animationType="fade-in">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -310,27 +310,27 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-white">
+              <div className="bg-[#2d5a7b] backdrop-blur-sm p-6 rounded-lg border border-[#3d6a8b] text-white shadow-lg hover:shadow-xl transition-all">
                 <div className="text-3xl mb-3">🌐</div>
                 <h3 className="text-lg font-bold mb-2">Nationwide Access</h3>
-                <p className="text-white/80">Receive professional support regardless of your location in South Africa.</p>
+                <p className="text-white/90">Receive professional support regardless of your location in South Africa.</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-white">
+              <div className="bg-[#2d5a7b] backdrop-blur-sm p-6 rounded-lg border border-[#3d6a8b] text-white shadow-lg hover:shadow-xl transition-all">
                 <div className="text-3xl mb-3">🔒</div>
                 <h3 className="text-lg font-bold mb-2">Secure & Private</h3>
-                <p className="text-white/80">All consultations are confidential and conducted through secure platforms.</p>
+                <p className="text-white/90">All consultations are confidential and conducted through secure platforms.</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-white">
+              <div className="bg-[#2d5a7b] backdrop-blur-sm p-6 rounded-lg border border-[#3d6a8b] text-white shadow-lg hover:shadow-xl transition-all">
                 <div className="text-3xl mb-3">⏰</div>
                 <h3 className="text-lg font-bold mb-2">Flexible Scheduling</h3>
-                <p className="text-white/80">Choose from available time slots that work with your schedule.</p>
+                <p className="text-white/90">Choose from available time slots that work with your schedule.</p>
               </div>
             </div>
 
             <div className="text-center">
               <button 
                 onClick={() => setLocation("/online-consultation")}
-                className="bg-white text-[#5DBB63] hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
+                className="bg-[#5DBB63] text-white hover:bg-[#4a9d52] font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
               >
                 Request an Online Consultation
               </button>
