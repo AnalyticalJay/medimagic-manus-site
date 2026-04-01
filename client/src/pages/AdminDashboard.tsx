@@ -32,8 +32,8 @@ const STATUS_COLORS: Record<string, string> = {
 export default function AdminDashboard() {
   const { user, loading } = useAuth();
   const [, setLocation] = useLocation();
-  const [filterService, setFilterService] = useState<string>("");
-  const [filterStatus, setFilterStatus] = useState<string>("");
+  const [filterService, setFilterService] = useState<string>("all");
+  const [filterStatus, setFilterStatus] = useState<string>("all");
   const [selectedBookingId, setSelectedBookingId] = useState<number | null>(null);
   const [newStatus, setNewStatus] = useState<string>("");
   
@@ -60,11 +60,11 @@ export default function AdminDashboard() {
   const displayBookings = useMemo(() => {
     let bookings = allBookings;
 
-    if (filterService && filterService !== "") {
+    if (filterService && filterService !== "all") {
       bookings = bookings.filter((b: any) => b.serviceType === filterService);
     }
 
-    if (filterStatus && filterStatus !== "") {
+    if (filterStatus && filterStatus !== "all") {
       bookings = bookings.filter((b: any) => b.status === filterStatus);
     }
 
@@ -144,7 +144,7 @@ export default function AdminDashboard() {
                   <SelectValue placeholder="All Services" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All Services</SelectItem>
+                  <SelectItem value="all">All Services</SelectItem>
                   {SERVICE_TYPES.map((service) => (
                     <SelectItem key={service} value={service}>
                       {service}
@@ -162,7 +162,7 @@ export default function AdminDashboard() {
                   <SelectValue placeholder="All Statuses" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All Statuses</SelectItem>
+                  <SelectItem value="all">All Statuses</SelectItem>
                   <SelectItem value="pending">Pending</SelectItem>
                   <SelectItem value="confirmed">Confirmed</SelectItem>
                   <SelectItem value="completed">Completed</SelectItem>
