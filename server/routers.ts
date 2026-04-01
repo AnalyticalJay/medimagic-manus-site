@@ -4,6 +4,7 @@ import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, protectedProcedure, router } from "./_core/trpc";
 import { z } from "zod";
 import { createBooking, getBookings, getBookingById, updateBookingStatus, getAvailability, getAvailabilityByDate, createAvailability, updateAvailability, getUserBookings, getAllUsers, getBookingStats, updateUser, getUserById, createOnlineConsultationSubmission, getOnlineConsultationSubmissions, getOnlineConsultationSubmissionById, updateOnlineConsultationSubmissionStatus, createConsultationTimeSlot, getConsultationTimeSlotsBySubmissionId, updateConsultationTimeSlotStatus, deleteConsultationTimeSlots } from "./db";
+import { sendSubmissionNotificationToCornelia, sendSubmissionConfirmationToClient, sendApprovalEmailWithTimeSlots, sendRejectionEmailToClient } from "./_core/consultationEmail";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -128,7 +129,7 @@ export const appRouter = router({
         preferredContactMethod: z.enum(["email", "phone", "both"]).default("email"),
       }))
       .mutation(async ({ input }) => {
-        return createOnlineConsultationSubmission({
+        const result = await createOnlineConsultationSubmission({
           name: input.name,
           email: input.email,
           phone: input.phone,
@@ -139,6 +140,24 @@ export const appRouter = router({
           preferredContactMethod: input.preferredContactMethod as any,
           status: "pending",
         });
+
+        // Send notifications
+        const submission = {
+          id: (result as any).insertId || 0,
+          name: input.name,
+          email: input.email,
+          phone: input.phone,
+          serviceType: input.serviceType,
+          specificService: input.specificService,
+          briefDescription: input.briefDescription,
+          urgency: input.urgency,
+          preferredContactMethod: input.preferredContactMethod,
+        };
+        
+        await sendSubmissionNotificationToCornelia(submission);
+        await sendSubmissionConfirmationToClient(submission);
+
+        return result;
       }),
     getSubmissions: protectedProcedure.query(({ ctx }) => {
       if (ctx.user?.role !== "admin") {
