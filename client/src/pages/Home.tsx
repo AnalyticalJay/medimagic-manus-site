@@ -80,7 +80,7 @@ export default function Home() {
             {/* Left Content */}
             <div>
               <div className="mb-6 inline-block bg-[#5DBB63] text-white px-4 py-2 rounded-full text-sm font-semibold drop-shadow-md">
-                Professional Family Law Mediation & Social Work
+                MediMagic
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                 Steady Support Through Life's Most Difficult Transitions
@@ -122,6 +122,19 @@ export default function Home() {
             <p className="text-lg sm:text-2xl md:text-3xl font-bold text-[#5DBB63] px-4">
               Changing SCARS into STARS - One BATTLE at a time.
             </p>
+            {/* Right Content - Hero Image */}
+            <div className="flex justify-center">
+              <div className="border-8 border-[#5DBB63] rounded-lg overflow-hidden shadow-2xl hover:drop-shadow-2xl transition-all duration-300">
+                <img 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/55a32670-2d82-11f1-a7d9-67b17eb03e09_f0435f41.png" 
+                  alt="MediMagic - Old Story to New Story" 
+                  className="w-full h-auto object-cover"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
