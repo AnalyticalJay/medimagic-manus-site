@@ -18,6 +18,7 @@ import IllnessDisability from "./pages/services/IllnessDisability";
 import PalliativeCare from "./pages/services/PalliativeCare";
 import HealthEducation from "./pages/services/HealthEducation";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminSubmissions from "./pages/AdminSubmissions";
 import ClientPortal from "./pages/ClientPortal";
 import UserDashboard from "./pages/UserDashboard";
 import OnlineConsultation from "./pages/OnlineConsultation";
@@ -49,6 +50,7 @@ function Router() {
       <Route path={"/services/palliative-care"} component={() => <RouteWrapper component={PalliativeCare} />} />
       <Route path={"/services/health-education"} component={() => <RouteWrapper component={HealthEducation} />} />
       <Route path={"/admin"} component={() => <RouteWrapper component={AdminDashboard} />} />
+      <Route path={"/admin/submissions"} component={() => <RouteWrapper component={AdminSubmissions} />} />
       <Route path={"/portal"} component={() => <RouteWrapper component={ClientPortal} />} />
       <Route path={"/dashboard"} component={() => <RouteWrapper component={UserDashboard} />} />
       <Route path={"/404"} component={() => <RouteWrapper component={NotFound} />} />
