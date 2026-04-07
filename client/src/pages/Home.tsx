@@ -83,10 +83,10 @@ export default function Home() {
                 MediMagic
               </div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-                Steady Support Through Life's Most Difficult Transitions
+                WHEN LIFE CHANGES, YOU DON'T HAVE TO NAVIGATE IT ALONE...
               </h1>
               <p className="text-lg text-white/90 mb-8 drop-shadow-md">
-                Medi Magic offers Professional Family Law Mediation and Social Work Services, bringing structure, fairness and calm direction to times of change.
+                Medi Magic offers Professional Family Law Mediation and Medical Social Work Services, bringing structure, fairness and calm direction to challenging times and transition.
               </p>
               <div className="flex gap-4 flex-wrap">
                 <button 
