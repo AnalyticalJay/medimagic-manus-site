@@ -67,9 +67,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="medimagic-hero py-20 px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start relative">
-            {/* Left Content - Text */}
-            <div className="lg:col-span-2 pl-4 sm:pl-8 lg:pl-12">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 items-center relative">
+            {/* Left Content - Text (60%) */}
+            <div className="lg:col-span-3">
               <div className="mb-6 inline-block bg-[#5DBB63] text-white px-4 py-2 rounded-full text-sm font-semibold drop-shadow-md">
                 MediMagic
               </div>
@@ -95,9 +95,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Content - Illustration with Overlay Logo */}
-            <div className="flex justify-center lg:justify-end relative">
-              <div className="relative w-full max-w-sm">
+            {/* Right Content - Illustration with Logo (40%) */}
+            <div className="lg:col-span-2 flex justify-center lg:justify-end relative">
+              <div className="relative w-full">
                 <img 
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/55a32670-2d82-11f1-a7d9-67b17eb03e09_f0435f41.png" 
                   alt="MediMagic Services" 
@@ -106,8 +106,8 @@ export default function Home() {
                     e.currentTarget.style.display = 'none';
                   }}
                 />
-                {/* MediMagic Logo Circle - Overlaying Image */}
-                <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full border-4 border-[#5DBB63] bg-white flex items-center justify-center shadow-lg">
+                {/* MediMagic Logo Circle - Top Right Corner */}
+                <div className="absolute -top-6 -right-6 w-32 h-32 rounded-full border-4 border-[#5DBB63] bg-white flex items-center justify-center shadow-lg z-10">
                   <img 
                     src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/LogoMedi_a41f255a.png" 
                     alt="MediMagic Logo" 
