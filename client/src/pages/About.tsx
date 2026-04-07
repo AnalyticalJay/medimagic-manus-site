@@ -71,17 +71,16 @@ export default function About() {
       </nav>
 
       {/* Hero Section with Professional Image */}
-      <section className="relative py-16 md:py-32 bg-cover bg-center" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/about-us-hero-N3DE8aE9QsgurTR7RoALRH.webp)'}}>
-        <div className="absolute inset-0 bg-black/35" />
-        <div className="container relative z-10">
+      <section className="medimagic-hero py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
-            <div className="inline-block px-3 py-1 bg-accent/20 rounded-full text-sm font-medium text-accent mb-4">
-              ABOUT CORNELIA
+            <div className="bg-[#5DBB63] rounded-2xl sm:rounded-3xl px-3 py-2 inline-block mb-4 sm:mb-8">
+              <h3 className="text-sm sm:text-base font-bold text-white">ABOUT CORNELIA</h3>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
               Cornelia Griessel
             </h1>
-            <p className="text-xl text-white/90">
+            <p className="text-sm sm:text-base md:text-lg text-gray-100">
               FAMAC Accredited Mediator, SASW Registered Social Worker, Masters Degree holder with 20+ years of experience in family mediation, medical social work, and child-centred practice.
             </p>
           </div>
