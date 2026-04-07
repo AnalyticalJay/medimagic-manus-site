@@ -83,14 +83,14 @@ export default function Footer() {
             <div className="text-sm text-gray-300 space-y-2">
               <p>
                 <strong>Email:</strong><br />
-                <a href="mailto:info@medimagic.co.za" className="hover:text-[#5DBB63] transition-colors">
-                  info@medimagic.co.za
+                <a href="mailto:corneliagriessel@medimagic.co.za" className="hover:text-[#5DBB63] transition-colors">
+                  corneliagriessel@medimagic.co.za
                 </a>
               </p>
               <p>
                 <strong>Phone:</strong><br />
-                <a href="tel:+27211234567" className="hover:text-[#5DBB63] transition-colors">
-                  +27 (0) 21 XXX XXXX
+                <a href="tel:+27640344575" className="hover:text-[#5DBB63] transition-colors">
+                  +27 64 034 4575
                 </a>
               </p>
             </div>

@@ -45,8 +45,8 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-1">Email</h3>
                     <p className="text-muted-foreground">
-                      <a href="mailto:cornelia@medimagic.co.za" className="hover:text-accent transition-colors">
-                        cornelia@medimagic.co.za
+                      <a href="mailto:corneliagriessel@medimagic.co.za" className="hover:text-accent transition-colors">
+                        corneliagriessel@medimagic.co.za
                       </a>
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">
@@ -65,8 +65,8 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-1">Phone</h3>
                     <p className="text-muted-foreground">
-                      <a href="tel:+27123456789" className="hover:text-accent transition-colors">
-                        +27 (0) 12 345 6789
+                      <a href="tel:+27640344575" className="hover:text-accent transition-colors">
+                        +27 64 034 4575
                       </a>
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">
