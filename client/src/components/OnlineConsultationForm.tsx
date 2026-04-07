@@ -188,6 +188,69 @@ export function OnlineConsultationForm() {
   return (
     <div className="max-w-3xl mx-auto">
       <Card className="p-8 shadow-lg">
+        {/* Progress Bar */}
+        <div className="mb-8">
+          <div className="flex justify-between items-center mb-3">
+            <h3 className="text-sm font-semibold text-gray-700">Step {currentPage} of 4</h3>
+            <span className="text-sm font-semibold text-[#5DBB63]">{Math.round((currentPage / 4) * 100)}%</span>
+          </div>
+          <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
+            <div
+              className="bg-[#5DBB63] h-2.5 rounded-full transition-all duration-300 ease-out"
+              style={{ width: `${(currentPage / 4) * 100}%` }}
+            />
+          </div>
+          <div className="flex justify-between mt-4">
+            <div className="flex flex-col items-center">
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all ${
+                currentPage >= 1 ? 'bg-[#5DBB63] text-white' : 'bg-gray-300 text-gray-600'
+              }`}>
+                1
+              </div>
+              <span className="text-xs text-gray-600 mt-1 text-center">Personal</span>
+            </div>
+            <div className="flex-1 flex items-center justify-center">
+              <div className={`h-0.5 flex-1 ${
+                currentPage >= 2 ? 'bg-[#5DBB63]' : 'bg-gray-300'
+              }`} />
+            </div>
+            <div className="flex flex-col items-center">
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all ${
+                currentPage >= 2 ? 'bg-[#5DBB63] text-white' : 'bg-gray-300 text-gray-600'
+              }`}>
+                2
+              </div>
+              <span className="text-xs text-gray-600 mt-1 text-center">Services</span>
+            </div>
+            <div className="flex-1 flex items-center justify-center">
+              <div className={`h-0.5 flex-1 ${
+                currentPage >= 3 ? 'bg-[#5DBB63]' : 'bg-gray-300'
+              }`} />
+            </div>
+            <div className="flex flex-col items-center">
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all ${
+                currentPage >= 3 ? 'bg-[#5DBB63] text-white' : 'bg-gray-300 text-gray-600'
+              }`}>
+                3
+              </div>
+              <span className="text-xs text-gray-600 mt-1 text-center">Procedures</span>
+            </div>
+            <div className="flex-1 flex items-center justify-center">
+              <div className={`h-0.5 flex-1 ${
+                currentPage >= 4 ? 'bg-[#5DBB63]' : 'bg-gray-300'
+              }`} />
+            </div>
+            <div className="flex flex-col items-center">
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all ${
+                currentPage >= 4 ? 'bg-[#5DBB63] text-white' : 'bg-gray-300 text-gray-600'
+              }`}>
+                4
+              </div>
+              <span className="text-xs text-gray-600 mt-1 text-center">Scheduling</span>
+            </div>
+          </div>
+        </div>
+
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Page 1: Personal Details */}
           {currentPage === 1 && (
