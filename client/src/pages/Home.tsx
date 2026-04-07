@@ -76,16 +76,16 @@ export default function Home() {
             />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            {/* Left Content - Text */}
+            <div className="lg:col-span-2">
               <div className="mb-6 inline-block bg-[#5DBB63] text-white px-4 py-2 rounded-full text-sm font-semibold drop-shadow-md">
                 MediMagic
               </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                 WHEN LIFE CHANGES, YOU DON'T HAVE TO NAVIGATE IT ALONE...
               </h1>
-              <p className="text-lg text-white/90 mb-8 drop-shadow-md">
+              <p className="text-base sm:text-lg text-white/90 mb-8 drop-shadow-md">
                 Medi Magic offers Professional Family Law Mediation and Medical Social Work Services, bringing structure, fairness and calm direction to challenging times and transition.
               </p>
               <div className="flex gap-4 flex-wrap">
@@ -104,12 +104,12 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Content - Illustration */}
-            <div className="flex justify-center">
+            {/* Right Content - Smaller Illustration */}
+            <div className="flex justify-center lg:justify-end">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_7Zr0Ey_hero_illustration_5e7f7d2c.png" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/55a32670-2d82-11f1-a7d9-67b17eb03e09_f0435f41.png" 
                 alt="MediMagic Services" 
-                className="w-full max-w-md rounded-2xl shadow-2xl border-4 border-[#5DBB63] object-cover"
+                className="w-full max-w-xs rounded-2xl shadow-2xl border-4 border-[#5DBB63] object-cover"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                 }}
@@ -117,19 +117,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Image */}
-          <div className="mt-16 flex justify-center">
-            <div className="border-8 border-[#5DBB63] rounded-lg overflow-hidden shadow-2xl hover:drop-shadow-2xl transition-all duration-300 max-w-2xl w-full">
-              <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/55a32670-2d82-11f1-a7d9-67b17eb03e09_f0435f41.png" 
-                alt="MediMagic - Old Story to New Story" 
-                className="w-full h-auto object-cover"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-            </div>
-          </div>
+
 
           {/* Tagline with White Background */}
           <div className="mt-12 flex justify-center">
