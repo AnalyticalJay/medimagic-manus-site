@@ -139,26 +139,24 @@ export default function Home() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <ScrollAnimationWrapper animationType="fade-in">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Left Column */}
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#0F3D4C] mb-6">Welcome to MediMagic</h2>
-                <p className="text-gray-600 mb-4">
-                  MediMagic is a uniquely integrated practice combining family law mediation and professional social work support. Our approach addresses both the <strong>practical decisions</strong> and the <strong>emotional realities</strong> that arise during conflict, separation, illness, or major life change.
-                </p>
-                <p className="text-gray-600 mb-8">
-                  We focus on helping individuals move forward with clarity, dignity, and stability through structured, ethical, and client-centred care.
-                </p>
-                <button 
-                  onClick={() => setLocation("/about")}
-                  className="text-[#5DBB63] font-semibold hover:underline"
-                >
-                  Learn About Cornelia →
-                </button>
-              </div>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0F3D4C] mb-6">Welcome to MediMagic</h2>
+              <p className="text-gray-600 mb-4 max-w-3xl mx-auto">
+                MediMagic is a uniquely integrated practice combining family law mediation and professional social work support. Our approach addresses both the <strong>practical decisions</strong> and the <strong>emotional realities</strong> that arise during conflict, separation, illness, or major life change.
+              </p>
+              <p className="text-gray-600 mb-8 max-w-3xl mx-auto">
+                We focus on helping individuals move forward with clarity, dignity, and stability through structured, ethical, and client-centred care.
+              </p>
+              <button 
+                onClick={() => setLocation("/about")}
+                className="text-[#5DBB63] font-semibold hover:underline"
+              >
+                Learn About Cornelia →
+              </button>
+            </div>
 
-              {/* Right Column - Feature Cards with Icons */}
-              <div className="grid grid-cols-1 gap-6">
+            {/* Feature Cards with Icons - Centered Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                 <div className="bg-white p-6 rounded-lg shadow-xl active:shadow-lg transition-all border-t-4 border-[#5DBB63] text-center group hover:animate-card-lift-enhanced"
                   onMouseEnter={(e) => e.currentTarget.classList.add('animate-card-lift-enhanced')}
                   onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}>
@@ -182,7 +180,6 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Highly Qualified</h3>
                   <p className="text-gray-600">FAMAC Accredited Mediator, SASW Registered Social Worker, Masters Degree holder with 20+ years experience.</p>
                 </div>
-              </div>
             </div>
           </div>
         </ScrollAnimationWrapper>
