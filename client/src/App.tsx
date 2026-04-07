@@ -21,6 +21,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 import ClientPortal from "./pages/ClientPortal";
 import UserDashboard from "./pages/UserDashboard";
 import OnlineConsultation from "./pages/OnlineConsultation";
+import WhatsAppWidget from "./components/WhatsAppWidget";
 
 // Wrapper component to add fade-in animation to each page
 function RouteWrapper({ component: Component }: { component: React.ComponentType<any> }) {
@@ -70,6 +71,7 @@ function App() {
             Skip to main content
           </a>
           <Toaster />
+          <WhatsAppWidget />
           <main id="main-content" role="main">
             <Router />
           </main>
