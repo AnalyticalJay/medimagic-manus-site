@@ -96,7 +96,17 @@ export default function Home() {
             </div>
 
             {/* Right Content - Illustration with Logo (40%) */}
-            <div className="lg:col-span-2 flex justify-center lg:justify-end relative">
+            <div className="lg:col-span-2 flex flex-col items-center lg:items-end gap-4 relative">
+              {/* MediMagic Logo Circle - Above Image */}
+              <div className="w-32 h-32 rounded-full border-4 border-[#5DBB63] bg-white flex items-center justify-center shadow-lg">
+                <img 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/LogoMedi_a41f255a.png" 
+                  alt="MediMagic Logo" 
+                  className="w-20 h-20 object-contain"
+                />
+              </div>
+              
+              {/* Hero Image */}
               <div className="relative w-full">
                 <img 
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/55a32670-2d82-11f1-a7d9-67b17eb03e09_f0435f41.png" 
@@ -106,14 +116,6 @@ export default function Home() {
                     e.currentTarget.style.display = 'none';
                   }}
                 />
-                {/* MediMagic Logo Circle - Top Right Corner */}
-                <div className="absolute -top-6 -right-6 w-32 h-32 rounded-full border-4 border-[#5DBB63] bg-white flex items-center justify-center shadow-lg z-10">
-                  <img 
-                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/LogoMedi_a41f255a.png" 
-                    alt="MediMagic Logo" 
-                    className="w-20 h-20 object-contain"
-                  />
-                </div>
               </div>
             </div>
           </div>
