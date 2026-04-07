@@ -125,11 +125,11 @@ export default function Home() {
           {/* Tagline with White Background */}
           <div className="mt-12 flex justify-center">
             <div className="bg-white rounded-full px-8 py-4 shadow-lg flex items-center gap-6 max-w-4xl">
-              <span className="text-2xl text-[#5DBB63]">⭐</span>
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/Footer_5a5cc08f.webp" alt="star" className="w-8 h-8" />
               <p className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 text-center">
                 Changing SCARS into STARS - One BATTLE at a time.
               </p>
-              <span className="text-2xl text-[#5DBB63]">⭐</span>
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/Footer_5a5cc08f.webp" alt="star" className="w-8 h-8" />
             </div>
           </div>
         </div>
