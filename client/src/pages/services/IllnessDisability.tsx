@@ -253,18 +253,18 @@ export default function IllnessDisability() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 medimagic-hero">
+      <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-[#1a3a52]">
         <div className="container max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-6">Ready to Navigate Your Health Journey with Support?</h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <h2 className="text-3xl font-bold text-white mb-6">Ready to Navigate Your Health Journey with Support?</h2>
+          <p className="text-lg text-white/90 mb-8">
             Let us help you adapt and thrive. Book a consultation with Cornelia today.
           </p>
-          <Button 
-            className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg"
+          <button 
+            className="medimagic-button"
             onClick={() => navigate("/booking")}
           >
             Book Your Consultation Now
-          </Button>
+          </button>
         </div>
       </section>
     </div>

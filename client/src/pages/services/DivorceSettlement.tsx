@@ -272,18 +272,18 @@ export default function DivorceSettlement() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 medimagic-hero">
+      <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-[#1a3a52]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6">Ready to Move Forward?</h2>
-          <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
+          <p className="text-sm sm:text-base md:text-lg text-white/90 mb-6 sm:mb-8">
             Take the first step toward a fair, respectful divorce settlement. Book a consultation with Cornelia today.
           </p>
-          <Button 
-            className="bg-[#5DBB63] hover:bg-[#4da852] text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-semibold w-full sm:w-auto transition-all duration-300 transform hover:scale-105"
+          <button 
+            className="medimagic-button"
             onClick={() => navigate("/booking")}
           >
             Book Your Consultation Now
-          </Button>
+          </button>
         </div>
       </section>
     </div>

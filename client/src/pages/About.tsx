@@ -303,18 +303,18 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-accent/10 via-teal-500/5 to-accent/10">
+      <section className="py-16 md:py-24 bg-[#1a3a52]">
         <div className="container max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-6">Ready to Work With Cornelia?</h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <h2 className="text-3xl font-bold text-white mb-6">Ready to Work With Cornelia?</h2>
+          <p className="text-lg text-white/90 mb-8">
             Schedule a consultation to discuss your needs and explore how MediMagic's integrated approach can support you through your life transition.
           </p>
-          <Button 
-            className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg"
+          <button 
+            className="medimagic-button"
             onClick={() => navigate("/booking")}
           >
             Book a Consultation
-          </Button>
+          </button>
         </div>
       </section>
     </div>
