@@ -133,14 +133,23 @@ export default function Home() {
 
 
 
+          {/* Mobile Hero Image - Below CTA Buttons */}
+          <div className="lg:hidden mt-6 sm:mt-8">
+            <img 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/55a32670-2d82-11f1-a7d9-67b17eb03e09_f0435f41.png" 
+              alt="MediMagic Services" 
+              className="w-full rounded-2xl shadow-2xl border-4 border-[#5DBB63] object-cover"
+            />
+          </div>
+
           {/* Tagline with White Background */}
-          <div className="mt-12 flex justify-center">
-            <div className="bg-white rounded-full px-8 py-4 shadow-lg flex items-center gap-6 max-w-4xl">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/star_e258d5b2.png" alt="star" className="w-8 h-8" />
-              <p className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 text-center">
+          <div className="mt-6 sm:mt-12 flex justify-center">
+            <div className="bg-white rounded-full px-4 sm:px-8 py-3 sm:py-4 shadow-lg flex items-center gap-2 sm:gap-6 max-w-4xl">
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/star_e258d5b2.png" alt="star" className="w-5 sm:w-8 h-5 sm:h-8 flex-shrink-0" />
+              <p className="text-xs sm:text-base md:text-xl lg:text-2xl font-bold text-gray-800 text-center">
                 Changing SCARS into STARS - One BATTLE at a time.
               </p>
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/star_e258d5b2.png" alt="star" className="w-8 h-8" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/star_e258d5b2.png" alt="star" className="w-5 sm:w-8 h-5 sm:h-8 flex-shrink-0" />
             </div>
           </div>
         </div>
