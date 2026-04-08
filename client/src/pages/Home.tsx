@@ -84,10 +84,10 @@ export default function Home() {
               <div className="mb-3 sm:mb-4 lg:mb-6 inline-block bg-[#5DBB63] text-white px-4 py-2 rounded-full text-xs sm:text-sm font-semibold drop-shadow-md">
                 MediMagic
               </div>
-              <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 lg:mb-6 leading-tight drop-shadow-lg">
+              <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 lg:mb-6 leading-tight drop-shadow-lg">
                 WHEN LIFE CHANGES, YOU DON'T HAVE TO NAVIGATE IT ALONE...
               </h1>
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white/90 mb-4 sm:mb-6 lg:mb-8 drop-shadow-md">
+              <p className="text-sm sm:text-sm md:text-base lg:text-lg text-white/90 mb-4 sm:mb-6 lg:mb-8 drop-shadow-md">
                 Medi Magic offers Professional Family Law Mediation and Medical Social Work Services, bringing structure, fairness and calm direction to challenging times and transition.
               </p>
               <div className="flex gap-2 sm:gap-3 lg:gap-4 flex-wrap">
