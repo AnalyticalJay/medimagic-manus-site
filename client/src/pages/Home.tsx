@@ -65,40 +65,51 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="medimagic-hero py-20 px-4 sm:px-6 lg:px-8 relative">
+      <section className="medimagic-hero py-8 sm:py-12 lg:py-20 px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 items-center relative">
+          {/* Mobile Logo Circle - Positioned at top right below header */}
+          <div className="lg:hidden flex justify-end mb-4 sm:mb-6">
+            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-[#5DBB63] bg-white flex items-center justify-center shadow-lg">
+              <img 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/LogoMedi_a41f255a.png" 
+                alt="MediMagic Logo" 
+                className="w-14 sm:w-16 h-14 sm:h-16 object-contain"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8 items-start relative">
             {/* Left Content - Text (60%) */}
             <div className="lg:col-span-3">
-              <div className="mb-6 inline-block bg-[#5DBB63] text-white px-4 py-2 rounded-full text-sm font-semibold drop-shadow-md">
+              <div className="mb-3 sm:mb-4 lg:mb-6 inline-block bg-[#5DBB63] text-white px-4 py-2 rounded-full text-xs sm:text-sm font-semibold drop-shadow-md">
                 MediMagic
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+              <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 lg:mb-6 leading-tight drop-shadow-lg">
                 WHEN LIFE CHANGES, YOU DON'T HAVE TO NAVIGATE IT ALONE...
               </h1>
-              <p className="text-base sm:text-lg text-white/90 mb-8 drop-shadow-md">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white/90 mb-4 sm:mb-6 lg:mb-8 drop-shadow-md">
                 Medi Magic offers Professional Family Law Mediation and Medical Social Work Services, bringing structure, fairness and calm direction to challenging times and transition.
               </p>
-              <div className="flex gap-4 flex-wrap">
+              <div className="flex gap-2 sm:gap-3 lg:gap-4 flex-wrap">
                 <button 
                   onClick={handleBooking}
-                  className="medimagic-button"
+                  className="medimagic-button text-xs sm:text-sm lg:text-base px-3 sm:px-4 py-2 sm:py-2.5"
                 >
                   Book a Consultation
                 </button>
                 <button 
                   onClick={() => setLocation("/about")}
-                  className="medimagic-button-outline"
+                  className="medimagic-button-outline text-xs sm:text-sm lg:text-base px-3 sm:px-4 py-2 sm:py-2.5"
                 >
                   Learn More
                 </button>
               </div>
             </div>
 
-            {/* Right Content - Illustration with Logo (40%) */}
-            <div className="lg:col-span-2 flex flex-col items-center lg:items-end gap-4 relative">
-              {/* MediMagic Logo Circle - Above Image */}
-              <div className="w-32 h-32 rounded-full border-4 border-[#5DBB63] bg-white flex items-center justify-center shadow-lg">
+            {/* Right Content - Illustration with Logo (40%) - Desktop Only */}
+            <div className="hidden lg:flex lg:col-span-2 flex-col items-end gap-6 relative">
+              {/* MediMagic Logo Circle - Positioned closer to header on desktop */}
+              <div className="w-32 h-32 rounded-full border-4 border-[#5DBB63] bg-white flex items-center justify-center shadow-lg flex-shrink-0" style={{display: 'inline-flex'}}>
                 <img 
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/LogoMedi_a41f255a.png" 
                   alt="MediMagic Logo" 
