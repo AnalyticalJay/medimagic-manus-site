@@ -44,11 +44,11 @@ export default function PalliativeCare() {
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                Palliative & End-of-Life Care
+               Palliative and End of Life Care:
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
-                Dignified, compassionate support for individuals and families during life's final chapter.
+                Holistic support focused on comfort, dignity, and emotional well-being during serious illness and end-of-life stages.
               </p>
             </div>
 
