@@ -60,6 +60,8 @@ function Router() {
     </Switch>
   );
 }
+
+// ✅ Scroll Fix Component
 function ScrollToTop() {
   const [location] = useLocation();
 
@@ -67,12 +69,13 @@ function ScrollToTop() {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "instant", // or "smooth" if you want fancy UX
+      behavior: "auto", // cleaner than "instant"
     });
   }, [location]);
 
   return null;
 }
+
 function App() {
   return (
     <ErrorBoundary>
@@ -86,8 +89,13 @@ function App() {
           >
             Skip to main content
           </a>
+
           <Toaster />
           <WhatsAppWidget />
+
+          {/* ✅ THIS is what you were missing */}
+          <ScrollToTop />
+
           <main id="main-content" role="main">
             <Router />
           </main>
