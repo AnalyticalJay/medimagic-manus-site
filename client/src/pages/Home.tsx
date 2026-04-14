@@ -171,7 +171,7 @@ export default function Home() {
                 onClick={() => setLocation("/about")}
                 className="text-[#5DBB63] font-semibold hover:underline"
               >
-                Learn About Cornelia →
+                a.Learn About Our Team →
               </button>
             </div>
 
