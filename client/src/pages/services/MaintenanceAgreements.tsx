@@ -48,7 +48,7 @@ export default function MaintenanceAgreements() {
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
-                Ensuring children's financial security and wellbeing through fair, sustainable maintenance arrangements.
+                A clear and balanced financial support agreement, established through mediation, outlining the current and future obligations of both parents/parties for the benefit of children and/or a former spouse.
               </p>
             </div>
 
