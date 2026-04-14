@@ -44,7 +44,7 @@ export default function HealthEducation() {
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                Health Education & Promotion:
+                Health Education and Promotion:
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
