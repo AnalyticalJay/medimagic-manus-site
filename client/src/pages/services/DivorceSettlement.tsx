@@ -48,7 +48,7 @@ export default function DivorceSettlement() {
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
-                Structured mediation to help couples reach fair, legally sound divorce agreements with clarity and mutual understanding.
+               A fair and structured agreement reached through comprehensive mediation, outlining the division of assets, finances, and responsibilities.
               </p>
             </div>
 
