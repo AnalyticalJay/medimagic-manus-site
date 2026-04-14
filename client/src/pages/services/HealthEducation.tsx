@@ -44,11 +44,11 @@ export default function HealthEducation() {
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                Health Education & Promotion
+                Health Education & Promotion:
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
-                Empowering individuals and communities through knowledge, skills, and resources for healthier living.
+                A supportive and informative service that equips individuals, groups and families with the knowledge and tools to make informed health decisions and enhance overall well-being.
               </p>
             </div>
 
