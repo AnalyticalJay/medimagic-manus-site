@@ -325,13 +325,13 @@ export default function Home() {
               </div>
               <div className="bg-[#2d5a7b] backdrop-blur-sm p-6 rounded-lg border border-[#3d6a8b] text-white shadow-lg hover:shadow-xl transition-all">
                 <div className="text-3xl mb-3">🔒</div>
-                <h3 className="text-lg font-bold mb-2">Secure & Private</h3>
-                <p className="text-white/90">All consultations are confidential and conducted through secure platforms.</p>
+                <h3 className="text-lg font-bold mb-2">Accessible Anywhere</h3>
+                <p className="text-white/90">Access to services across the country.</p>
               </div>
               <div className="bg-[#2d5a7b] backdrop-blur-sm p-6 rounded-lg border border-[#3d6a8b] text-white shadow-lg hover:shadow-xl transition-all">
                 <div className="text-3xl mb-3">⏰</div>
-                <h3 className="text-lg font-bold mb-2">Flexible Scheduling</h3>
-                <p className="text-white/90">Choose from available time slots that work with your schedule.</p>
+                <h3 className="text-lg font-bold mb-2">Flexible to Your Schedule</h3>
+                <p className="text-white/90">Conveniently access support at times that suit your lifestyle.</p>
               </div>
             </div>
 
