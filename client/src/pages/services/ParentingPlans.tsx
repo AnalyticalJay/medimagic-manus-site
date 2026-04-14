@@ -48,8 +48,7 @@ export default function ParentingPlans() {
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
-                Child-centred mediation to create parenting arrangements that prioritize children's wellbeing and stability.
-              </p>
+                A child-centred parenting plan developed through mediation, accommodating any co-parenting situation while defining care, contact, and shared decision-making arrangements.
             </div>
 
             {/* Service Image */}
