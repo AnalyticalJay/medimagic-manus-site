@@ -48,7 +48,7 @@ export default function VoiceOfChild() {
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
-                Professional child advocacy ensuring children's perspectives are heard and valued in family decisions.
+                A thoughtfully facilitated outcome of mediation, capturing the child’s views and needs to guide decisions in their best interests.
               </p>
             </div>
 
