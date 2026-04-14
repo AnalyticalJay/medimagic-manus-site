@@ -44,11 +44,11 @@ export default function AdultDivorcePrep() {
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                Adult Divorce Preparation
+                Divorce Preparation and Counselling:
               </h1>
               
               <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-6 sm:mb-8">
-                Compassionate support helping adults navigate the emotional and practical aspects of divorce.
+                Supportive guidance to help individuals and families prepare for and navigate the emotional and practical challenges of divorce.
               </p>
             </div>
 
