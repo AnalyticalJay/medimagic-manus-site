@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "wouter";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -58,7 +60,19 @@ function Router() {
     </Switch>
   );
 }
+function ScrollToTop() {
+  const [location] = useLocation();
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant", // or "smooth" if you want fancy UX
+    });
+  }, [location]);
+
+  return null;
+}
 function App() {
   return (
     <ErrorBoundary>
