@@ -303,31 +303,37 @@ export default function Home() {
       </section>
 
       {/* Online Consultation Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#1a3a52] to-[#0f2438]">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <ScrollAnimationWrapper animationType="fade-in">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-7xl mx-auto">
+            {/* Section Title with Green Line and Navy Bar */}
+            <div className="border-t-8 border-[#5DBB63] mb-12">
+              <div className="bg-[#0F3D4C] py-6 px-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Online Consultations</h2>
+              </div>
+            </div>
+
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Online Consultations</h2>
-              <p className="text-white/90 text-lg mb-6">
+              <p className="text-gray-700 text-lg mb-6">
                 Access professional mediation and social work support from the comfort of your home. Nationwide service delivery via secure online consultations.
               </p>
-              <div className="inline-block bg-white px-6 py-2 rounded-full">
+              <div className="inline-block bg-white px-6 py-2 rounded-full border border-[#5DBB63]">
                 <p className="text-[#5DBB63] font-semibold">Available for all service types</p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-[#2d5a7b] backdrop-blur-sm p-6 rounded-lg border border-[#3d6a8b] text-white shadow-lg hover:shadow-xl transition-all">
+              <div className="bg-[#1a3a52] p-6 rounded-lg border-2 border-[#5DBB63] text-white shadow-lg hover:shadow-xl transition-all">
                 <div className="text-3xl mb-3">🌐</div>
                 <h3 className="text-lg font-bold mb-2">Accessible Anywhere</h3>
                 <p className="text-white/90">Access to services across the country.</p>
               </div>
-              <div className="bg-[#2d5a7b] backdrop-blur-sm p-6 rounded-lg border border-[#3d6a8b] text-white shadow-lg hover:shadow-xl transition-all">
+              <div className="bg-[#1a3a52] p-6 rounded-lg border-2 border-[#5DBB63] text-white shadow-lg hover:shadow-xl transition-all">
                 <div className="text-3xl mb-3">🔒</div>
                 <h3 className="text-lg font-bold mb-2">Comfort of Your Own Space</h3>
                 <p className="text-white/90">Engage in services from the privacy and comfort of your home.</p>
               </div>
-              <div className="bg-[#2d5a7b] backdrop-blur-sm p-6 rounded-lg border border-[#3d6a8b] text-white shadow-lg hover:shadow-xl transition-all">
+              <div className="bg-[#1a3a52] p-6 rounded-lg border-2 border-[#5DBB63] text-white shadow-lg hover:shadow-xl transition-all">
                 <div className="text-3xl mb-3">⏰</div>
                 <h3 className="text-lg font-bold mb-2">Flexible to Your Schedule</h3>
                 <p className="text-white/90">Conveniently access support at times that suit your lifestyle.</p>
