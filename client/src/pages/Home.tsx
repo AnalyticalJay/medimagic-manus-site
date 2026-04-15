@@ -319,13 +319,13 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="bg-[#2d5a7b] backdrop-blur-sm p-6 rounded-lg border border-[#3d6a8b] text-white shadow-lg hover:shadow-xl transition-all">
                 <div className="text-3xl mb-3">🌐</div>
-                <h3 className="text-lg font-bold mb-2">Nationwide Access</h3>
-                <p className="text-white/90">Receive professional support regardless of your location in South Africa.</p>
+                <h3 className="text-lg font-bold mb-2">Accessible Anywhere</h3>
+                <p className="text-white/90">Access to services across the country.</p>
               </div>
               <div className="bg-[#2d5a7b] backdrop-blur-sm p-6 rounded-lg border border-[#3d6a8b] text-white shadow-lg hover:shadow-xl transition-all">
                 <div className="text-3xl mb-3">🔒</div>
-                <h3 className="text-lg font-bold mb-2">Accessible Anywhere</h3>
-                <p className="text-white/90">Access to services across the country.</p>
+                <h3 className="text-lg font-bold mb-2">Comfort of Your Own Space</h3>
+                <p className="text-white/90">Engage in services from the privacy and comfort of your home.</p>
               </div>
               <div className="bg-[#2d5a7b] backdrop-blur-sm p-6 rounded-lg border border-[#3d6a8b] text-white shadow-lg hover:shadow-xl transition-all">
                 <div className="text-3xl mb-3">⏰</div>
