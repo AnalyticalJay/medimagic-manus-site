@@ -19,34 +19,34 @@ export default function Home() {
     { 
       name: "Divorce Settlement Agreements", 
       path: "/services/divorce-settlement", 
-      desc: "Structured mediation to help couples reach fair, legally sound divorce agreements.",
+      desc: "A fair and structured agreement reached through comprehensive mediation, outlining the division of assets, finances, and responsibilities.",
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_fcM4sa_divorce-settleent_e4ada8cb.png"
     },
     { 
       name: "Parenting Plan", 
       path: "/services/parenting-plans", 
-      desc: "Child-centred co-parenting frameworks prioritising children's wellbeing.",
+      desc: "A child-centred parenting plan developed through mediation, accommodating any co-parenting situation while defining care, contact, and shared decision-making arrangements.",
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_onhlOo_ParentingPLans_c3fa36c8.png"
     },
     { 
       name: "Maintenance Agreements", 
       path: "/services/maintenance-agreements", 
-      desc: "Structured mediation to help couples reach fair, legally sound divorce agreements.",
+      desc: "A clear and balanced financial support agreement, established through mediation, outlining the current and future obligations of both parents/parties for the benefit of children and/or a former spouse.",
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_zQexNL_MaintenanceAgreements_32fcc08a.png"
     },
     { 
       name: "Voice of the Child Assessments", 
       path: "/services/voice-of-child", 
-      desc: "Structured mediation to help couples reach fair, legally sound divorce agreements.",
+      desc: "A thoughtfully facilitated outcome of mediation, capturing the child’s views and needs to guide decisions in their best interests.",
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_Nj9mcO_Voiceofchildinterviews_d8b25c08.png"
     },
   ];
 
   const socialWorkServices = [
-    { name: "Adult Divorce Preparation", path: "/services/adult-divorce-prep", desc: "Emotional and practical support for adults navigating the complexities of divorce and separation.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/adult-divorce-prep-hdiAXYVUZdPW3m8urReFKL.webp" },
-    { name: "Illness & Disability Support", path: "/services/illness-disability", desc: "Compassionate guidance for individuals and families coping with illness, disability, and life transitions.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/illness-disability-BUDZwUcbhbA5Z3fUUjjZHQ.webp" },
-    { name: "Palliative & End-of-Life Care", path: "/services/palliative-care", desc: "Holistic support for patients, families, and caregivers during end-of-life journeys.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/palliative-care-8v5vkQgC9LPzGCeQSk3dJY.webp" },
-    { name: "Health Education & Promotion", path: "/services/health-education", desc: "Educational programs promoting mental health, wellbeing, and healthy life transitions.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/health-education-JaYkB6NtYHP2RzBMhjfDNE.webp" },
+    { name: "Divorce Preparation and counselling", path: "/services/adult-divorce-prep", desc: "Supportive guidance to help individuals and families prepare for and navigate the emotional and practical challenges of divorce.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/adult-divorce-prep-hdiAXYVUZdPW3m8urReFKL.webp" },
+    { name: "Illness & Disability Support", path: "/services/illness-disability", desc: "Compassionate support to help individuals and families adjust to illness or disability while maintaining dignity and quality of life.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/illness-disability-BUDZwUcbhbA5Z3fUUjjZHQ.webp" },
+    { name: "Palliative & End-of-Life Care", path: "/services/palliative-care", desc: "Holistic support focused on comfort, dignity, and emotional well-being during serious illness and end-of-life stages.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/palliative-care-8v5vkQgC9LPzGCeQSk3dJY.webp" },
+    { name: "Health Education & Promotion", path: "/services/health-education", desc: "A supportive and informative service that equips individuals, groups and families with the knowledge and tools to make informed health decisions and enhance overall well-being.", image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/health-education-JaYkB6NtYHP2RzBMhjfDNE.webp" },
   ];
 
   const faqs = [
@@ -170,8 +170,7 @@ export default function Home() {
               <button 
                 onClick={() => setLocation("/about")}
                 className="text-[#5DBB63] font-semibold hover:underline"
-              >
-                a.Learn About Our Team →
+              >Learn About Our Team →
               </button>
             </div>
 
