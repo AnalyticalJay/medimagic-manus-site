@@ -52,12 +52,12 @@ export default function Home() {
   const faqs = [
     { q: "What is the difference between mediation and social work support?", a: "Mediation focuses on helping parties reach agreements on specific issues, while social work support addresses emotional wellbeing and practical life transitions." },
     { q: "Is mediation confidential?", a: "Yes, all mediation sessions are strictly confidential and protected by professional privilege." },
-    { q: "How long does the mediation process typically take?", a: "Most mediation processes take between 3-6 months, depending on complexity." },
+    { q: "How long does the mediation process typically take?", a: "Most mediation processes take between 1-3 months, depending on complexity." },
     { q: "Can children be involved in the mediation process?", a: "Yes, through our Voice of the Child services, children's perspectives can be professionally represented." },
     { q: "What if we cannot reach agreement through mediation?", a: "If mediation doesn't resolve all issues, you can pursue litigation for remaining matters." },
     { q: "Are online consultations as effective as in-person sessions?", a: "Yes, we offer both online and in-person consultations with equal effectiveness." },
     { q: "How do I know if mediation is right for my situation?", a: "Contact us for a free consultation to discuss your specific circumstances." },
-    { q: "What qualifications does Cornelia hold?", a: "Cornelia holds a Masters Degree and is a FAMAC Accredited Mediator and SASW Registered Social Worker with 20+ years experience." },
+    { q: "Is Mediation only for Divorce and Parenting Cases?", a: "c.No, mediation can be used for a wide range of family disputes, including decisions about elderly care, medical or healthcare choices, and sensitive matters such as wills and inheritance.io" },
   ];
 
   return (
