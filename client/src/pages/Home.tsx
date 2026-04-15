@@ -323,20 +323,26 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-[#1a3a52] p-6 rounded-lg border-2 border-[#5DBB63] text-white shadow-lg hover:shadow-xl transition-all">
-                <div className="text-3xl mb-3">🌐</div>
-                <h3 className="text-lg font-bold mb-2">Accessible Anywhere</h3>
-                <p className="text-white/90">Access to services across the country.</p>
+              <div className="bg-[#1a3a52] p-6 rounded-lg border-2 border-[#5DBB63] text-white shadow-lg hover:shadow-xl transition-all flex flex-col items-center">
+                <div className="mb-4 flex justify-center">
+                  <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/laptop_icon_6f27f101.png" alt="Accessible Anywhere" className="h-24 w-auto" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-center">Accessible Anywhere</h3>
+                <p className="text-white/90 text-center">Access to services across the country.</p>
               </div>
-              <div className="bg-[#1a3a52] p-6 rounded-lg border-2 border-[#5DBB63] text-white shadow-lg hover:shadow-xl transition-all">
-                <div className="text-3xl mb-3">🔒</div>
-                <h3 className="text-lg font-bold mb-2">Comfort of Your Own Space</h3>
-                <p className="text-white/90">Engage in services from the privacy and comfort of your home.</p>
+              <div className="bg-[#1a3a52] p-6 rounded-lg border-2 border-[#5DBB63] text-white shadow-lg hover:shadow-xl transition-all flex flex-col items-center">
+                <div className="mb-4 flex justify-center">
+                  <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/couch_icon_a94161c1.png" alt="Comfort of Your Own Space" className="h-24 w-auto" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-center">Comfort of Your Own Space</h3>
+                <p className="text-white/90 text-center">Engage in services from the privacy and comfort of your home.</p>
               </div>
-              <div className="bg-[#1a3a52] p-6 rounded-lg border-2 border-[#5DBB63] text-white shadow-lg hover:shadow-xl transition-all">
-                <div className="text-3xl mb-3">⏰</div>
-                <h3 className="text-lg font-bold mb-2">Flexible to Your Schedule</h3>
-                <p className="text-white/90">Conveniently access support at times that suit your lifestyle.</p>
+              <div className="bg-[#1a3a52] p-6 rounded-lg border-2 border-[#5DBB63] text-white shadow-lg hover:shadow-xl transition-all flex flex-col items-center">
+                <div className="mb-4 flex justify-center">
+                  <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/calendar_clock_icon_4120d120.png" alt="Flexible to Your Schedule" className="h-24 w-auto" />
+                </div>
+                <h3 className="text-lg font-bold mb-2 text-center">Flexible to Your Schedule</h3>
+                <p className="text-white/90 text-center">Conveniently access support at times that suit your lifestyle.</p>
               </div>
             </div>
 
