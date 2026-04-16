@@ -76,13 +76,13 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
             <div className="bg-[#5DBB63] rounded-2xl sm:rounded-3xl px-3 py-2 inline-block mb-4 sm:mb-8">
-              <h3 className="text-sm sm:text-base font-bold text-white">ABOUT CORNELIA</h3>
+              <h3 className="text-sm sm:text-base font-bold text-white">ABOUT OUR TEAM</h3>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
               Cornelia Griessel
             </h1>
             <p className="text-sm sm:text-base md:text-lg text-gray-100">
-              FAMAC Accredited Mediator, SASW Registered Social Worker, Masters Degree holder with 20+ years of experience in family mediation, medical social work, and child-centred practice.
+              NABFAM Accredited Mediator, SACSSP Registered Social Worker, Masters Degree holder with 20+ years of experience in family mediation, medical social work, and family-centred practice.
             </p>
           </div>
         </div>
@@ -108,24 +108,24 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-foreground mb-6">Professional Qualifications</h3>
                 <div className="space-y-4">
                   <div className="flex gap-4">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/qualifications-icon-MVKZawTS6NWhXw59YaCkU4.webp" alt="Qualifications" className="w-16 h-16 flex-shrink-0" />
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/accreditation_icon_c452b9ba.png" alt="Accreditation" className="w-16 h-16 flex-shrink-0" />
                     <div>
-                      <h4 className="font-bold text-foreground mb-1">FAMAC Accredited Mediator</h4>
-                      <p className="text-muted-foreground">Accredited by the Family Mediation Association of South Africa (FAMAC) with specialized training in family law mediation and conflict resolution.</p>
+                      <h4 className="font-bold text-foreground mb-1">NABFAM Accredited Mediator</h4>
+                      <p className="text-muted-foreground">Accredited by the National Accreditation Board for Family Mediators through the Social Justice Association (SJA), with active membership in the South African Association of Mediators (SAAM) and the Mediation Society of South Africa (MSSA).</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <Award className="w-16 h-16 text-accent flex-shrink-0" />
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/registration_icon_ee223c9e.png" alt="Registration" className="w-16 h-16 flex-shrink-0" />
                     <div>
-                      <h4 className="font-bold text-foreground mb-1">SASW Registered Social Worker</h4>
-                      <p className="text-muted-foreground">Registered with the South African Society of Social Workers (SASW) with extensive experience in medical social work and family support.</p>
+                      <h4 className="font-bold text-foreground mb-1">SACSSP Registered Social Worker</h4>
+                      <p className="text-muted-foreground">Registered as a Social Worker with the South African Council for Social Service Professions (SACSSP), and a member of the South African Association of Social Workers in Private Practice (SAASWIPP).</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <Lightbulb className="w-16 h-16 text-accent flex-shrink-0" />
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/education_icon_c63705a3.png" alt="Education" className="w-16 h-16 flex-shrink-0" />
                     <div>
-                      <h4 className="font-bold text-foreground mb-1">Masters Degree</h4>
-                      <p className="text-muted-foreground">Advanced academic qualification demonstrating expertise and commitment to professional excellence in social work and family support services.</p>
+                      <h4 className="font-bold text-foreground mb-1">Additional Qualifications & Professional Development</h4>
+                      <p className="text-muted-foreground">Master's Degree in Early Childhood Intervention, qualified Facilitator and Assessor, and registered Voice of the Child Practitioner—reflecting specialised expertise and a continued commitment to excellence in social work and family support services.</p>
                     </div>
                   </div>
                 </div>
@@ -134,9 +134,9 @@ export default function About() {
 
             {/* Right Column: Image and Key Stats */}
             <div className="space-y-8">
-              <div className="rounded-lg overflow-hidden shadow-2xl hover:shadow-2xl hover:drop-shadow-lg transition-all">
+              <div className="rounded-lg overflow-hidden shadow-2xl hover:shadow-2xl hover:drop-shadow-lg transition-all border-4 border-[#5DBB63]">
                 <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/CorneliaGrissel_58ab5064.png"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/corniliaimage_e720662f.jpeg"
                   alt="Cornelia Griessel - Professional Portrait"
                   className="w-full h-auto"
                 />
