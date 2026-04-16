@@ -195,3 +195,12 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Add step 5 Implementation and Review with child explanation and six-month follow-up
 - [x] Extract and upload 3 benefit icons (Children's Best Interests, Reduced Conflict, Practical & Flexible)
 - [x] Update Benefits section to use new custom icons
+
+## Maintenance Agreements Page Updates
+- [x] Remove red alert section and merge paragraphs into cohesive introduction
+- [x] Replace What Is Child Maintenance with How Is Maintenance Calculated section
+- [x] Replace hero image with new mediation team image and apply navy border
+- [x] Change process heading to The Process of Establishing Fair Child Maintenance
+- [x] Update step 4 to include Maintenance Court and divorce decree information
+- [x] Extract and upload 3 benefit icons (Financial Security, Fair Agreements, Sustainable Growth)
+- [x] Update Benefits section to use new custom icons

@@ -55,9 +55,9 @@ export default function MaintenanceAgreements() {
             {/* Service Image */}
             <div className="flex justify-center mt-8 lg:mt-0">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_zQexNL_MaintenanceAgreements_32fcc08a.png" 
-                alt="Child Maintenance Agreements" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_qICqsS_image_11947b66.png" 
+                alt="Child Maintenance Mediation" 
+                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
               />
             </div>
           </div>
@@ -78,30 +78,18 @@ export default function MaintenanceAgreements() {
         <div className="space-y-8">
           <div>
             <h2 className="text-3xl font-bold text-foreground mb-4">Understanding Child Maintenance</h2>
-            <p className="text-lg text-muted-foreground">
-              Child maintenance is the financial support provided by both parents to ensure children's needs are met after separation or divorce. At MediMagic, we help parents establish fair, sustainable maintenance arrangements that prioritize children's wellbeing and provide the stability they need during family transitions.
+            <p className="text-lg text-muted-foreground mb-6">
+              Child maintenance is the financial support provided by both parents to ensure children's needs are met. At MediMagic, we help parents establish fair, sustainable maintenance arrangements that prioritize children's wellbeing and provide the stability they need during family transitions.
             </p>
-          </div>
-
-          <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded">
-            <div className="flex gap-3">
-              <AlertCircle className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" />
-              <div>
-                <h3 className="text-xl font-bold text-red-900 mb-2">Understanding the Impact & Consequences</h3>
-                <p className="text-red-800">
-                  Child maintenance decisions have profound, long-lasting effects on children's physical health, emotional development, educational opportunities, and future prospects. Inadequate or disputed maintenance can create financial stress, limit access to essential services, and negatively impact children's sense of security and wellbeing.
-                </p>
-              </div>
-            </div>
+            <p className="text-lg text-muted-foreground">
+              Child maintenance decisions have profound, long-lasting effects on children's physical health, emotional development, educational opportunities, and future prospects. Inadequate or disputed maintenance can create financial stress, limit access to essential services, and negatively impact children's sense of security and wellbeing.
+            </p>
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-4">What Is Child Maintenance?</h3>
-            <p className="text-muted-foreground mb-4">
-              Child maintenance is the ongoing financial contribution both parents make toward raising their children. This includes essential expenses such as housing, food, education, healthcare, and other necessities. Unlike spousal maintenance, child maintenance focuses exclusively on meeting children's needs and is a legal obligation of both parents.
-            </p>
+            <h3 className="text-2xl font-bold text-foreground mb-4">How Is Maintenance Calculated?</h3>
             <p className="text-muted-foreground">
-              Fair child maintenance ensures children maintain a consistent standard of living and have access to the opportunities and support they need to thrive.
+              Child maintenance is not calculated using a fixed formula, but is based on the reasonable needs of the child and the financial means of both parents. This includes considering expenses such as housing, food, clothing, education, medical care, and other day-to-day costs. Each parent's income, financial responsibilities, and ability to contribute are taken into account to determine a fair and proportionate contribution. The goal is to ensure that the child's standard of living is maintained as far as possible, with both parents sharing in the financial responsibility.
             </p>
           </div>
 
@@ -190,7 +178,7 @@ export default function MaintenanceAgreements() {
       {/* The Mediation Process */}
       <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-accent/5">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 sm:mb-12 text-center">How We Establish Fair Child Maintenance</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 sm:mb-12 text-center">The Process of Establishing Fair Child Maintenance</h2>
           
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <div className="flex gap-4">
@@ -237,7 +225,7 @@ export default function MaintenanceAgreements() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Formal Documentation</h3>
-                <p className="text-muted-foreground">Creating a legally binding agreement that ensures children's financial security and can adapt to future changes.</p>
+                <p className="text-muted-foreground">Creating a legally binding agreement that ensures children's financial security and can adapt to future changes, which may be submitted to the Maintenance Court to form part of a maintenance order or incorporated into a divorce decree.</p>
               </div>
             </div>
           </div>
@@ -251,19 +239,25 @@ export default function MaintenanceAgreements() {
           
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             <Card className="p-8">
-              <Heart className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_financial_security_icon_be379c71.png" alt="Financial Security" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Children's Security</h3>
               <p className="text-muted-foreground">Ensures children have stable financial support and access to essential services and opportunities.</p>
             </Card>
 
             <Card className="p-8">
-              <TrendingUp className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_fair_agreements_icon_d5cd0dfe.png" alt="Fair Agreements" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Reduced Conflict</h3>
               <p className="text-muted-foreground">Clear agreements eliminate ongoing disputes about financial responsibility, protecting children from family conflict.</p>
             </Card>
 
             <Card className="p-8">
-              <Check className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_sustainable_growth_icon_3435efe9.png" alt="Sustainable Growth" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Sustainable & Flexible</h3>
               <p className="text-muted-foreground">Agreements can adapt to changing circumstances while maintaining children's wellbeing and stability.</p>
             </Card>
