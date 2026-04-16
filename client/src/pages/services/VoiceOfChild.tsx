@@ -55,9 +55,9 @@ export default function VoiceOfChild() {
             {/* Service Image */}
             <div className="flex justify-center mt-8 lg:mt-0">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_Nj9mcO_Voiceofchildinterviews_d8b25c08.png" 
-                alt="Voice of the Child Assessments" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_lu2KJ6_image_3ec25ed4.png" 
+                alt="Voice of the Child Practitioner" 
+                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
               />
             </div>
           </div>
@@ -212,8 +212,8 @@ export default function VoiceOfChild() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Professional Analysis</h3>
-                <p className="text-muted-foreground">Careful analysis of children's perspectives and needs, considering their age and developmental stage.</p>
+                <h3 className="text-xl font-bold text-foreground mb-2">Professional Report and Parent Feedback</h3>
+                <p className="text-muted-foreground">Findings are documented in a formal report and shared with parents during mediation to help them make decisions that consider their children's needs.</p>
               </div>
             </div>
 
@@ -224,8 +224,8 @@ export default function VoiceOfChild() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Parent Consultation</h3>
-                <p className="text-muted-foreground">Findings are shared with parents to inform mediation and help them make decisions that consider their children's needs.</p>
+                <h3 className="text-xl font-bold text-foreground mb-2">Child Feedback</h3>
+                <p className="text-muted-foreground">As a final step, the agreed parenting plan is explained to the children in an age-appropriate manner, supporting them in understanding and adjusting to the concept of two homes.</p>
               </div>
             </div>
           </div>
@@ -239,19 +239,25 @@ export default function VoiceOfChild() {
           
           <div className="grid md:grid-cols-3 gap-6 md:gap-6 md:gap-6 md:gap-8">
             <Card className="p-8">
-              <Ear className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_voice_matters_icon_1019c8d9.png" alt="Children's Voice Matters" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Children Heard</h3>
               <p className="text-muted-foreground">Children feel their voices matter and their perspectives are valued in family decisions.</p>
             </Card>
 
             <Card className="p-8">
-              <Shield className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_child_protection_icon_29ad44a8.png" alt="Child Protection" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Protected Wellbeing</h3>
               <p className="text-muted-foreground">Professional assessment ensures children's emotional and psychological wellbeing is prioritized.</p>
             </Card>
 
             <Card className="p-8">
-              <Heart className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_family_wellbeing_icon_cb9ae43c.png" alt="Family Wellbeing" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Better Outcomes</h3>
               <p className="text-muted-foreground">Arrangements that consider children's needs lead to more stable, successful family arrangements.</p>
             </Card>

@@ -204,3 +204,10 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Update step 4 to include Maintenance Court and divorce decree information
 - [x] Extract and upload 3 benefit icons (Financial Security, Fair Agreements, Sustainable Growth)
 - [x] Update Benefits section to use new custom icons
+
+## Voice of the Child Page Updates
+- [x] Replace hero image with new Voice of the Child practitioner image and apply navy border
+- [x] Update step 3 to Professional Report and Parent Feedback with formal documentation description
+- [x] Update step 4 to Child Feedback with age-appropriate explanation of parenting plan
+- [x] Extract and upload 3 benefit icons (Voice Matters, Child Protection, Family Wellbeing)
+- [x] Update Benefits section to use new custom icons
