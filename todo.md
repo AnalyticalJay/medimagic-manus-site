@@ -169,3 +169,13 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Update About page to use new icons in Years Experience/Clients Served cards
 - [x] Update Core Values section to display 5 cards with new icons
 - [x] Update Integrated Approach description to: "A balanced approach that supports clear, practical decisions while also caring for the people navigating them."
+
+## Divorce Settlement Page Updates
+- [x] Change heading to "A Better Way Through Divorce"
+- [x] Update paragraph ending with new text about guiding away from conflict
+- [x] Remove "Financial Support" heading and update Spousal Maintenance description
+- [x] Replace image with new mediation team image and apply navy border
+- [x] Reorder mediation process steps (swap steps 2 and 3)
+- [x] Update step 4 with legal representation alternatives
+- [x] Extract and upload 3 benefit icons (Secure & Legal, Collaborative, Cost-Effective)
+- [x] Update Benefits section to use new custom icons

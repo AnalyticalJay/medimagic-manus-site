@@ -55,9 +55,9 @@ export default function DivorceSettlement() {
             {/* Service Image */}
             <div className="flex justify-center mt-8 lg:mt-0">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_fcM4sa_divorce-settleent_e4ada8cb.png" 
-                alt="Divorce Settlement Agreements" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_y747ly_image_abff7ab6.png" 
+                alt="Divorce Settlement Mediation" 
+                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
               />
             </div>
           </div>
@@ -85,9 +85,9 @@ export default function DivorceSettlement() {
             {/* Main Content */}
             <div className="md:col-span-2 order-1 md:order-2 space-y-6 md:space-y-8">
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3 sm:mb-4">Understanding Divorce Settlement Mediation</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3 sm:mb-4">A Better Way Through Divorce</h2>
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground">
-                  Divorce is one of life's most significant transitions. Beyond the emotional complexity, there are critical legal and financial decisions that must be made—decisions that will affect your future and that of your children. At MediMagic, we provide structured mediation to help you navigate these decisions with clarity, fairness, and mutual respect.
+                  Divorce is one of life's most significant transitions. Beyond the emotional complexity, there are critical legal and financial decisions that must be made—decisions that will affect your future and that of your children. At MediMagic, we provide structured mediation to guide you away from ongoing conflict and toward decisions made with clarity, fairness, and mutual respect.
                 </p>
               </div>
 
@@ -114,8 +114,8 @@ export default function DivorceSettlement() {
                   <div className="flex gap-3">
                     <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-bold text-foreground">Financial Support</h4>
-                      <p className="text-sm text-muted-foreground">Determination of spousal maintenance or alimony arrangements that are sustainable and fair.</p>
+                      <h4 className="font-bold text-foreground">Spousal Maintenance</h4>
+                      <p className="text-sm text-muted-foreground">Determination of fair and sustainable spousal maintenance arrangements that adapt to changing circumstances while promoting long-term financial independence.</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
@@ -132,13 +132,7 @@ export default function DivorceSettlement() {
                       <p className="text-sm text-muted-foreground">Fair determination of financial support for children based on both parents' circumstances and capacity to provide.</p>
                     </div>
                   </div>
-                  <div className="flex gap-3">
-                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-bold text-foreground">Spousal Maintenance</h4>
-                      <p className="text-sm text-muted-foreground">Fair and sustainable financial support arrangements between spouses that adapt to changing circumstances and promote financial independence.</p>
-                    </div>
-                  </div>
+
                 </div>
               </div>
 
@@ -212,8 +206,8 @@ export default function DivorceSettlement() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Joint Mediation Sessions</h3>
-                <p className="text-muted-foreground">Structured meetings where both spouses meet with the mediator to discuss issues, exchange information, and work toward agreements. The mediator facilitates communication and ensures both parties are heard.</p>
+                <h3 className="text-xl font-bold text-foreground mb-2">Information Gathering</h3>
+                <p className="text-muted-foreground">Full financial disclosure and documentation of all assets, liabilities, income, and expenses. This transparency is essential for fair decision-making and creating legally sound agreements.. The mediator facilitates communication and ensures both parties are heard.</p>
               </div>
             </div>
 
@@ -224,8 +218,8 @@ export default function DivorceSettlement() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Information Gathering</h3>
-                <p className="text-muted-foreground">Full financial disclosure and documentation of all assets, liabilities, income, and expenses. This transparency is essential for fair decision-making and creating legally sound agreements.</p>
+                <h3 className="text-xl font-bold text-foreground mb-2">Joint Mediation Sessions</h3>
+                <p className="text-muted-foreground">Structured meetings where both spouses meet with the mediator to discuss issues, exchange information, and work toward agreements.</p>
               </div>
             </div>
 
@@ -237,7 +231,7 @@ export default function DivorceSettlement() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Agreement & Documentation</h3>
-                <p className="text-muted-foreground">Once agreements are reached, they are documented in a Memorandum of Understanding. Both parties can then have their lawyers review before finalising the divorce settlement.</p>
+                <p className="text-muted-foreground">Once agreements are reached, they are documented in a Settlement Agreement or Memorandum of Understanding. The parties may then choose to have their legal representatives review the agreement before finalising the divorce, or submit it directly to court for processing without the need for legal representation.</p>
               </div>
             </div>
           </div>
@@ -251,19 +245,25 @@ export default function DivorceSettlement() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <Card className="p-8">
-              <FileText className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_secure_legal_icon_00de829c.png" alt="Legally Sound" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Legally Sound Agreements</h3>
               <p className="text-muted-foreground">Our mediated agreements are comprehensive and legally enforceable, protecting your interests and ensuring compliance.</p>
             </Card>
 
             <Card className="p-8">
-              <Users className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_collaborative_icon_237d0a92.png" alt="Collaborative" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Collaborative Approach</h3>
               <p className="text-muted-foreground">We foster cooperation rather than conflict, creating a foundation for positive post-divorce relationships, especially important when children are involved.</p>
             </Card>
 
             <Card className="p-8">
-              <Clock className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_cost_effective_icon_ab2781ad.png" alt="Cost Effective" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Time & Cost Efficient</h3>
               <p className="text-muted-foreground">Mediation typically takes weeks rather than years, and costs a fraction of contested litigation—saving money and emotional energy.</p>
             </Card>
