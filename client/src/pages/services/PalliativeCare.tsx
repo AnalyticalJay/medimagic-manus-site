@@ -57,7 +57,7 @@ export default function PalliativeCare() {
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/palliative-care-8v5vkQgC9LPzGCeQSk3dJY.webp" 
                 alt="Palliative & End-of-Life Care" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
+                className="w-full max-w-xs sm:max-w-sm h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
               />
             </div>
           </div>
@@ -86,7 +86,7 @@ export default function PalliativeCare() {
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">What Is Palliative & End-of-Life Care Support?</h3>
                 <p className="text-muted-foreground mb-4">
-                  Palliative & End-of-Life Care Support is professional social work guidance focused on quality of life, comfort, meaning-making, and family support during terminal illness or end-of-life transitions. We help individuals and families navigate medical decisions, emotional challenges, spiritual questions, and legacy planning.
+                  Palliative & End-of-Life Care Support is professional social work guidance and support focused on quality of life, comfort, meaning-making, and aiding family support during terminal illness or end-of-life transitions. We help individuals and families navigate medical decisions, emotional challenges, spiritual questions, and legacy planning.
                 </p>
                 <p className="text-muted-foreground">
                   This service honors the dignity and autonomy of the individual while supporting families through one of life's most profound experiences.
@@ -232,19 +232,25 @@ export default function PalliativeCare() {
           
           <div className="grid md:grid-cols-3 gap-6 md:gap-6 md:gap-6 md:gap-8">
             <Card className="p-8">
-              <Heart className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_emotional_support_icon_f6013bdb.png" alt="Emotional Support" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Peaceful Transition</h3>
               <p className="text-muted-foreground">Navigate end-of-life with dignity, comfort, and emotional support in a safe environment.</p>
             </Card>
 
             <Card className="p-8">
-              <Lightbulb className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_practical_planning_icon_75cd656d.png" alt="Practical Planning" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Meaningful Connection</h3>
               <p className="text-muted-foreground">Create lasting memories and meaningful moments with loved ones during this sacred time.</p>
             </Card>
 
             <Card className="p-8">
-              <Users className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_social_reintegration_icon_0d42095e.png" alt="Social Reintegration" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Family Support</h3>
               <p className="text-muted-foreground">Help families navigate grief, communicate openly, and find peace and closure.</p>
             </Card>
