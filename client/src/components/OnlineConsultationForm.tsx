@@ -63,6 +63,7 @@ export function OnlineConsultationForm() {
     "Palliative Support",
     "Health Education",
     "General Family Law Mediation Services",
+    "Other",
   ];
 
   const historyOptions = [

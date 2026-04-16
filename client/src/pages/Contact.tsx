@@ -10,19 +10,27 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 overflow-hidden bg-cover bg-center" style={{backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/pagebackground_cf02c7c4.jpg)'}}>
-        <div className="absolute inset-0 bg-black/40"></div>
+      <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-[#1a3a52] via-[#2d5a7b] to-[#1a3a52]">
         <div className="container relative z-10">
-          <div className="max-w-2xl">
-            <div className="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-medium text-white mb-6">
-              Get in Touch
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+            <div className="flex-1">
+              <div className="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-medium text-white mb-6">
+                Get in Touch
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                Contact MediMagic
+              </h1>
+              <p className="text-lg text-white/90 max-w-lg">
+                Reach out to discuss your situation, ask questions, or schedule a consultation with Cornelia.
+              </p>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Contact MediMagic
-            </h1>
-            <p className="text-lg text-white/90 max-w-lg">
-              Reach out to discuss your situation, ask questions, or schedule a consultation with Cornelia.
-            </p>
+            <div className="flex-shrink-0">
+              <img 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/medimagic_logo_main_7f8b9c2a.png" 
+                alt="MediMagic Logo" 
+                className="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-lg border-4 border-white"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -50,6 +58,11 @@ export default function Contact() {
                         corneliagriessel@medimagic.co.za
                       </a>
                     </p>
+                    <p className="text-muted-foreground">
+                      <a href="mailto:MediMagic.Cornelia@gmail.com" className="hover:text-accent transition-colors">
+                        MediMagic.Cornelia@gmail.com
+                      </a>
+                    </p>
                     <p className="text-sm text-muted-foreground mt-1">
                       Response time: Within 24 hours
                     </p>
@@ -66,8 +79,8 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-1">Phone</h3>
                     <p className="text-muted-foreground">
-                      <a href="tel:+27640344575" className="hover:text-accent transition-colors">
-                        +27 64 034 4575
+                      <a href="tel:+27650603592" className="hover:text-accent transition-colors">
+                        065 060 3592
                       </a>
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">
@@ -86,7 +99,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-1">Location</h3>
                     <p className="text-muted-foreground">
-                      Johannesburg, South Africa
+                      Port Elizabeth, South Africa
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">
                       In-person and online consultations available
@@ -107,7 +120,7 @@ export default function Contact() {
                       Monday - Friday: 9:00 AM - 5:00 PM
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">
-                      Saturday by appointment
+                      Afterhours / Weekends by appointment
                     </p>
                   </div>
                 </div>
@@ -203,7 +216,7 @@ export default function Contact() {
               </div>
 
               <div className="border border-border rounded-lg p-6 hover:border-accent/50 transition-colors">
-                <h3 className="text-lg font-semibold text-foreground mb-3">Do you offer sliding scale fees?</h3>
+                <h3 className="text-lg font-semibold text-foreground mb-3">Do you offer sliding scale fees or payment plans?</h3>
                 <p className="text-muted-foreground">
                   Yes, we believe everyone deserves access to professional support. Please discuss your circumstances during your initial consultation, and we can explore options that work for your situation.
                 </p>

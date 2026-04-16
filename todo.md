@@ -237,3 +237,13 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Add Flexible bullet point "Individual, group or community set-up"
 - [x] Update Benefits section with same three custom icons (Emotional Support, Practical Planning, Social Reintegration)
 - [x] Rephrase Family Support benefit to emphasize family connection and communication
+
+## Contact Us Page Updates
+- [x] Change hero banner to gradient style matching other pages
+- [x] Add MediMagic logo to hero section with white border
+- [x] Add second email: MediMagic.Cornelia@gmail.com
+- [x] Change phone number to 065 060 3592
+- [x] Correct location to Port Elizabeth
+- [x] Change Saturday by appointment to Afterhours / Weekends by appointment
+- [x] Update FAQ question to Do you offer sliding scale fees or payment plans
+- [x] Add Other option to Service Type in booking form
