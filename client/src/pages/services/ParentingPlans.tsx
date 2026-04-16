@@ -55,9 +55,9 @@ export default function ParentingPlans() {
             {/* Service Image */}
             <div className="flex justify-center mt-8 lg:mt-0">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_onhlOo_ParentingPLans_c3fa36c8.png" 
-                alt="Parenting Plans" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_oA9Jng_image_907d4496.png" 
+                alt="Parenting Plans Mediation" 
+                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
               />
             </div>
           </div>
@@ -79,30 +79,20 @@ export default function ParentingPlans() {
           <div>
             <h2 className="text-3xl font-bold text-foreground mb-4">Creating Child-Centred Parenting Plans</h2>
             <p className="text-lg text-muted-foreground">
-              When parents separate or divorce, one of the most important decisions is determining parenting arrangements. At MediMagic, we facilitate mediation to help parents create comprehensive parenting plans that prioritize children's wellbeing, maintain strong relationships with both parents, and provide stability during this transition.
+              When parents separate or divorce, one of the most important decisions is determining parenting arrangements. At MediMagic, we facilitate mediation to help parents create comprehensive parenting plans that prioritize children's wellbeing, maintain strong relationships with both parents, and provide stability during this transition. These plans can also be used to establish meaningful care and contact arrangements between children and extended family members, such as grandparents, where appropriate.
             </p>
           </div>
 
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-4">What Is a Parenting Plan?</h3>
             <p className="text-muted-foreground mb-4">
-              A parenting plan is a detailed agreement that outlines how parents will share responsibility for their children after separation or divorce. It covers custody, visitation schedules, decision-making authority, and other arrangements designed to ensure children's physical, emotional, and developmental needs are met.
-            </p>
-            <p className="text-muted-foreground">
-              A well-crafted parenting plan provides clarity, reduces conflict, and gives children the security of knowing what to expect.
+              A parenting plan is a detailed agreement that outlines how parents or guardians will share the responsibility to raise and care for their children after separation, divorce or death. It covers custody, care, residency and contact arrangements (previously known as custody and visitation schedules), decision-making authority, and other arrangements designed to ensure children's physical, emotional, and developmental needs are met. A well-crafted parenting plan provides clarity, reduces conflict, and gives children the security of knowing what to expect.
             </p>
           </div>
 
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-4">Key Elements Addressed</h3>
             <div className="space-y-3">
-              <div className="flex gap-3">
-                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                <div>
-                  <h4 className="font-bold text-foreground">Single Parents</h4>
-                  <p className="text-sm text-muted-foreground">Support and guidance for single parents establishing parenting arrangements that prioritize children's stability and wellbeing.</p>
-                </div>
-              </div>
               <div className="flex gap-3">
                 <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <div>
@@ -114,7 +104,14 @@ export default function ParentingPlans() {
                 <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-foreground">Decision-Making Authority</h4>
-                  <p className="text-sm text-muted-foreground">Who makes decisions about education, healthcare, religion, and other important matters affecting the children.</p>
+                  <p className="text-sm text-muted-foreground">How to make decisions about education, healthcare, religion, and other important matters affecting the children.</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-foreground">Relationships with Others</h4>
+                  <p className="text-sm text-muted-foreground">Guidelines for introducing new partners and maintaining relationships with extended family members.</p>
                 </div>
               </div>
               <div className="flex gap-3">
@@ -140,6 +137,10 @@ export default function ParentingPlans() {
           <Card className="p-8 bg-accent/5 border border-accent/20">
             <h3 className="text-xl font-bold text-foreground mb-4">Our Child-Centred Approach</h3>
             <ul className="space-y-3 mb-6">
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Child Participation:</strong> Children have the right to participate in decisions affecting them, with their views considered in accordance with their age, maturity, and ability.</span>
+              </li>
               <li className="flex gap-2">
                 <span className="text-accent font-bold">✓</span>
                 <span className="text-muted-foreground"><strong>Children's best interests:</strong> All decisions prioritize children's wellbeing</span>
@@ -171,7 +172,7 @@ export default function ParentingPlans() {
       {/* The Mediation Process */}
       <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-accent/5">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 sm:mb-12 text-center">Creating Your Parenting Plan</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 sm:mb-12 text-center">The Process of Creating Your Parenting Plan</h2>
           
           <div className="grid md:grid-cols-2 gap-6 md:gap-6 md:gap-6 md:gap-8">
             <div className="flex gap-4">
@@ -194,7 +195,7 @@ export default function ParentingPlans() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Joint Mediation Sessions</h3>
-                <p className="text-muted-foreground">Structured meetings where both parents discuss parenting arrangements, focusing on children's needs and practical logistics.</p>
+                <p className="text-muted-foreground">Structured meetings where both parents discuss parenting arrangements, focusing on children's needs and practical logistics. Working through specific issues (schedules, holidays, decision-making) to find solutions that work for the whole family.</p>
               </div>
             </div>
 
@@ -205,8 +206,8 @@ export default function ParentingPlans() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Problem-Solving & Negotiation</h3>
-                <p className="text-muted-foreground">Working through specific issues (schedules, holidays, decision-making) to find solutions that work for the whole family.</p>
+                <h3 className="text-xl font-bold text-foreground mb-2">Child Participation</h3>
+                <p className="text-muted-foreground">Depending on the parties' preference, children may either be consulted directly by the mediator or referred to an independent Voice of the Child Practitioner to share their views. This input is then provided to the parties to consider and incorporate before making final decisions that significantly impact the children's lives.</p>
               </div>
             </div>
 
@@ -217,8 +218,8 @@ export default function ParentingPlans() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Documentation</h3>
-                <p className="text-muted-foreground">The agreed parenting plan is documented in a formal agreement that can be incorporated into the divorce decree.</p>
+                <h3 className="text-xl font-bold text-foreground mb-2">Documentation & Legal Process</h3>
+                <p className="text-muted-foreground">The agreements reached are recorded in a comprehensive parenting plan. Where applicable, confirmation of child participation is included. The parenting plan is then submitted to the Office of the Family Advocate for review and endorsement. Once endorsed, it may be made an order of court, giving it legal effect. In divorce matters, the parenting plan is typically incorporated into the final divorce order.</p>
               </div>
             </div>
           </div>

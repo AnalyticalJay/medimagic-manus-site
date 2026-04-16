@@ -179,3 +179,16 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Update step 4 with legal representation alternatives
 - [x] Extract and upload 3 benefit icons (Secure & Legal, Collaborative, Cost-Effective)
 - [x] Update Benefits section to use new custom icons
+
+## Parenting Plans Page Updates
+- [x] Add extended sentence about grandparents and extended family arrangements
+- [x] Update What Is a Parenting Plan definition with comprehensive text
+- [x] Remove Single Parents heading from Key Elements Addressed
+- [x] Update Decision-Making Authority to How to make decisions about
+- [x] Add Relationships with Others bullet point
+- [x] Replace image with new parenting plan mediation image and apply navy border
+- [x] Add Child Participation as first bullet in Our Child-Centred Approach
+- [x] Change process heading to The Process of Creating Your Parenting Plan
+- [x] Combine problem-solving content into step 2
+- [x] Change step 3 to Child Participation with Voice of the Child Practitioner details
+- [x] Update step 4 to Documentation & Legal Process with Family Advocate review and court endorsement
