@@ -57,7 +57,7 @@ export default function AdultDivorcePrep() {
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/adult-divorce-prep-hdiAXYVUZdPW3m8urReFKL.webp" 
                 alt="Adult Divorce Preparation" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
+                className="w-full max-w-xs sm:max-w-sm h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
               />
             </div>
           </div>
@@ -79,14 +79,14 @@ export default function AdultDivorcePrep() {
           <div>
             <h2 className="text-3xl font-bold text-foreground mb-4">Preparing for Life After Divorce</h2>
             <p className="text-lg text-muted-foreground">
-              Divorce is one of life's most challenging transitions. Beyond the legal and financial aspects, it involves significant emotional, social, and practical changes. At MediMagic, our Adult Divorce Preparation service provides comprehensive support to help you navigate this transition with confidence and resilience.
+              Divorce is one of life's most challenging transitions. Beyond the legal and financial aspects, it involves significant emotional, social, and practical changes. At MediMagic, our Adult Divorce Preparation service provides comprehensive support to help you and your family navigate this transition with confidence and resilience.
             </p>
           </div>
 
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-4">What Is Adult Divorce Preparation?</h3>
             <p className="text-muted-foreground mb-4">
-              Adult Divorce Preparation is a social work service that helps adults process the emotional impact of divorce, develop practical coping strategies, and build resilience for life after divorce. Through individual sessions, we address emotional wellbeing, financial planning, social reintegration, and personal growth.
+              Adult Divorce Preparation is a social work service that helps individuals (adults or children) process the emotional impact of divorce, develop practical coping strategies, and build resilience for life after divorce. Through individual sessions, we address emotional wellbeing, practical planning, social reintegration, and personal growth.
             </p>
             <p className="text-muted-foreground">
               This service acknowledges that divorce affects not just legal status, but your entire life—and we're here to help you rebuild.
@@ -232,19 +232,25 @@ export default function AdultDivorcePrep() {
           
           <div className="grid md:grid-cols-3 gap-6 md:gap-6 md:gap-6 md:gap-8">
             <Card className="p-8">
-              <Heart className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_emotional_support_icon_f6013bdb.png" alt="Emotional Support" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Emotional Healing</h3>
               <p className="text-muted-foreground">Process difficult emotions in a safe, supportive environment with professional guidance.</p>
             </Card>
 
             <Card className="p-8">
-              <Lightbulb className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_practical_planning_icon_75cd656d.png" alt="Practical Planning" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Practical Strategies</h3>
               <p className="text-muted-foreground">Develop actionable plans for managing finances, housing, employment, and daily challenges.</p>
             </Card>
 
             <Card className="p-8">
-              <Users className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_social_reintegration_icon_0d42095e.png" alt="Social Reintegration" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Social Reintegration</h3>
               <p className="text-muted-foreground">Rebuild your social network and create a positive new identity after divorce.</p>
             </Card>

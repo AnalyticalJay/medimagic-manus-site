@@ -211,3 +211,10 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Update step 4 to Child Feedback with age-appropriate explanation of parenting plan
 - [x] Extract and upload 3 benefit icons (Voice Matters, Child Protection, Family Wellbeing)
 - [x] Update Benefits section to use new custom icons
+
+## Adult Divorce Preparation Page Updates
+- [x] Update Preparing for Life After Divorce section with "you and your family" language
+- [x] Update What Is Adult Divorce Preparation definition to include adults and children, practical planning
+- [x] Resize hero image to smaller size and change border to navy
+- [x] Extract and upload 3 benefit icons (Emotional Support, Practical Planning, Social Reintegration)
+- [x] Update Benefits section to use new custom icons
