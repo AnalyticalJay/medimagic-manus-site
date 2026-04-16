@@ -57,7 +57,7 @@ export default function IllnessDisability() {
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/illness-disability-BUDZwUcbhbA5Z3fUUjjZHQ.webp" 
                 alt="Illness & Disability Support" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
+                className="w-full max-w-xs sm:max-w-sm h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
               />
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function IllnessDisability() {
               </li>
               <li className="flex gap-2">
                 <span className="text-accent font-bold">✓</span>
-                <span className="text-muted-foreground"><strong>Empowering:</strong> Building your agency and resilience</span>
+                <span className="text-muted-foreground"><strong>Empowering:</strong> Strengthening your sense of control and resilience</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-accent font-bold">✓</span>
@@ -232,21 +232,27 @@ export default function IllnessDisability() {
           
           <div className="grid md:grid-cols-3 gap-6 md:gap-6 md:gap-6 md:gap-8">
             <Card className="p-8">
-              <Heart className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_emotional_support_icon_f6013bdb.png" alt="Emotional Support" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Emotional Healing</h3>
               <p className="text-muted-foreground">Process difficult emotions in a safe, supportive environment with professional guidance.</p>
             </Card>
 
             <Card className="p-8">
-              <Lightbulb className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_practical_planning_icon_75cd656d.png" alt="Practical Planning" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Practical Strategies</h3>
               <p className="text-muted-foreground">Develop actionable plans for managing daily challenges and healthcare navigation.</p>
             </Card>
 
             <Card className="p-8">
-              <Users className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_social_reintegration_icon_0d42095e.png" alt="Social Reintegration" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Family Support</h3>
-              <p className="text-muted-foreground">Strengthen family relationships and communication through health challenges.</p>
+              <p className="text-muted-foreground">Supporting families to stay connected and communicate effectively through health challenges.</p>
             </Card>
           </div>
         </div>

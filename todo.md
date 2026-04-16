@@ -218,3 +218,9 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Resize hero image to smaller size and change border to navy
 - [x] Extract and upload 3 benefit icons (Emotional Support, Practical Planning, Social Reintegration)
 - [x] Update Benefits section to use new custom icons
+
+## Illness and Disability Page Updates
+- [x] Update Empowerment text to "Strengthening your sense of control and resilience"
+- [x] Resize hero image to smaller size and change border to navy
+- [x] Update Benefits section with same three custom icons (Emotional Support, Practical Planning, Social Reintegration)
+- [x] Rephrase Family Support benefit to emphasize family connection and communication
