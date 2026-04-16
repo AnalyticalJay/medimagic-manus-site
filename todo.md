@@ -162,3 +162,10 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [ ] Update About page with Masters Degree information
 - [ ] Update FAQ with Masters Degree and qualifications
 - [ ] Update service pages with Masters Degree references where relevant
+
+## About Page Icon Updates
+- [x] Extract and upload custom icons for Years Experience and Clients Served section
+- [x] Extract and upload 4 custom icons for Core Values section (Compassion, Collaboration, Clarity, Support)
+- [x] Update About page to use new icons in Years Experience/Clients Served cards
+- [x] Update Core Values section to display 5 cards with new icons
+- [x] Update Integrated Approach description to: "A balanced approach that supports clear, practical decisions while also caring for the people navigating them."

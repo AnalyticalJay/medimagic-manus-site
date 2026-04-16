@@ -145,17 +145,15 @@ export default function About() {
               <div className="grid grid-cols-2 gap-4">
                 <Card className="p-6 bg-accent/5 border border-accent/20 text-center">
                   <div className="flex justify-center mb-3">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/experience-icon-LmPPxUi6eShTqJSiM4shKQ.webp" alt="Experience" className="w-12 h-12" />
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/years_experience_icon_fe223172.png" alt="Years of Experience" className="w-20 h-20" />
                   </div>
-                  <p className="text-3xl font-bold text-accent mb-2">20+</p>
                   <p className="text-sm font-semibold text-foreground">Years of Experience</p>
                 </Card>
 
                 <Card className="p-6 bg-accent/5 border border-accent/20 text-center">
                   <div className="flex justify-center mb-3">
-                    <Users className="w-12 h-12 text-accent" />
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/clients_served_icon_ce9224fc.png" alt="Clients Served" className="w-20 h-20" />
                   </div>
-                  <p className="text-3xl font-bold text-accent mb-2">1000+</p>
                   <p className="text-sm font-semibold text-foreground">Clients Supported</p>
                 </Card>
               </div>
@@ -178,7 +176,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-8">
               <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/values-icon-RQH2woVS7EB4SyorScn4b6.webp" alt="Compassion" className="w-16 h-16" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/compassion_icon_85090b26.png" alt="Compassion" className="w-16 h-16" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Compassion & Care</h3>
               <p className="text-muted-foreground">
@@ -188,11 +186,41 @@ export default function About() {
 
             <Card className="p-8">
               <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/collaboration_icon_0cc1666f.png" alt="Collaboration" className="w-16 h-16" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">Collaboration</h3>
+              <p className="text-muted-foreground">
+                Working together with clients to find solutions that work for everyone involved, building consensus and mutual understanding.
+              </p>
+            </Card>
+
+            <Card className="p-8">
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/clarity_icon_cbf87caa.png" alt="Clarity" className="w-16 h-16" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">Clarity</h3>
+              <p className="text-muted-foreground">
+                Clear communication and transparent processes ensure clients understand their options and make informed decisions with confidence.
+              </p>
+            </Card>
+
+            <Card className="p-8">
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/support_icon_b58b6f9b.png" alt="Support" className="w-16 h-16" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">Support</h3>
+              <p className="text-muted-foreground">
+                Holistic support that addresses both the practical and emotional aspects of life transitions, ensuring clients feel cared for throughout the process.
+              </p>
+            </Card>
+
+            <Card className="p-8">
+              <div className="mb-4">
                 <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/approach-icon-6euxnyxfisY5c3P6C3DLno.webp" alt="Integrated Approach" className="w-16 h-16" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Integrated Approach</h3>
               <p className="text-muted-foreground">
-                Combining mediation's structure with social work's emotional intelligence to address both practical decisions and emotional wellbeing holistically.
+                A balanced approach that supports clear, practical decisions while also caring for the people navigating them.
               </p>
             </Card>
 
