@@ -222,6 +222,18 @@ export default function ParentingPlans() {
                 <p className="text-muted-foreground">The agreements reached are recorded in a comprehensive parenting plan. Where applicable, confirmation of child participation is included. The parenting plan is then submitted to the Office of the Family Advocate for review and endorsement. Once endorsed, it may be made an order of court, giving it legal effect. In divorce matters, the parenting plan is typically incorporated into the final divorce order.</p>
               </div>
             </div>
+
+            <div className="flex gap-4">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-full bg-accent text-accent-foreground font-bold text-lg">
+                  5
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-foreground mb-2">Implementation and Review</h3>
+                <p className="text-muted-foreground">As a final step, the mediator may assist in explaining the parenting plan to the children in an age-appropriate manner. It is recommended that a follow-up mediation session be scheduled approximately six months later to review how well the arrangements are working in practice. Adjustments can then be made as needed, either in response to life changes or through periodic reviews over time.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -233,19 +245,25 @@ export default function ParentingPlans() {
           
           <div className="grid md:grid-cols-3 gap-6 md:gap-6 md:gap-6 md:gap-8">
             <Card className="p-8">
-              <Heart className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_children_best_interests_icon_a6ae8361.png" alt="Children's Best Interests" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Children's Wellbeing</h3>
               <p className="text-muted-foreground">Plans designed with children's best interests at the centre, ensuring stability and meaningful relationships with both parents.</p>
             </Card>
 
             <Card className="p-8">
-              <Users className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_reduced_conflict_icon_5b9c4d37.png" alt="Reduced Conflict" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Reduced Conflict</h3>
               <p className="text-muted-foreground">Clear agreements reduce ongoing disputes, creating a more peaceful environment for children and parents.</p>
             </Card>
 
             <Card className="p-8">
-              <Calendar className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_practical_flexible_icon_c2f20a86.png" alt="Practical & Flexible" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Practical & Flexible</h3>
               <p className="text-muted-foreground">Plans that work in real life and can adapt as children grow and circumstances change.</p>
             </Card>

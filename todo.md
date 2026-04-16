@@ -192,3 +192,6 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Combine problem-solving content into step 2
 - [x] Change step 3 to Child Participation with Voice of the Child Practitioner details
 - [x] Update step 4 to Documentation & Legal Process with Family Advocate review and court endorsement
+- [x] Add step 5 Implementation and Review with child explanation and six-month follow-up
+- [x] Extract and upload 3 benefit icons (Children's Best Interests, Reduced Conflict, Practical & Flexible)
+- [x] Update Benefits section to use new custom icons
