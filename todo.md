@@ -229,3 +229,11 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Update What Is Palliative & End-of-Life Care Support definition with "guidance and support" and "aiding family support"
 - [x] Resize hero image to smaller size and change border to navy
 - [x] Update Benefits section with same three custom icons (Emotional Support, Practical Planning, Social Reintegration)
+
+## Health Education Page Updates
+- [x] Add home page hero illustration to top section
+- [x] Add Treatment Adherence bullet point to Areas We Support
+- [x] Update Empowering text to "Building confidence and agency in health decisions"
+- [x] Add Flexible bullet point "Individual, group or community set-up"
+- [x] Update Benefits section with same three custom icons (Emotional Support, Practical Planning, Social Reintegration)
+- [x] Rephrase Family Support benefit to emphasize family connection and communication

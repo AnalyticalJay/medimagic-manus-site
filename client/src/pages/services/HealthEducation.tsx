@@ -55,7 +55,7 @@ export default function HealthEducation() {
             {/* Service Image */}
             <div className="flex justify-center mt-8 lg:mt-0">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/health-education-vqJKqEFaHyJ8aqVLfGvQKU.webp" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/medimagic_hero_illustration_home_page.webp" 
                 alt="Health Education & Wellness" 
                 className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
               />
@@ -124,6 +124,13 @@ export default function HealthEducation() {
                       <p className="text-sm text-muted-foreground">Connecting individuals to health services, support groups, and community resources.</p>
                     </div>
                   </div>
+                  <div className="flex gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="font-bold text-foreground">Treatment Adherence</h4>
+                      <p className="text-sm text-muted-foreground">Supporting individuals to understand, manage, and consistently follow their treatment plans to improve health outcomes and overall wellbeing.</p>
+                    </div>
+                  </div>
                 </div>
           </div>
         </div>
@@ -155,6 +162,10 @@ export default function HealthEducation() {
               <li className="flex gap-2">
                 <span className="text-accent font-bold">✓</span>
                 <span className="text-muted-foreground"><strong>Empowering:</strong> Building confidence and agency in health decisions</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent font-bold">✓</span>
+                <span className="text-muted-foreground"><strong>Flexible:</strong> Individual, group or community set-up</span>
               </li>
             </ul>
           </Card>
@@ -232,21 +243,27 @@ export default function HealthEducation() {
           
           <div className="grid md:grid-cols-3 gap-6 md:gap-6 md:gap-6 md:gap-8">
             <Card className="p-8">
-              <Heart className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_emotional_support_icon_f6013bdb.png" alt="Emotional Support" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Informed Decisions</h3>
               <p className="text-muted-foreground">Make confident, informed health decisions based on evidence and your personal values.</p>
             </Card>
 
             <Card className="p-8">
-              <Lightbulb className="w-10 h-10 text-accent mb-4" />
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_practical_planning_icon_75cd656d.png" alt="Practical Planning" className="w-16 h-16" />
+              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Practical Skills</h3>
               <p className="text-muted-foreground">Develop actionable skills for nutrition, exercise, stress management, and healthy living.</p>
             </Card>
 
             <Card className="p-8">
-              <Users className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-xl font-bold text-foreground mb-3">Community Connection</h3>
-              <p className="text-muted-foreground">Connect with health resources and support communities for ongoing wellness.</p>
+              <div className="mb-4">
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/benefit_social_reintegration_icon_0d42095e.png" alt="Social Reintegration" className="w-16 h-16" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">Family Support</h3>
+              <p className="text-muted-foreground">Supporting families to stay connected and communicate effectively through health challenges.</p>
             </Card>
           </div>
         </div>
