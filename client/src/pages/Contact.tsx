@@ -2,6 +2,7 @@ import { Mail, Phone, MapPin, Clock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useLocation } from "wouter";
+import Footer from "@/components/Footer";
 
 export default function Contact() {
   const [, navigate] = useLocation();
@@ -211,6 +212,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

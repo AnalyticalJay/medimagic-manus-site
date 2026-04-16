@@ -4,6 +4,7 @@ import { ArrowLeft, Check, Menu, X, ChevronDown, Heart, Award, Lightbulb, Users 
 import { useLocation } from "wouter";
 import { useState } from "react";
 import { ScrollAnimationWrapper } from "@/components/ScrollAnimationWrapper";
+import Footer from "@/components/Footer";
 
 export default function About() {
   const [, navigate] = useLocation();
@@ -316,6 +317,7 @@ export default function About() {
           </button>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
