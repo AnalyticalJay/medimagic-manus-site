@@ -46,11 +46,8 @@ export default function Footer() {
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_pTZa1S_image_849e5472.png" 
                 alt="MediMagic Logo" 
-                className="h-32 w-auto mb-4"
+                className="h-24 w-24"
               />
-              <p className="text-gray-300 text-sm text-center">
-                Professional Family Law Mediation and Social Work Services
-              </p>
             </div>
 
             {/* Services with Dropdowns */}
