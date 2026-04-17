@@ -247,3 +247,7 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Change Saturday by appointment to Afterhours / Weekends by appointment
 - [x] Update FAQ question to Do you offer sliding scale fees or payment plans
 - [x] Add Other option to Service Type in booking form
+
+## Footer Updates
+- [x] Replace footer logo and MEDIMAGIC text with MediMagic circle logo
+- [x] Center logo and description in footer first column
