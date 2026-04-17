@@ -197,7 +197,7 @@ export default function Home() {
                   onMouseLeave={(e) => e.currentTarget.classList.remove('animate-card-lift-enhanced')}>
                   <div className="text-5xl mb-4">⭐</div>
                   <h3 className="text-xl font-bold text-[#0F3D4C] mb-3">Highly Qualified</h3>
-                  <p className="text-gray-600">FAMAC Accredited Mediator, SASW Registered Social Worker, Masters Degree holder with 20+ years experience.</p>
+                  <p className="text-gray-600">NABFAM Accredited Mediator, SACSSP Registered Social Worker, Masters Degree holder with 20+ years experience.</p>
                 </div>
             </div>
           </div>
