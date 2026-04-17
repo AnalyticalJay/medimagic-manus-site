@@ -44,9 +44,9 @@ export default function Footer() {
             {/* Company Info with Logo */}
             <div className="flex flex-col items-center justify-center">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_pTZa1S_image_849e5472.png" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/ChatGPTImageJan8,2026,09_40_25PM_ce713a05.png" 
                 alt="MediMagic Logo" 
-                className="h-24 w-24"
+                className="h-32 w-auto"
               />
             </div>
 
