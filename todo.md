@@ -299,3 +299,8 @@ Complete website migration and rebuild for a mediation and social work practice.
 
 ## Home Page Flexible Schedule Icon Final Update
 - [x] Replace flexible schedule icon with the calendar and checkmark in circular frame icon
+
+## Storage Proxy Configuration
+- [x] Set up storage proxy for /manus-storage/* paths
+- [x] Register storage proxy in server/_core/index.ts
+- [x] Restart dev server to apply changes
