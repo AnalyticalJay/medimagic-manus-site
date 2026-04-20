@@ -216,7 +216,7 @@ export default function About() {
 
             <Card className="p-8">
               <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/approach-icon-6euxnyxfisY5c3P6C3DLno.webp" alt="Integrated Approach" className="w-16 h-16" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/ChatGPTImageApr17,2026,05_50_14PM_70226ed4.png" alt="Integrated Approach" className="w-24 h-24" style={{backgroundPosition: '0 0', backgroundSize: '300%', backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/ChatGPTImageApr17,2026,05_50_14PM_70226ed4.png)', backgroundRepeat: 'no-repeat'}} />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Integrated Approach</h3>
               <p className="text-muted-foreground">
@@ -226,7 +226,7 @@ export default function About() {
 
             <Card className="p-8">
               <div className="mb-4">
-                <Lightbulb className="w-16 h-16 text-accent" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/ChatGPTImageApr17,2026,05_50_14PM_70226ed4.png" alt="Professional Excellence" className="w-24 h-24" style={{backgroundPosition: '-100% 0', backgroundSize: '300%', backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/ChatGPTImageApr17,2026,05_50_14PM_70226ed4.png)', backgroundRepeat: 'no-repeat'}} />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Professional Excellence</h3>
               <p className="text-muted-foreground">
@@ -236,7 +236,7 @@ export default function About() {
 
             <Card className="p-8">
               <div className="mb-4">
-                <Heart className="w-16 h-16 text-accent" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/ChatGPTImageApr17,2026,05_50_14PM_70226ed4.png" alt="Client-Centred Care" className="w-24 h-24" style={{backgroundPosition: '-200% 0', backgroundSize: '300%', backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/ChatGPTImageApr17,2026,05_50_14PM_70226ed4.png)', backgroundRepeat: 'no-repeat'}} />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Client-Centred Care</h3>
               <p className="text-muted-foreground">
