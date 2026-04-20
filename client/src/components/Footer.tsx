@@ -15,7 +15,7 @@ export default function Footer() {
   ];
 
   const socialWorkServices = [
-    { name: "Adult Divorce Preparation", path: "/services/adult-divorce-prep" },
+    { name: "Divorce Preparation and Counselling", path: "/services/adult-divorce-prep" },
     { name: "Illness & Disability Support", path: "/services/illness-disability" },
     { name: "Palliative Care Support", path: "/services/palliative-care" },
     { name: "Health Education", path: "/services/health-education" },

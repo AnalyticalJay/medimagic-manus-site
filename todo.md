@@ -304,3 +304,6 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Set up storage proxy for /manus-storage/* paths
 - [x] Register storage proxy in server/_core/index.ts
 - [x] Restart dev server to apply changes
+
+## Navigation Menu Updates
+- [x] Remove "Adult" from "Adult Divorce Preparation" in Social Work dropdown menu
