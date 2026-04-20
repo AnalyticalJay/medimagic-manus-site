@@ -99,10 +99,11 @@ export default function Booking() {
     "Maintenance Agreements",
     "Parenting Plans",
     "Voice of Child",
-    "Adult Divorce Prep",
+    "Divorce Preparation",
     "Illness & Disability",
     "Palliative Care",
     "Health Education",
+    "Other",
   ];
 
   const timeSlots = [

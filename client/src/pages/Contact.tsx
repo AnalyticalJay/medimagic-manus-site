@@ -28,7 +28,7 @@ export default function Contact() {
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/medimagic_logo_main_7f8b9c2a.png" 
                 alt="MediMagic Logo" 
-                className="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-lg border-4 border-white"
+                className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full shadow-lg border-4 border-white"
               />
             </div>
           </div>
