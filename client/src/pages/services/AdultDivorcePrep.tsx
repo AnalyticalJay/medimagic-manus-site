@@ -129,7 +129,7 @@ export default function AdultDivorcePrep() {
         </div>
 
         <div className="space-y-8">
-          <div>
+          <div className="pt-8">
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/adult-divorce-prep-content-BpiLE6xBKiRVZshSMf7n8w.webp" 
               alt="Emotional support and healing" 

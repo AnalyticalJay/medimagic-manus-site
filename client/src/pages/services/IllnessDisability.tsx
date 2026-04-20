@@ -129,7 +129,7 @@ export default function IllnessDisability() {
         </div>
 
         <div className="space-y-8">
-          <div>
+          <div className="pt-8">
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/illness-disability-content-LYZMPav9drhb22dCT5ncBa.webp" 
               alt="Healthcare support and compassionate care" 

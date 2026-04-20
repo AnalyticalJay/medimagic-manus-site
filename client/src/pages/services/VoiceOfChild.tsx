@@ -136,7 +136,7 @@ export default function VoiceOfChild() {
         </div>
 
         <div className="space-y-8">
-          <div>
+          <div className="pt-8">
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_lu2KJ6_image_3ec25ed4.png" 
               alt="Child empowerment and advocacy" 

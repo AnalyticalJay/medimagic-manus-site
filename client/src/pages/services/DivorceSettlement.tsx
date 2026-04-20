@@ -136,7 +136,7 @@ export default function DivorceSettlement() {
                 </div>
               </div>
 
-              <div>
+              <div className="pt-8">
                 <img 
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_y747ly_image_abff7ab6.png" 
                   alt="Professional divorce mediation" 

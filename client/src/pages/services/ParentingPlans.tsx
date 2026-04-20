@@ -126,7 +126,7 @@ export default function ParentingPlans() {
         </div>
 
         <div className="space-y-8">
-          <div>
+          <div className="pt-8">
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_oA9Jng_image_907d4496.png" 
               alt="Happy co-parenting family" 

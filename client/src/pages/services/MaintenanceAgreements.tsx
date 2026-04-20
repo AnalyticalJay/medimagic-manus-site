@@ -129,7 +129,7 @@ export default function MaintenanceAgreements() {
         </div>
 
         <div className="space-y-8">
-          <div>
+          <div className="pt-8">
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_qICqsS_image_11947b66.png" 
               alt="Children's wellbeing and security" 
