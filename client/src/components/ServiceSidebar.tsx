@@ -24,7 +24,7 @@ export default function ServiceSidebar({
     category === "mediation" ? "Mediation Services" : "Social Work Services";
 
   return (
-    <aside className="w-full md:w-64 flex-shrink-0">
+    <aside className="w-full md:w-80 flex-shrink-0">
       <div className="sticky top-20 bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
         {/* Sidebar Header */}
         <div className="bg-[#0F3D4C] px-6 py-4">
@@ -43,7 +43,7 @@ export default function ServiceSidebar({
                   : "text-gray-700 hover:bg-gray-50"
               }`}
             >
-              <span className="flex-1">{service.name}</span>
+              <span className="flex-1 break-words whitespace-normal">{service.name}</span>
               <ChevronRight
                 className={`w-4 h-4 transition-transform ${
                   currentService === service.name

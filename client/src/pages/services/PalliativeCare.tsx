@@ -69,7 +69,7 @@ export default function PalliativeCare() {
         category="social-work"
         currentService="Palliative Care"
         services={[
-          { name: "Adult Divorce Prep", path: "/services/adult-divorce-prep" },
+          { name: "Divorce Preparation and Counselling", path: "/services/adult-divorce-prep" },
           { name: "Illness & Disability", path: "/services/illness-disability" },
           { name: "Palliative Care", path: "/services/palliative-care" },
           { name: "Health Education", path: "/services/health-education" },
