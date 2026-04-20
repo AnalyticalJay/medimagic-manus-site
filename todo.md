@@ -329,3 +329,7 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Create health education and wellness image with same styling as other Social Work pages
 - [x] Add the image to the "Areas we support" section of Health Education page
 - [x] Remove "and agency" from "Empowering: Building confidence and agency in health decisions" bullet point
+
+## Health Education Page - Benefits Icons Update
+- [x] Extract and upload three benefit icons (Informed Decisions, Practical Skills, Family Support)
+- [x] Replace benefit icons in Benefits section with new custom icons

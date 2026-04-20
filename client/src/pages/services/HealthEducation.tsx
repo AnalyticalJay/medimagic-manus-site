@@ -244,7 +244,7 @@ export default function HealthEducation() {
           <div className="grid md:grid-cols-3 gap-6 md:gap-6 md:gap-6 md:gap-8">
             <Card className="p-8">
               <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_VpkrRi_image_c2aaa560.png" alt="Emotional Support" className="w-20 h-20" style={{ objectPosition: '0 0', objectFit: 'cover', width: '80px', height: '80px' }} />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/health-benefit-informed-decisions-X4DuUxcfu99UuC5YoRteHH.webp" alt="Informed Decisions" className="w-20 h-20" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Informed Decisions</h3>
               <p className="text-muted-foreground">Make confident, informed health decisions based on evidence and your personal values.</p>
@@ -252,7 +252,7 @@ export default function HealthEducation() {
 
             <Card className="p-8">
               <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_VpkrRi_image_c2aaa560.png" alt="Practical Planning" className="w-20 h-20" style={{ objectPosition: '-80px 0', objectFit: 'cover', width: '80px', height: '80px' }} />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/health-benefit-practical-skills-kdYe5hsGkc88F8bACVPU3Y.webp" alt="Practical Skills" className="w-20 h-20" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Practical Skills</h3>
               <p className="text-muted-foreground">Develop actionable skills for nutrition, exercise, stress management, and healthy living.</p>
@@ -260,7 +260,7 @@ export default function HealthEducation() {
 
             <Card className="p-8">
               <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_VpkrRi_image_c2aaa560.png" alt="Social Reintegration" className="w-20 h-20" style={{ objectPosition: '-160px 0', objectFit: 'cover', width: '80px', height: '80px' }} />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/health-benefit-family-support-i7aVsFQL8J4ZdZpZJ8onue.webp" alt="Family Support" className="w-20 h-20" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Family Support</h3>
               <p className="text-muted-foreground">Supporting families to stay connected and communicate effectively through health challenges.</p>
