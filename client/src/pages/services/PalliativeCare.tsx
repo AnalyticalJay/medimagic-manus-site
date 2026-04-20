@@ -129,7 +129,7 @@ export default function PalliativeCare() {
         </div>
 
         <div className="space-y-8">
-          <div className="flex justify-center py-8">
+          <div>
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/palliative-care-content-kMKPDW7XnLk7CZZp3hyUZV.webp" 
               alt="Peaceful family gathering and dignified end-of-life care" 

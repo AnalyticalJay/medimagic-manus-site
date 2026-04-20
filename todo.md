@@ -321,3 +321,6 @@ Complete website migration and rebuild for a mediation and social work practice.
 
 ## Voice of the Child Assessments Service Page
 - [x] Add hero section image to Voice of the Child Assessments service detail page
+
+## Service Detail Pages Image Spacing Consistency
+- [x] Match image spacing on all service detail pages to Divorce Settlements Agreements page
