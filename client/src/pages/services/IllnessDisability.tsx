@@ -57,7 +57,7 @@ export default function IllnessDisability() {
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/illness-disability-BUDZwUcbhbA5Z3fUUjjZHQ.webp" 
                 alt="Illness & Disability Support" 
-                className="w-full max-w-xs sm:max-w-sm h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
+                className="w-full max-w-lg sm:max-w-xl h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
               />
             </div>
           </div>
@@ -129,11 +129,11 @@ export default function IllnessDisability() {
         </div>
 
         <div className="space-y-8">
-          <div className="rounded-lg overflow-hidden shadow-lg">
+          <div className="flex justify-center">
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/illness-disability-content-LYZMPav9drhb22dCT5ncBa.webp" 
               alt="Healthcare support and compassionate care" 
-              className="w-full h-auto"
+              className="w-full max-w-md h-auto rounded-2xl border-4 border-[#5DBB63]"
             />
           </div>
 

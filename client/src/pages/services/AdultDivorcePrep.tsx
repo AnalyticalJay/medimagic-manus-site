@@ -57,7 +57,7 @@ export default function AdultDivorcePrep() {
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/adult-divorce-prep-hdiAXYVUZdPW3m8urReFKL.webp" 
                 alt="Adult Divorce Preparation" 
-                className="w-full max-w-xs sm:max-w-sm h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
+                className="w-full max-w-lg sm:max-w-xl h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
               />
             </div>
           </div>
@@ -129,11 +129,11 @@ export default function AdultDivorcePrep() {
         </div>
 
         <div className="space-y-8">
-          <div className="rounded-lg overflow-hidden shadow-lg">
+          <div className="flex justify-center">
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/adult-divorce-prep-content-BpiLE6xBKiRVZshSMf7n8w.webp" 
               alt="Emotional support and healing" 
-              className="w-full h-auto"
+              className="w-full max-w-md h-auto rounded-2xl border-4 border-[#5DBB63]"
             />
           </div>
 

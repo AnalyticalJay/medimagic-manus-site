@@ -57,7 +57,7 @@ export default function HealthEducation() {
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/medimagic_hero_illustration_home_page.webp" 
                 alt="Health Education & Wellness" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
+                className="w-full max-w-lg sm:max-w-xl h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
               />
             </div>
           </div>
@@ -136,11 +136,11 @@ export default function HealthEducation() {
         </div>
 
         <div className="space-y-8">
-          <div className="rounded-lg overflow-hidden shadow-lg">
+          <div className="flex justify-center">
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/health-education-content-5Hc3Rvq8VXgSZYnGz4XYQH.webp" 
               alt="Health education and wellness resources" 
-              className="w-full h-auto"
+              className="w-full max-w-md h-auto rounded-2xl border-4 border-[#5DBB63]"
             />
           </div>
 
