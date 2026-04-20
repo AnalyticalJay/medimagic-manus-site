@@ -284,3 +284,8 @@ Complete website migration and rebuild for a mediation and social work practice.
 
 ## Home Page Icon Correction
 - [x] Remove first two icons from "Flexible to Your Schedule" block, keep only the calendar with checkmark icon
+
+## About Us Page Icon Updates
+- [x] Remove background from "Years of Experience" icon (make transparent)
+- [x] Remove background from "Clients Supported" icon (make transparent)
+- [x] Add "1K" text to "Clients Supported" icon to match "Years of Experience" icon style
