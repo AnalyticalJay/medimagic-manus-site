@@ -274,3 +274,10 @@ Complete website migration and rebuild for a mediation and social work practice.
 
 ## FAQ Text Correction
 - [x] Remove erroneous "c." prefix and ".io" suffix from FAQ answer for "Is Mediation only for Divorce and Parenting Cases?"
+
+## Social Work Services Hero Image Sizing Fix
+- [x] Fix hero section image sizes on all 4 Social Work service detail pages to match Mediation service sizing (max-w-lg sm:max-w-xl)
+- [x] Verify Divorce Preparation and Counselling hero image sizing
+- [x] Verify Illness & Disability hero image sizing
+- [x] Verify Palliative Care hero image sizing
+- [x] Verify Health Education hero image sizing

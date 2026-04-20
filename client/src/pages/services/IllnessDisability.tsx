@@ -57,7 +57,7 @@ export default function IllnessDisability() {
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/illness-disability-BUDZwUcbhbA5Z3fUUjjZHQ.webp" 
                 alt="Illness & Disability Support" 
-                className="w-full max-w-lg sm:max-w-xl h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
+                className="w-full max-w-lg sm:max-w-xl h-auto max-h-96 object-cover rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
               />
             </div>
           </div>
