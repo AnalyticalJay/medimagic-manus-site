@@ -86,7 +86,7 @@ export default function ParentingPlans() {
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-4">What Is a Parenting Plan?</h3>
             <p className="text-muted-foreground mb-4">
-              A parenting plan is a detailed agreement that outlines how parents or guardians will share the responsibility to raise and care for their children after separation, divorce or death. It covers custody, care, residency and contact arrangements (previously known as custody and visitation schedules), decision-making authority, and other arrangements designed to ensure children's physical, emotional, and developmental needs are met. A well-crafted parenting plan provides clarity, reduces conflict, and gives children the security of knowing what to expect.
+              A parenting plan is a detailed agreement that outlines how parents or guardians will share the responsibility to raise and care for their children after separation, divorce or death. It covers care, residency and contact arrangements (previously known as custody and visitation schedules), decision-making authority, and other arrangements designed to ensure children's physical, emotional, and developmental needs are met. A well-crafted parenting plan provides clarity, reduces conflict, and gives children the security of knowing what to expect.
             </p>
           </div>
 
