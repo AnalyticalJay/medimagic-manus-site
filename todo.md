@@ -296,3 +296,6 @@ Complete website migration and rebuild for a mediation and social work practice.
 ## About Us Page Icon Replacement
 - [x] Replace "Years of Experience" icon with 20 Years icon
 - [x] Replace "Clients Supported" icon with 1K Clients icon with stars
+
+## Home Page Flexible Schedule Icon Final Update
+- [x] Replace flexible schedule icon with the calendar and checkmark in circular frame icon
