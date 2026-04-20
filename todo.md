@@ -318,3 +318,6 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Update Collaboration icon size to match other icons (w-24 h-24)
 - [x] Update Clarity icon size to match other icons (w-24 h-24)
 - [x] Update Support icon size to match other icons (w-24 h-24)
+
+## Voice of the Child Assessments Service Page
+- [x] Add hero section image to Voice of the Child Assessments service detail page
