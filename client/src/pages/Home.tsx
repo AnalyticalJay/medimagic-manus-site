@@ -339,12 +339,21 @@ export default function Home() {
               </div>
               <div className="bg-[#1a3a52] p-6 rounded-lg border-2 border-[#5DBB63] text-white shadow-lg hover:shadow-xl transition-all flex flex-col items-center">
                 <div className="mb-4 flex justify-center">
-                  <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/calendar_clock_icon_4120d120.png" alt="Flexible to Your Schedule" className="h-24 w-auto brightness-0 invert" />
-                  <style>{`
-                    img[alt="Flexible to Your Schedule"] {
-                      filter: brightness(0) invert(1);
-                    }
-                  `}</style>
+                  <svg className="h-24 w-24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Clock circle */}
+                    <circle cx="30" cy="30" r="18" stroke="#5DBB63" strokeWidth="2" />
+                    {/* Clock hands */}
+                    <line x1="30" y1="30" x2="30" y2="18" stroke="#5DBB63" strokeWidth="2" strokeLinecap="round" />
+                    <line x1="30" y1="30" x2="38" y2="30" stroke="#5DBB63" strokeWidth="2" strokeLinecap="round" />
+                    {/* Calendar */}
+                    <rect x="50" y="18" width="35" height="35" rx="3" stroke="#5DBB63" strokeWidth="2" />
+                    <line x1="50" y1="26" x2="85" y2="26" stroke="#5DBB63" strokeWidth="1.5" />
+                    {/* Calendar date blocks */}
+                    <rect x="54" y="32" width="6" height="6" fill="#5DBB63" />
+                    <rect x="64" y="32" width="6" height="6" fill="#5DBB63" />
+                    <rect x="74" y="32" width="6" height="6" fill="#5DBB63" />
+                    <rect x="54" y="42" width="6" height="6" fill="#5DBB63" />
+                  </svg>
                 </div>
                 <h3 className="text-lg font-bold mb-2 text-center">Flexible to Your Schedule</h3>
                 <p className="text-white/90 text-center">Conveniently access support at times that suit your lifestyle.</p>
