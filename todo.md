@@ -324,3 +324,8 @@ Complete website migration and rebuild for a mediation and social work practice.
 
 ## Service Detail Pages Image Spacing Consistency
 - [x] Match image spacing on all service detail pages to Divorce Settlements Agreements page
+
+## Health Education Page - Areas We Support Image
+- [x] Create health education and wellness image with same styling as other Social Work pages
+- [x] Add the image to the "Areas we support" section of Health Education page
+- [x] Remove "and agency" from "Empowering: Building confidence and agency in health decisions" bullet point

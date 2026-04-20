@@ -138,7 +138,7 @@ export default function HealthEducation() {
         <div className="space-y-8">
           <div className="pt-8">
             <img 
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/health-education-content-5Hc3Rvq8VXgSZYnGz4XYQH.webp" 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/health-education-wellness-KQU5Gtk5EQck5HLEY8cQew.webp" 
               alt="Health education and wellness resources" 
               className="w-full max-w-md h-auto rounded-2xl border-4 border-[#5DBB63]"
             />
@@ -161,7 +161,7 @@ export default function HealthEducation() {
               </li>
               <li className="flex gap-2">
                 <span className="text-accent font-bold">✓</span>
-                <span className="text-muted-foreground"><strong>Empowering:</strong> Building confidence and agency in health decisions</span>
+                <span className="text-muted-foreground"><strong>Empowering:</strong> Building confidence in health decisions</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-accent font-bold">✓</span>
