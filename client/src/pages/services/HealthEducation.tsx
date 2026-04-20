@@ -244,7 +244,7 @@ export default function HealthEducation() {
           <div className="grid md:grid-cols-3 gap-6 md:gap-6 md:gap-6 md:gap-8">
             <Card className="p-8">
               <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/health-benefit-informed-decisions-X4DuUxcfu99UuC5YoRteHH.webp" alt="Informed Decisions" className="w-20 h-20" />
+                <img src="/manus-storage/InformedDecisions_8f19c5af.png" alt="Informed Decisions" className="w-20 h-20" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Informed Decisions</h3>
               <p className="text-muted-foreground">Make confident, informed health decisions based on evidence and your personal values.</p>
@@ -252,7 +252,7 @@ export default function HealthEducation() {
 
             <Card className="p-8">
               <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/health-benefit-practical-skills-kdYe5hsGkc88F8bACVPU3Y.webp" alt="Practical Skills" className="w-20 h-20" />
+                <img src="/manus-storage/PracticalSkillsicon_c3d430cb.png" alt="Practical Skills" className="w-20 h-20" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Practical Skills</h3>
               <p className="text-muted-foreground">Develop actionable skills for nutrition, exercise, stress management, and healthy living.</p>
@@ -260,7 +260,7 @@ export default function HealthEducation() {
 
             <Card className="p-8">
               <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/health-benefit-family-support-i7aVsFQL8J4ZdZpZJ8onue.webp" alt="Family Support" className="w-20 h-20" />
+                <img src="/manus-storage/FamilySupportIcon_1946b521.png" alt="Family Support" className="w-20 h-20" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Family Support</h3>
               <p className="text-muted-foreground">Supporting families to stay connected and communicate effectively through health challenges.</p>
