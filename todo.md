@@ -307,3 +307,8 @@ Complete website migration and rebuild for a mediation and social work practice.
 
 ## Navigation Menu Updates
 - [x] Remove "Adult" from "Adult Divorce Preparation" in Social Work dropdown menu
+
+## About Us Page CORE VALUES & APPROACH Icons
+- [x] Replace Integrated Approach icon with correct icon
+- [x] Replace Professional Excellence icon with correct icon
+- [x] Replace Client-Centred Care icon with correct icon
