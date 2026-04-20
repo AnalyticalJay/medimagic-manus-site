@@ -57,7 +57,7 @@ export default function Home() {
     { q: "What if we cannot reach agreement through mediation?", a: "If mediation doesn't resolve all issues, you can pursue litigation for remaining matters." },
     { q: "Are online consultations as effective as in-person sessions?", a: "Yes, we offer both online and in-person consultations with equal effectiveness." },
     { q: "How do I know if mediation is right for my situation?", a: "Contact us for a free consultation to discuss your specific circumstances." },
-    { q: "Is Mediation only for Divorce and Parenting Cases?", a: "c.No, mediation can be used for a wide range of family disputes, including decisions about elderly care, medical or healthcare choices, and sensitive matters such as wills and inheritance.io" },
+    { q: "Is Mediation only for Divorce and Parenting Cases?", a: "No, mediation can be used for a wide range of family disputes, including decisions about elderly care, medical or healthcare choices, and sensitive matters such as wills and inheritance." },
   ];
 
   return (

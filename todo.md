@@ -271,3 +271,6 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Update first social work service card title to "Divorce Preparation and Counselling" (capitalize C)
 - [x] Update AdultDivorcePrep page breadcrumb to reflect new title
 - [x] Update AdultDivorcePrep sidebar service name to match new title
+
+## FAQ Text Correction
+- [x] Remove erroneous "c." prefix and ".io" suffix from FAQ answer for "Is Mediation only for Divorce and Parenting Cases?"
