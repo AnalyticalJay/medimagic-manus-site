@@ -289,3 +289,6 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Remove background from "Years of Experience" icon (make transparent)
 - [x] Remove background from "Clients Supported" icon (make transparent)
 - [x] Add "1K" text to "Clients Supported" icon to match "Years of Experience" icon style
+
+## Home Page Flexible to Your Schedule Icon Update
+- [x] Replace calendar with checkmark icon with new flexible time icon (calendar and clock)
