@@ -281,3 +281,6 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Verify Illness & Disability hero image sizing
 - [x] Verify Palliative Care hero image sizing
 - [x] Verify Health Education hero image sizing
+
+## Home Page Icon Correction
+- [x] Remove first two icons from "Flexible to Your Schedule" block, keep only the calendar with checkmark icon
