@@ -126,11 +126,11 @@ export default function ParentingPlans() {
         </div>
 
         <div className="space-y-8">
-          <div className="flex justify-center">
+          <div>
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_oA9Jng_image_907d4496.png" 
               alt="Happy co-parenting family" 
-              className="w-full max-w-md h-auto rounded-2xl border-4 border-[#5DBB63]"
+              className="w-full max-w-md h-auto rounded-xl border-4 border-[#5DBB63]"
             />
           </div>
 
