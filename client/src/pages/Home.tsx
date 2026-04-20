@@ -339,7 +339,7 @@ export default function Home() {
               </div>
               <div className="bg-[#1a3a52] p-6 rounded-lg border-2 border-[#5DBB63] text-white shadow-lg hover:shadow-xl transition-all flex flex-col items-center">
                 <div className="mb-4 flex justify-center">
-                  <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/flexible-schedule-calendar-clock-icon-mNrgj8Ls7yuYomhEMBxktn.webp" alt="Flexible to Your Schedule" className="h-24 w-auto" />
+                  <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/flexible-schedule-last-icon-oLXxWXYk72CzcxKcEjCUCa.webp" alt="Flexible to Your Schedule" className="h-24 w-auto" />
                 </div>
                 <h3 className="text-lg font-bold mb-2 text-center">Flexible to Your Schedule</h3>
                 <p className="text-white/90 text-center">Conveniently access support at times that suit your lifestyle.</p>
