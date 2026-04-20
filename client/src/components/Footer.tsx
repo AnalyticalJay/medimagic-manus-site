@@ -11,10 +11,10 @@ export default function Footer() {
     { name: "Divorce Settlement", path: "/services/divorce-settlement" },
     { name: "Parenting Plans", path: "/services/parenting-plans" },
     { name: "Maintenance Agreements", path: "/services/maintenance-agreements" },
+    { name: "Voice of the Child Assessments", path: "/services/voice-of-child" },
   ];
 
   const socialWorkServices = [
-    { name: "Voice of the Child", path: "/services/voice-of-child" },
     { name: "Adult Divorce Preparation", path: "/services/adult-divorce-prep" },
     { name: "Illness & Disability Support", path: "/services/illness-disability" },
     { name: "Palliative Care Support", path: "/services/palliative-care" },
