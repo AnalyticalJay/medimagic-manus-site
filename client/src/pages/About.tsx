@@ -145,14 +145,14 @@ export default function About() {
               <div className="grid grid-cols-2 gap-4">
                 <Card className="p-6 bg-accent/5 border border-accent/20 text-center">
                   <div className="flex justify-center mb-3">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/about-us-icons-6BHeJbk6LufBqNC4eXDX9E.webp" alt="Years of Experience" className="w-24 h-24" />
+                    <img src="/manus-storage/20-years-icon_6fe71d69.png" alt="Years of Experience" className="w-24 h-24" />
                   </div>
                   <p className="text-sm font-semibold text-foreground">Years of Experience</p>
                 </Card>
 
                 <Card className="p-6 bg-accent/5 border border-accent/20 text-center">
                   <div className="flex justify-center mb-3">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/about-us-icons-6BHeJbk6LufBqNC4eXDX9E.webp" alt="Clients Supported" className="w-24 h-24" />
+                    <img src="/manus-storage/1k-clients-icon_bb5a4044.png" alt="Clients Supported" className="w-24 h-24" />
                   </div>
                   <p className="text-sm font-semibold text-foreground">Clients Supported</p>
                 </Card>
