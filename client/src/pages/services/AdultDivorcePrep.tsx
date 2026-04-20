@@ -31,7 +31,7 @@ export default function AdultDivorcePrep() {
       <Breadcrumb items={[
         { label: 'Home', href: '/' },
         { label: 'Social Work Services', href: '/#social-work' },
-        { label: 'Adult Divorce Preparation' },
+        { label: 'Divorce Preparation and Counselling' },
       ]} />
 
       {/* Hero Section */}
@@ -67,9 +67,9 @@ export default function AdultDivorcePrep() {
       {/* Main Content with Sidebar */}
       <ServicePageWithSidebar
         category="social-work"
-        currentService="Adult Divorce Prep"
+        currentService="Divorce Preparation and Counselling"
         services={[
-          { name: "Adult Divorce Prep", path: "/services/adult-divorce-prep" },
+          { name: "Divorce Preparation and Counselling", path: "/services/adult-divorce-prep" },
           { name: "Illness & Disability", path: "/services/illness-disability" },
           { name: "Palliative Care", path: "/services/palliative-care" },
           { name: "Health Education", path: "/services/health-education" },

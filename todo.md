@@ -266,3 +266,8 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Move current Maintenance Agreements hero image to Key Areas Addressed section
 - [x] Replace hero section images on Voice of the Child detail page with card image
 - [x] Move current Voice of the Child hero image to Key Areas Addressed section
+
+## Service Card Title Updates
+- [x] Update first social work service card title to "Divorce Preparation and Counselling" (capitalize C)
+- [x] Update AdultDivorcePrep page breadcrumb to reflect new title
+- [x] Update AdultDivorcePrep sidebar service name to match new title
