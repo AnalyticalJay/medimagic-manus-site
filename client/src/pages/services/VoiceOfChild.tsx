@@ -55,9 +55,9 @@ export default function VoiceOfChild() {
             {/* Service Image */}
             <div className="flex justify-center mt-8 lg:mt-0">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_lu2KJ6_image_3ec25ed4.png" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_zLKqPb_VoiceOfChild_d5c9e8c2.png" 
                 alt="Voice of the Child Practitioner" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
+                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
               />
             </div>
           </div>
@@ -138,9 +138,9 @@ export default function VoiceOfChild() {
         <div className="space-y-8">
           <div className="rounded-lg overflow-hidden shadow-lg">
             <img 
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/voice-of-child-content-2kYjisopVkY6KkiQVGSH2T.webp" 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_lu2KJ6_image_3ec25ed4.png" 
               alt="Child empowerment and advocacy" 
-              className="w-full h-auto"
+              className="w-full h-auto rounded-2xl border-4 border-[#1a3a52]"
             />
           </div>
 

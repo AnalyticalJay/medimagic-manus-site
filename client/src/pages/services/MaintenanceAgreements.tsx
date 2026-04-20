@@ -55,9 +55,9 @@ export default function MaintenanceAgreements() {
             {/* Service Image */}
             <div className="flex justify-center mt-8 lg:mt-0">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_qICqsS_image_11947b66.png" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_zQexNL_MaintenanceAgreements_32fcc08a.png" 
                 alt="Child Maintenance Mediation" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
+                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
               />
             </div>
           </div>
@@ -131,9 +131,9 @@ export default function MaintenanceAgreements() {
         <div className="space-y-8">
           <div className="rounded-lg overflow-hidden shadow-lg">
             <img 
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/maintenance-agreements-content-cDvZ8HX2vLRQfqJhBKPXDX.webp" 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_qICqsS_image_11947b66.png" 
               alt="Children's wellbeing and security" 
-              className="w-full h-auto"
+              className="w-full h-auto rounded-2xl border-4 border-[#1a3a52]"
             />
           </div>
 

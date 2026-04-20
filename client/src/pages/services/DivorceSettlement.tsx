@@ -55,9 +55,9 @@ export default function DivorceSettlement() {
             {/* Service Image */}
             <div className="flex justify-center mt-8 lg:mt-0">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_y747ly_image_abff7ab6.png" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_fcM4sa_divorce-settleent_e4ada8cb.png" 
                 alt="Divorce Settlement Mediation" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
+                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
               />
             </div>
           </div>
@@ -138,9 +138,9 @@ export default function DivorceSettlement() {
 
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/divorce-settlement-content-DmHrPDmfmbWrYivJ4TUKze.webp" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_y747ly_image_abff7ab6.png" 
                   alt="Professional divorce mediation" 
-                  className="w-full h-auto"
+                  className="w-full h-auto rounded-2xl border-4 border-[#1a3a52]"
                 />
               </div>
 

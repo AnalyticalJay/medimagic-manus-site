@@ -251,3 +251,18 @@ Complete website migration and rebuild for a mediation and social work practice.
 ## Footer Updates
 - [x] Replace footer logo and MEDIMAGIC text with MediMagic circle logo
 - [x] Center logo and description in footer first column
+
+## Home Page Updates
+- [x] Update Highly Qualified section to change FAMAC to NABFAM and SASW to SACSSP
+- [x] Add white fill to calendar icon in "Flexible to Your Schedule" block
+
+## Mediation Service Card Image Reorganization
+- [x] Extract card images from Mediation Services section (Divorce Settlement, Parenting Plan, Maintenance Agreements, Voice of the Child)
+- [x] Replace hero section images on Divorce Settlement detail page with card image
+- [x] Move current Divorce Settlement hero image to Key Areas Addressed section
+- [x] Replace hero section images on Parenting Plans detail page with card image
+- [x] Move current Parenting Plans hero image to Key Areas Addressed section
+- [x] Replace hero section images on Maintenance Agreements detail page with card image
+- [x] Move current Maintenance Agreements hero image to Key Areas Addressed section
+- [x] Replace hero section images on Voice of the Child detail page with card image
+- [x] Move current Voice of the Child hero image to Key Areas Addressed section

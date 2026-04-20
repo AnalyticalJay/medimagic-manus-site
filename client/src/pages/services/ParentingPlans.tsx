@@ -55,9 +55,9 @@ export default function ParentingPlans() {
             {/* Service Image */}
             <div className="flex justify-center mt-8 lg:mt-0">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_oA9Jng_image_907d4496.png" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_onhlOo_ParentingPLans_c3fa36c8.png" 
                 alt="Parenting Plans Mediation" 
-                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#1a3a52]"
+                className="w-full max-w-sm sm:max-w-md h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
               />
             </div>
           </div>
@@ -128,9 +128,9 @@ export default function ParentingPlans() {
         <div className="space-y-8">
           <div className="rounded-lg overflow-hidden shadow-lg">
             <img 
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/parenting-plans-content-7Qjz9KPqEQfYNvWjXNXX.webp" 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/pasted_file_oA9Jng_image_907d4496.png" 
               alt="Happy co-parenting family" 
-              className="w-full h-auto"
+              className="w-full h-auto rounded-2xl border-4 border-[#1a3a52]"
             />
           </div>
 
