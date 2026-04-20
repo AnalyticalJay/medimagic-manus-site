@@ -347,17 +347,17 @@ export default function Home() {
                     {/* Calendar rings/holes */}
                     <circle cx="40" cy="50" r="6" fill="white" />
                     <circle cx="120" cy="50" r="6" fill="white" />
-                    {/* Calendar date blocks - gray */}
-                    <rect x="30" y="75" width="18" height="18" rx="2" fill="#555555" />
-                    <rect x="55" y="75" width="18" height="18" rx="2" fill="#555555" />
-                    <rect x="80" y="75" width="18" height="18" rx="2" fill="#555555" />
-                    <rect x="105" y="75" width="18" height="18" rx="2" fill="#555555" />
-                    <rect x="130" y="75" width="18" height="18" rx="2" fill="#555555" />
-                    <rect x="30" y="100" width="18" height="18" rx="2" fill="#555555" />
-                    <rect x="55" y="100" width="18" height="18" rx="2" fill="#555555" />
-                    <rect x="80" y="100" width="18" height="18" rx="2" fill="#555555" />
-                    <rect x="105" y="100" width="18" height="18" rx="2" fill="#555555" />
-                    <rect x="130" y="100" width="18" height="18" rx="2" fill="#555555" />
+                    {/* Calendar date blocks - white */}
+                    <rect x="30" y="75" width="18" height="18" rx="2" fill="#f5f5f5" />
+                    <rect x="55" y="75" width="18" height="18" rx="2" fill="#f5f5f5" />
+                    <rect x="80" y="75" width="18" height="18" rx="2" fill="#f5f5f5" />
+                    <rect x="105" y="75" width="18" height="18" rx="2" fill="#f5f5f5" />
+                    <rect x="130" y="75" width="18" height="18" rx="2" fill="#f5f5f5" />
+                    <rect x="30" y="100" width="18" height="18" rx="2" fill="#f5f5f5" />
+                    <rect x="55" y="100" width="18" height="18" rx="2" fill="#f5f5f5" />
+                    <rect x="80" y="100" width="18" height="18" rx="2" fill="#f5f5f5" />
+                    <rect x="105" y="100" width="18" height="18" rx="2" fill="#f5f5f5" />
+                    <rect x="130" y="100" width="18" height="18" rx="2" fill="#f5f5f5" />
                     {/* Highlighted date block (lime green) */}
                     <rect x="30" y="125" width="18" height="18" rx="2" fill="#BFFF00" />
                     {/* Checkmark */}
