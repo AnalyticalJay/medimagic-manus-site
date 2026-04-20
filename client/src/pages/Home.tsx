@@ -339,20 +339,41 @@ export default function Home() {
               </div>
               <div className="bg-[#1a3a52] p-6 rounded-lg border-2 border-[#5DBB63] text-white shadow-lg hover:shadow-xl transition-all flex flex-col items-center">
                 <div className="mb-4 flex justify-center">
-                  <svg className="h-24 w-24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="h-24 w-24" viewBox="0 0 280 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Calendar body */}
+                    <rect x="20" y="30" width="140" height="140" rx="8" fill="#1a1a1a" stroke="white" strokeWidth="3" />
+                    {/* Calendar header (lime green) */}
+                    <rect x="20" y="30" width="140" height="35" rx="8" fill="#BFFF00" />
+                    {/* Calendar rings/holes */}
+                    <circle cx="40" cy="50" r="6" fill="white" />
+                    <circle cx="120" cy="50" r="6" fill="white" />
+                    {/* Calendar date blocks - gray */}
+                    <rect x="30" y="75" width="18" height="18" rx="2" fill="#555555" />
+                    <rect x="55" y="75" width="18" height="18" rx="2" fill="#555555" />
+                    <rect x="80" y="75" width="18" height="18" rx="2" fill="#555555" />
+                    <rect x="105" y="75" width="18" height="18" rx="2" fill="#555555" />
+                    <rect x="130" y="75" width="18" height="18" rx="2" fill="#555555" />
+                    <rect x="30" y="100" width="18" height="18" rx="2" fill="#555555" />
+                    <rect x="55" y="100" width="18" height="18" rx="2" fill="#555555" />
+                    <rect x="80" y="100" width="18" height="18" rx="2" fill="#555555" />
+                    <rect x="105" y="100" width="18" height="18" rx="2" fill="#555555" />
+                    <rect x="130" y="100" width="18" height="18" rx="2" fill="#555555" />
+                    {/* Highlighted date block (lime green) */}
+                    <rect x="30" y="125" width="18" height="18" rx="2" fill="#BFFF00" />
+                    {/* Checkmark */}
+                    <path d="M 35 135 L 40 140 L 48 132" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     {/* Clock circle */}
-                    <circle cx="30" cy="30" r="18" stroke="#5DBB63" strokeWidth="2" />
+                    <circle cx="200" cy="110" r="55" fill="#BFFF00" stroke="white" strokeWidth="3" />
+                    {/* Clock center dot */}
+                    <circle cx="200" cy="110" r="4" fill="white" />
+                    {/* Clock hour markers */}
+                    <circle cx="200" cy="65" r="3" fill="white" />
+                    <circle cx="235" cy="110" r="3" fill="white" />
+                    <circle cx="200" cy="155" r="3" fill="white" />
+                    <circle cx="165" cy="110" r="3" fill="white" />
                     {/* Clock hands */}
-                    <line x1="30" y1="30" x2="30" y2="18" stroke="#5DBB63" strokeWidth="2" strokeLinecap="round" />
-                    <line x1="30" y1="30" x2="38" y2="30" stroke="#5DBB63" strokeWidth="2" strokeLinecap="round" />
-                    {/* Calendar */}
-                    <rect x="50" y="18" width="35" height="35" rx="3" stroke="#5DBB63" strokeWidth="2" />
-                    <line x1="50" y1="26" x2="85" y2="26" stroke="#5DBB63" strokeWidth="1.5" />
-                    {/* Calendar date blocks */}
-                    <rect x="54" y="32" width="6" height="6" fill="#5DBB63" />
-                    <rect x="64" y="32" width="6" height="6" fill="#5DBB63" />
-                    <rect x="74" y="32" width="6" height="6" fill="#5DBB63" />
-                    <rect x="54" y="42" width="6" height="6" fill="#5DBB63" />
+                    <line x1="200" y1="110" x2="200" y2="80" stroke="white" strokeWidth="3" strokeLinecap="round" />
+                    <line x1="200" y1="110" x2="225" y2="110" stroke="white" strokeWidth="3" strokeLinecap="round" />
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold mb-2 text-center">Flexible to Your Schedule</h3>
