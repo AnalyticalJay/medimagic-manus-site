@@ -176,7 +176,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-8">
               <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/compassion_icon_85090b26.png" alt="Compassion" className="w-16 h-16" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/compassion_icon_85090b26.png" alt="Compassion" className="w-24 h-24" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Compassion & Care</h3>
               <p className="text-muted-foreground">
@@ -186,7 +186,7 @@ export default function About() {
 
             <Card className="p-8">
               <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/collaboration_icon_0cc1666f.png" alt="Collaboration" className="w-16 h-16" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/collaboration_icon_0cc1666f.png" alt="Collaboration" className="w-24 h-24" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Collaboration</h3>
               <p className="text-muted-foreground">
@@ -196,7 +196,7 @@ export default function About() {
 
             <Card className="p-8">
               <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/clarity_icon_cbf87caa.png" alt="Clarity" className="w-16 h-16" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/clarity_icon_cbf87caa.png" alt="Clarity" className="w-24 h-24" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Clarity</h3>
               <p className="text-muted-foreground">
@@ -206,7 +206,7 @@ export default function About() {
 
             <Card className="p-8">
               <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/support_icon_b58b6f9b.png" alt="Support" className="w-16 h-16" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/support_icon_b58b6f9b.png" alt="Support" className="w-24 h-24" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">Support</h3>
               <p className="text-muted-foreground">

@@ -312,3 +312,9 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Replace Integrated Approach icon with correct icon
 - [x] Replace Professional Excellence icon with correct icon
 - [x] Replace Client-Centred Care icon with correct icon
+
+## CORE VALUES & APPROACH Icon Size Consistency
+- [x] Update Compassion & Care icon size to match other icons (w-24 h-24)
+- [x] Update Collaboration icon size to match other icons (w-24 h-24)
+- [x] Update Clarity icon size to match other icons (w-24 h-24)
+- [x] Update Support icon size to match other icons (w-24 h-24)
