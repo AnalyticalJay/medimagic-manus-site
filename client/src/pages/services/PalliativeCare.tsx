@@ -84,9 +84,9 @@ export default function PalliativeCare() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">What Is Palliative & End-of-Life Care Support?</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">What Is Palliative & End-of-Life Care?</h3>
                 <p className="text-muted-foreground mb-4">
-                  Palliative & End-of-Life Care Support is professional social work guidance and support focused on quality of life, comfort, meaning-making, and aiding family support during terminal illness or end-of-life transitions. We help individuals and families navigate medical decisions, emotional challenges, spiritual questions, and legacy planning.
+                  Palliative & End-of-Life Care is professional social work guidance and support focused on quality of life, comfort, meaning-making, and aiding family support during terminal illness or end-of-life transitions. We help individuals and families navigate medical decisions, emotional challenges, spiritual questions, and legacy planning.
                 </p>
                 <p className="text-muted-foreground">
                   This service honors the dignity and autonomy of the individual while supporting families through one of life's most profound experiences.
