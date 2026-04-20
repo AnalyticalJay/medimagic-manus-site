@@ -56,7 +56,7 @@ export default function AdultDivorcePrep() {
             <div className="flex justify-center mt-8 lg:mt-0">
               <img 
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/adult-divorce-prep-hdiAXYVUZdPW3m8urReFKL.webp" 
-                alt="Adult Divorce Preparation" 
+                alt="Divorce Preparation" 
                 className="w-full max-w-lg sm:max-w-xl h-auto rounded-2xl sm:rounded-3xl shadow-lg border-4 border-[#5DBB63]"
               />
             </div>
@@ -79,14 +79,14 @@ export default function AdultDivorcePrep() {
           <div>
             <h2 className="text-3xl font-bold text-foreground mb-4">Preparing for Life After Divorce</h2>
             <p className="text-lg text-muted-foreground">
-              Divorce is one of life's most challenging transitions. Beyond the legal and financial aspects, it involves significant emotional, social, and practical changes. At MediMagic, our Adult Divorce Preparation service provides comprehensive support to help you and your family navigate this transition with confidence and resilience.
+              Divorce is one of life's most challenging transitions. Beyond the legal and financial aspects, it involves significant emotional, social, and practical changes. At MediMagic, our Divorce Preparation service provides comprehensive support to help you and your family navigate this transition with confidence and resilience.
             </p>
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-4">What Is Adult Divorce Preparation?</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">What Is Divorce Preparation?</h3>
             <p className="text-muted-foreground mb-4">
-              Adult Divorce Preparation is a social work service that helps individuals (adults or children) process the emotional impact of divorce, develop practical coping strategies, and build resilience for life after divorce. Through individual sessions, we address emotional wellbeing, practical planning, social reintegration, and personal growth.
+              Divorce Preparation is a social work service that helps individuals (adults or children) process the emotional impact of divorce, develop practical coping strategies, and build resilience for life after divorce. Through individual sessions, we address emotional wellbeing, practical planning, social reintegration, and personal growth.
             </p>
             <p className="text-muted-foreground">
               This service acknowledges that divorce affects not just legal status, but your entire life—and we're here to help you rebuild.
@@ -129,7 +129,7 @@ export default function AdultDivorcePrep() {
         </div>
 
         <div className="space-y-8">
-          <div className="flex justify-center">
+          <div className="flex justify-center py-8">
             <img 
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/adult-divorce-prep-content-BpiLE6xBKiRVZshSMf7n8w.webp" 
               alt="Emotional support and healing" 
