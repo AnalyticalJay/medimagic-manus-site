@@ -206,10 +206,10 @@ export default function About() {
           </ScrollAnimationWrapper>
 
           {/* CTA Section */}
-          <ScrollAnimationWrapper>
-            <div className="text-center py-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Ready to Get Started?</h2>
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-[#1a3a52] -mx-4 sm:-mx-6 lg:-mx-8">
+            <div className="container max-w-4xl text-center">
+              <h2 className="text-3xl font-bold text-white mb-6">Ready to Get Started?</h2>
+              <p className="text-lg text-white/90 mb-8">
                 Schedule a consultation with Cornelia to discuss your situation and explore how her integrated approach can support you and your family.
               </p>
               <Button 
@@ -220,7 +220,7 @@ export default function About() {
                 Book a Consultation
               </Button>
             </div>
-          </ScrollAnimationWrapper>
+          </section>
         </div>
       </section>
 

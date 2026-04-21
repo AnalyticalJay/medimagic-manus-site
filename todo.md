@@ -348,3 +348,7 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Update About page header to match Home page green header with navigation menu
 - [x] Update Contact page header to match Home page green header with navigation menu
 - [x] All pages now use Navigation component with green background, menu items, and Login button
+
+## About Page Fixes
+- [x] Add navy background to CTA section at bottom before footer (matching service detail pages)
+- [x] Core Values & Approach icons are displaying correctly (verified in browser)
