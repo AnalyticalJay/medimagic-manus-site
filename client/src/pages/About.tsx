@@ -106,7 +106,7 @@ export default function About() {
           <ScrollAnimationWrapper>
             <div className="mb-20">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">CORE VALUES & APPROACH</h2>
-              <div className="grid md:grid-cols-5 gap-6">
+              <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
                     <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/compassion-care-icon-BqmfSeNeqBzzBDpXMaVpzA.webp" alt="Compassion & Care" className="w-24 h-24" />
@@ -138,13 +138,30 @@ export default function About() {
                   <h3 className="font-bold text-foreground mb-2">Support</h3>
                   <p className="text-sm text-muted-foreground">Holistic support that addresses both practical decisions and emotional wellbeing throughout transitions.</p>
                 </div>
-
+              </div>
+              <div className="grid md:grid-cols-3 gap-6 mt-6">
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/integrated-approach-icon-SgaGh34MM4Ri2ETxjsSEMp.webp" alt="Integrated Approach" className="w-24 h-24" />
+                    <img src="/manus-storage/IntegratedApproachIcon_822825cb.png" alt="Integrated Approach" className="w-24 h-24" />
                   </div>
                   <h3 className="font-bold text-foreground mb-2">Integrated Approach</h3>
                   <p className="text-sm text-muted-foreground">A balanced approach that supports clear, practical decisions while also caring for the people navigating them.</p>
+                </div>
+
+                <div className="text-center">
+                  <div className="flex justify-center mb-4">
+                    <img src="/manus-storage/Professionalexcellence_d167ce3b.png" alt="Professional Excellence" className="w-24 h-24" />
+                  </div>
+                  <h3 className="font-bold text-foreground mb-2">Professional Excellence</h3>
+                  <p className="text-sm text-muted-foreground">Commitment to maintaining the highest standards of professional practice and continuous improvement.</p>
+                </div>
+
+                <div className="text-center">
+                  <div className="flex justify-center mb-4">
+                    <img src="/manus-storage/ClientCentredCare_ce8dc794.png" alt="Client-Centred Care" className="w-24 h-24" />
+                  </div>
+                  <h3 className="font-bold text-foreground mb-2">Client-Centred Care</h3>
+                  <p className="text-sm text-muted-foreground">Placing your needs and wellbeing at the centre of all decisions and support provided.</p>
                 </div>
               </div>
             </div>
