@@ -341,5 +341,5 @@ Complete website migration and rebuild for a mediation and social work practice.
 ## Mobile Menu Implementation
 - [x] Implement mobile menu functionality on Contact page
 - [x] Implement mobile menu functionality on About page
-- [ ] Implement mobile menu functionality on all service pages
-- [ ] Test mobile menu dropdowns on smaller screens
+- [x] Implement mobile menu functionality on all service pages
+- [x] Test mobile menu dropdowns on smaller screens
