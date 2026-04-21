@@ -109,7 +109,7 @@ export default function About() {
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/compassion-care-icon-final-QcrMZ6uvTMKV2oF7wf3oQj.webp" alt="Compassion & Care" className="w-24 h-24" />
+                    <img src="/manus-storage/Compassion&CareIcon_8bb1a1b4.png" alt="Compassion & Care" className="w-24 h-24" />
                   </div>
                   <h3 className="font-bold text-foreground mb-2">Compassion & Care</h3>
                   <p className="text-sm text-muted-foreground">Genuine empathy and respect for each person's unique journey and emotional experience.</p>
@@ -117,7 +117,7 @@ export default function About() {
 
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/collaboration-icon-final-kRdQhoa85sUxjherrFis3P.webp" alt="Collaboration" className="w-24 h-24" />
+                    <img src="/manus-storage/CollaborationIcon_a638c82d.png" alt="Collaboration" className="w-24 h-24" />
                   </div>
                   <h3 className="font-bold text-foreground mb-2">Collaboration</h3>
                   <p className="text-sm text-muted-foreground">Working together with all parties to find solutions that honour everyone's needs and values.</p>
@@ -125,7 +125,7 @@ export default function About() {
 
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/clarity-icon-final-PVMpMJWaSik82y2MQWLDKP.webp" alt="Clarity" className="w-24 h-24" />
+                    <img src="/manus-storage/ClarityIcon_d11d8dec.png" alt="Clarity" className="w-24 h-24" />
                   </div>
                   <h3 className="font-bold text-foreground mb-2">Clarity</h3>
                   <p className="text-sm text-muted-foreground">Clear communication and transparent processes that help people understand their options and outcomes.</p>
@@ -133,7 +133,7 @@ export default function About() {
 
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/support-icon-final-i2BGYDJEfihXKn6v7ND7NN.webp" alt="Support" className="w-24 h-24" />
+                    <img src="/manus-storage/SupportIcon_87ebf13f.png" alt="Support" className="w-24 h-24" />
                   </div>
                   <h3 className="font-bold text-foreground mb-2">Support</h3>
                   <p className="text-sm text-muted-foreground">Holistic support that addresses both practical decisions and emotional wellbeing throughout transitions.</p>
