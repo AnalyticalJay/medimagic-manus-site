@@ -222,22 +222,23 @@ export default function About() {
             </div>
           </ScrollAnimationWrapper>
 
-          {/* CTA Section */}
-          <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-[#1a3a52] -mx-4 sm:-mx-6 lg:-mx-8">
-            <div className="container max-w-4xl text-center">
-              <h2 className="text-3xl font-bold text-white mb-6">Ready to Get Started?</h2>
-              <p className="text-lg text-white/90 mb-8">
-                Schedule a consultation with Cornelia to discuss your situation and explore how her integrated approach can support you and your family.
-              </p>
-              <Button 
-                size="lg" 
-                className="bg-[#5DBB63] hover:bg-[#4a9a52] text-white"
-                onClick={() => navigate("/booking")}
-              >
-                Book a Consultation
-              </Button>
-            </div>
-          </section>
+        </div>
+      </section>
+
+      {/* CTA Section - Full Width */}
+      <section className="w-full py-16 md:py-24 bg-[#1a3a52]">
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
+          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto px-4">
+            Schedule a consultation with Cornelia to discuss your situation and explore how her integrated approach can support you and your family.
+          </p>
+          <Button 
+            size="lg" 
+            className="bg-[#5DBB63] hover:bg-[#4a9a52] text-white"
+            onClick={() => navigate("/booking")}
+          >
+            Book a Consultation
+          </Button>
         </div>
       </section>
 
