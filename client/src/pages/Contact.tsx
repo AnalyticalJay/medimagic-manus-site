@@ -1,14 +1,74 @@
-import { Mail, Phone, MapPin, Clock, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, ArrowRight, Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useLocation } from "wouter";
+import { useState } from "react";
 import Footer from "@/components/Footer";
 
 export default function Contact() {
   const [, navigate] = useLocation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border header-shadow">
+        <div className="container flex items-center justify-between h-16">
+          <button onClick={() => navigate("/")} className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
+            <img 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/medimagic_logo_e9a0b25b.webp" 
+              alt="MediMagic Logo"
+              className="h-8 w-auto"
+            />
+          </button>
+          <div className="hidden md:flex items-center gap-8">
+            <button onClick={() => navigate("/")} className="text-foreground hover:text-accent transition-colors">Home</button>
+            <button onClick={() => navigate("/about")} className="text-foreground hover:text-accent transition-colors">About</button>
+            <div className="relative group">
+              <button className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
+                Mediation
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              <div className="absolute left-0 mt-0 w-56 bg-background border border-border rounded-lg shadow-2xl hover:drop-shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  <a href="/services/divorce-settlement" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Divorce Settlement Agreements</a>
+                  <a href="/services/maintenance-agreements" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Maintenance Agreements</a>
+                  <a href="/services/parenting-plans" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Parenting Plans</a>
+                  <a href="/services/voice-of-child" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Voice of the Child</a>
+                </div>
+              </div>
+            </div>
+            <div className="relative group">
+              <button className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
+                Social Work
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              <div className="absolute left-0 mt-0 w-56 bg-background border border-border rounded-lg shadow-2xl hover:drop-shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  <a href="/services/adult-divorce-preparation" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Adult Divorce Preparation</a>
+                  <a href="/services/illness-disability" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Illness & Disability Support</a>
+                  <a href="/services/palliative-care" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Palliative & End-of-Life Care</a>
+                  <a href="/services/health-education" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Health Education & Promotion</a>
+                </div>
+              </div>
+            </div>
+            <button onClick={() => navigate("/contact")} className="text-foreground hover:text-accent transition-colors font-semibold text-accent">Contact</button>
+            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground" onClick={() => navigate("/booking")}>
+              Get Started
+            </Button>
+          </div>
+          <button 
+            className="md:hidden p-2"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6 text-foreground" />
+            ) : (
+              <Menu className="w-6 h-6 text-foreground" />
+            )}
+          </button>
+        </div>
+      </nav>
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-[#1a3a52] via-[#2d5a7b] to-[#1a3a52]">
         <div className="container relative z-10">
@@ -26,7 +86,7 @@ export default function Contact() {
             </div>
             <div className="flex-shrink-0">
               <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/medimagic_logo_main_7f8b9c2a.png" 
+                src="/manus-storage/MediMagicLogoround_9660a174.png" 
                 alt="MediMagic Logo" 
                 className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full shadow-lg border-4 border-white"
               />
