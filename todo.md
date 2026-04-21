@@ -343,3 +343,8 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Implement mobile menu functionality on About page
 - [x] Implement mobile menu functionality on all service pages
 - [x] Test mobile menu dropdowns on smaller screens
+
+## Header Consistency Across All Pages
+- [x] Update About page header to match Home page green header with navigation menu
+- [x] Update Contact page header to match Home page green header with navigation menu
+- [x] All pages now use Navigation component with green background, menu items, and Login button

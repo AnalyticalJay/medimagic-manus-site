@@ -1,135 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Check, Menu, X, ChevronDown, Heart, Award, Lightbulb, Users } from "lucide-react";
+import { Check, Heart, Award, Lightbulb, Users } from "lucide-react";
 import { useLocation } from "wouter";
-import { useState } from "react";
 import { ScrollAnimationWrapper } from "@/components/ScrollAnimationWrapper";
+import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export default function About() {
   const [, navigate] = useLocation();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [mediationOpen, setMediationOpen] = useState(false);
-  const [socialWorkOpen, setSocialWorkOpen] = useState(false);
-
-  const handleNavigation = (path: string) => {
-    navigate(path);
-    setMobileMenuOpen(false);
-  };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border header-shadow">
-        <div className="container flex items-center justify-between h-16">
-          <button onClick={() => navigate("/")} className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
-            <img 
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663349340425/ZpznwMcSz4FYagEgbyVyar/medimagic_logo_e9a0b25b.webp" 
-              alt="MediMagic Logo"
-              className="h-8 w-auto"
-            />
-          </button>
-          <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => navigate("/")} className="text-foreground hover:text-accent transition-colors">Home</button>
-            <button onClick={() => navigate("/about")} className="text-foreground hover:text-accent transition-colors font-semibold text-accent">About</button>
-            <div className="relative group">
-              <button className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
-                Mediation
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              <div className="absolute left-0 mt-0 w-56 bg-background border border-border rounded-lg shadow-2xl hover:drop-shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <div className="py-2">
-                  <a href="/services/divorce-settlement" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Divorce Settlement Agreements</a>
-                  <a href="/services/maintenance-agreements" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Maintenance Agreements</a>
-                  <a href="/services/parenting-plans" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Parenting Plans</a>
-                  <a href="/services/voice-of-child" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Voice of the Child</a>
-                </div>
-              </div>
-            </div>
-            <div className="relative group">
-              <button className="flex items-center gap-1 text-foreground hover:text-accent transition-colors">
-                Social Work
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              <div className="absolute left-0 mt-0 w-56 bg-background border border-border rounded-lg shadow-2xl hover:drop-shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <div className="py-2">
-                  <a href="/services/adult-divorce-preparation" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Adult Divorce Preparation</a>
-                  <a href="/services/illness-disability" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Illness & Disability Support</a>
-                  <a href="/services/palliative-care" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Palliative & End-of-Life Care</a>
-                  <a href="/services/health-education" className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors">Health Education & Promotion</a>
-                </div>
-              </div>
-            </div>
-            <button onClick={() => navigate("/contact")} className="text-foreground hover:text-accent transition-colors">Contact</button>
-            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground" onClick={() => navigate("/booking")}>
-              Get Started
-            </Button>
-          </div>
-          <button 
-            className="md:hidden p-2"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? (
-              <X className="w-6 h-6 text-foreground" />
-            ) : (
-              <Menu className="w-6 h-6 text-foreground" />
-            )}
-          </button>
-        </div>
-
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden border-t border-border bg-background/95 backdrop-blur">
-            <div className="container py-4 space-y-2">
-              <button onClick={() => handleNavigation("/")} className="block w-full text-left px-4 py-2 text-foreground hover:bg-accent/10 hover:text-accent transition-colors rounded">
-                Home
-              </button>
-              <button onClick={() => handleNavigation("/about")} className="block w-full text-left px-4 py-2 text-accent font-semibold hover:bg-accent/10 transition-colors rounded">
-                About
-              </button>
-              
-              {/* Mobile Mediation Dropdown */}
-              <div className="px-4 py-2">
-                <button onClick={() => setMediationOpen(!mediationOpen)} className="w-full text-left flex items-center justify-between text-foreground hover:text-accent transition-colors font-medium">
-                  Mediation
-                  <ChevronDown className={`w-4 h-4 transition-transform ${mediationOpen ? 'rotate-180' : ''}`} />
-                </button>
-                {mediationOpen && (
-                  <div className="mt-2 space-y-1 pl-4 border-l-2 border-accent/30">
-                    <a href="/services/divorce-settlement" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors rounded">Divorce Settlement Agreements</a>
-                    <a href="/services/maintenance-agreements" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors rounded">Maintenance Agreements</a>
-                    <a href="/services/parenting-plans" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors rounded">Parenting Plans</a>
-                    <a href="/services/voice-of-child" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors rounded">Voice of the Child</a>
-                  </div>
-                )}
-              </div>
-              
-              {/* Mobile Social Work Dropdown */}
-              <div className="px-4 py-2">
-                <button onClick={() => setSocialWorkOpen(!socialWorkOpen)} className="w-full text-left flex items-center justify-between text-foreground hover:text-accent transition-colors font-medium">
-                  Social Work
-                  <ChevronDown className={`w-4 h-4 transition-transform ${socialWorkOpen ? 'rotate-180' : ''}`} />
-                </button>
-                {socialWorkOpen && (
-                  <div className="mt-2 space-y-1 pl-4 border-l-2 border-accent/30">
-                    <a href="/services/adult-divorce-preparation" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors rounded">Adult Divorce Preparation</a>
-                    <a href="/services/illness-disability" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors rounded">Illness & Disability Support</a>
-                    <a href="/services/palliative-care" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors rounded">Palliative & End-of-Life Care</a>
-                    <a href="/services/health-education" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-sm text-foreground hover:bg-accent/10 hover:text-accent transition-colors rounded">Health Education & Promotion</a>
-                  </div>
-                )}
-              </div>
-              
-              <button onClick={() => handleNavigation("/contact")} className="block w-full text-left px-4 py-2 text-foreground hover:bg-accent/10 hover:text-accent transition-colors rounded">
-                Contact
-              </button>
-              <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground mt-4" onClick={() => handleNavigation("/booking")}>
-                Get Started
-              </Button>
-            </div>
-          </div>
-        )}
-      </nav>
+    <div className="min-h-screen flex flex-col bg-white">
+      <Navigation />
 
       {/* Hero Section with Professional Image */}
       <section className="medimagic-hero py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative">
@@ -219,192 +101,129 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Core Values Section */}
-      <section className="py-16 md:py-24 bg-accent/5">
-        <ScrollAnimationWrapper animationType="slide-up" delay={100}>
-          <div className="container max-w-6xl">
-          {/* Section Title with Green Line and Navy Bar */}
-          <div className="border-t-8 border-[#5DBB63] mb-12">
-            <div className="bg-[#0F3D4C] py-6 px-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Core Values & Approach</h2>
+          {/* Core Values Section */}
+          <ScrollAnimationWrapper>
+            <div className="mb-20">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">CORE VALUES & APPROACH</h2>
+              <div className="grid md:grid-cols-5 gap-6">
+                <div className="text-center">
+                  <div className="flex justify-center mb-4">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/compassion-care-icon_c2b8f2c7.png" alt="Compassion & Care" className="w-24 h-24" />
+                  </div>
+                  <h3 className="font-bold text-foreground mb-2">Compassion & Care</h3>
+                  <p className="text-sm text-muted-foreground">Genuine empathy and respect for each person's unique journey and emotional experience.</p>
+                </div>
+
+                <div className="text-center">
+                  <div className="flex justify-center mb-4">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/collaboration-icon_2c7a9c5c.png" alt="Collaboration" className="w-24 h-24" />
+                  </div>
+                  <h3 className="font-bold text-foreground mb-2">Collaboration</h3>
+                  <p className="text-sm text-muted-foreground">Working together with all parties to find solutions that honour everyone's needs and values.</p>
+                </div>
+
+                <div className="text-center">
+                  <div className="flex justify-center mb-4">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/clarity-icon_a1c8f3e2.png" alt="Clarity" className="w-24 h-24" />
+                  </div>
+                  <h3 className="font-bold text-foreground mb-2">Clarity</h3>
+                  <p className="text-sm text-muted-foreground">Clear communication and transparent processes that help people understand their options and outcomes.</p>
+                </div>
+
+                <div className="text-center">
+                  <div className="flex justify-center mb-4">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/support-icon_f4b9d2a1.png" alt="Support" className="w-24 h-24" />
+                  </div>
+                  <h3 className="font-bold text-foreground mb-2">Support</h3>
+                  <p className="text-sm text-muted-foreground">Holistic support that addresses both practical decisions and emotional wellbeing throughout transitions.</p>
+                </div>
+
+                <div className="text-center">
+                  <div className="flex justify-center mb-4">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/integrated-approach-icon_e3d7c1b5.png" alt="Integrated Approach" className="w-24 h-24" />
+                  </div>
+                  <h3 className="font-bold text-foreground mb-2">Integrated Approach</h3>
+                  <p className="text-sm text-muted-foreground">A balanced approach that supports clear, practical decisions while also caring for the people navigating them.</p>
+                </div>
+              </div>
             </div>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8">
-              <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/compassion_icon_85090b26.png" alt="Compassion" className="w-24 h-24" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Compassion & Care</h3>
-              <p className="text-muted-foreground">
-                Every client is treated with dignity, respect, and genuine care. Cornelia creates a safe, non-judgmental space where clients feel heard and supported.
-              </p>
-            </Card>
+          </ScrollAnimationWrapper>
 
-            <Card className="p-8">
-              <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/collaboration_icon_0cc1666f.png" alt="Collaboration" className="w-24 h-24" />
+          {/* Why Choose Cornelia */}
+          <ScrollAnimationWrapper>
+            <div className="bg-gradient-to-r from-[#5DBB63]/10 to-[#1a3a52]/10 rounded-lg p-8 md:p-12 mb-20">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">Why Choose Cornelia</h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <div className="flex gap-4">
+                    <Check className="w-6 h-6 text-[#5DBB63] flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-bold text-foreground mb-1">Dual Expertise</h3>
+                      <p className="text-muted-foreground">Combines mediation and social work for comprehensive, holistic support.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <Check className="w-6 h-6 text-[#5DBB63] flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-bold text-foreground mb-1">Extensive Experience</h3>
+                      <p className="text-muted-foreground">20+ years supporting individuals and families through complex transitions.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <Check className="w-6 h-6 text-[#5DBB63] flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-bold text-foreground mb-1">Professional Accreditation</h3>
+                      <p className="text-muted-foreground">NABFAM accredited mediator and SACSSP registered social worker.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex gap-4">
+                    <Check className="w-6 h-6 text-[#5DBB63] flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-bold text-foreground mb-1">Child-Centred Practice</h3>
+                      <p className="text-muted-foreground">Registered Voice of the Child Practitioner prioritizing children's wellbeing.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <Check className="w-6 h-6 text-[#5DBB63] flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-bold text-foreground mb-1">Confidential & Safe</h3>
+                      <p className="text-muted-foreground">All sessions are strictly confidential and protected by professional privilege.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <Check className="w-6 h-6 text-[#5DBB63] flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-bold text-foreground mb-1">Flexible Options</h3>
+                      <p className="text-muted-foreground">Online and in-person consultations tailored to your needs and schedule.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Collaboration</h3>
-              <p className="text-muted-foreground">
-                Working together with clients to find solutions that work for everyone involved, building consensus and mutual understanding.
-              </p>
-            </Card>
-
-            <Card className="p-8">
-              <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/clarity_icon_cbf87caa.png" alt="Clarity" className="w-24 h-24" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Clarity</h3>
-              <p className="text-muted-foreground">
-                Clear communication and transparent processes ensure clients understand their options and make informed decisions with confidence.
-              </p>
-            </Card>
-
-            <Card className="p-8">
-              <div className="mb-4">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/support_icon_b58b6f9b.png" alt="Support" className="w-24 h-24" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Support</h3>
-              <p className="text-muted-foreground">
-                Holistic support that addresses both the practical and emotional aspects of life transitions, ensuring clients feel cared for throughout the process.
-              </p>
-            </Card>
-
-            <Card className="p-8">
-              <div className="mb-4">
-                <img src="/manus-storage/IntegratedApproachIcon_57ad38d1.png" alt="Integrated Approach" className="w-24 h-24" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Integrated Approach</h3>
-              <p className="text-muted-foreground">
-                A balanced approach that supports clear, practical decisions while also caring for the people navigating them.
-              </p>
-            </Card>
-
-            <Card className="p-8">
-              <div className="mb-4">
-                <img src="/manus-storage/Professionalexcellence_2c07572b.png" alt="Professional Excellence" className="w-24 h-24" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Professional Excellence</h3>
-              <p className="text-muted-foreground">
-                Bound by strict professional ethical codes and regulatory standards. Continuous professional development ensures current, evidence-based practice.
-              </p>
-            </Card>
-
-            <Card className="p-8">
-              <div className="mb-4">
-                <img src="/manus-storage/ClientCentredCare_91b4071d.png" alt="Client-Centred Care" className="w-24 h-24" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">Client-Centred Care</h3>
-              <p className="text-muted-foreground">
-                Every client's unique circumstances, values, and needs are central to the process. Solutions are tailored to individual situations, not one-size-fits-all.
-              </p>
-            </Card>
-          </div>
-        </div>
-        </ScrollAnimationWrapper>
-      </section>
-
-      {/* Why Choose Cornelia Section */}
-      <section className="py-16 md:py-24 bg-background">
-        <ScrollAnimationWrapper animationType="fade-in" delay={150}>
-          <div className="container max-w-6xl">
-            {/* Section Title with Green Line and Navy Bar */}
-          <div className="border-t-8 border-[#5DBB63] mb-12">
-            <div className="bg-[#0F3D4C] py-6 px-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">Areas of Expertise</h2>
             </div>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 border-l-4 border-l-accent">
-              <h3 className="text-xl font-bold text-foreground mb-4">Family Law Mediation</h3>
-              <ul className="space-y-2">
-                <li className="flex gap-2">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-muted-foreground">Divorce settlements</span>
-                </li>
-                <li className="flex gap-2">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-muted-foreground">Maintenance agreements</span>
-                </li>
-                <li className="flex gap-2">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-muted-foreground">Parenting plans</span>
-                </li>
-                <li className="flex gap-2">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-muted-foreground">Child advocacy</span>
-                </li>
-              </ul>
-            </Card>
+          </ScrollAnimationWrapper>
 
-            <Card className="p-8 border-l-4 border-l-accent">
-              <h3 className="text-xl font-bold text-foreground mb-4">Medical Social Work</h3>
-              <ul className="space-y-2">
-                <li className="flex gap-2">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-muted-foreground">Illness support</span>
-                </li>
-                <li className="flex gap-2">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-muted-foreground">Disability counselling</span>
-                </li>
-                <li className="flex gap-2">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-muted-foreground">End-of-life care</span>
-                </li>
-                <li className="flex gap-2">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-muted-foreground">Health education</span>
-                </li>
-              </ul>
-            </Card>
-
-            <Card className="p-8 border-l-4 border-l-accent">
-              <h3 className="text-xl font-bold text-foreground mb-4">Life Transitions</h3>
-              <ul className="space-y-2">
-                <li className="flex gap-2">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-muted-foreground">Divorce preparation</span>
-                </li>
-                <li className="flex gap-2">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-muted-foreground">Emotional support</span>
-                </li>
-                <li className="flex gap-2">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-muted-foreground">Crisis counselling</span>
-                </li>
-                <li className="flex gap-2">
-                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span className="text-muted-foreground">Wellness coaching</span>
-                </li>
-              </ul>
-            </Card>
-          </div>
-        </div>
-        </ScrollAnimationWrapper>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-[#1a3a52]">
-        <div className="container max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Ready to Work With Cornelia?</h2>
-          <p className="text-lg text-white/90 mb-8">
-            Schedule a consultation to discuss your needs and explore how MediMagic's integrated approach can support you through your life transition.
-          </p>
-          <button 
-            className="medimagic-button"
-            onClick={() => navigate("/booking")}
-          >
-            Book a Consultation
-          </button>
+          {/* CTA Section */}
+          <ScrollAnimationWrapper>
+            <div className="text-center py-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Ready to Get Started?</h2>
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Schedule a consultation with Cornelia to discuss your situation and explore how her integrated approach can support you and your family.
+              </p>
+              <Button 
+                size="lg" 
+                className="bg-[#5DBB63] hover:bg-[#4a9a52] text-white"
+                onClick={() => navigate("/booking")}
+              >
+                Book a Consultation
+              </Button>
+            </div>
+          </ScrollAnimationWrapper>
         </div>
       </section>
+
       <Footer />
     </div>
   );
