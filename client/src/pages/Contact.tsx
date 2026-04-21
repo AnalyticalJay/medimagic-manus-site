@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   const [, navigate] = useLocation();
@@ -130,59 +131,14 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Quick Booking Card */}
+            {/* Contact Form */}
             <div>
               <Card className="p-8 sticky top-24">
-                <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Get Started?</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Send us a Message</h3>
                 <p className="text-muted-foreground mb-6">
-                  Book a consultation directly through our online booking system. Choose your preferred service, date, and time.
+                  Have a question or want to discuss your situation? Fill out the form below and we'll get back to you within 24 hours.
                 </p>
-
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-accent/20">
-                        <span className="text-xs font-semibold text-accent">1</span>
-                      </div>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Select Your Service</p>
-                      <p className="text-sm text-muted-foreground">Choose from mediation or social work services</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-accent/20">
-                        <span className="text-xs font-semibold text-accent">2</span>
-                      </div>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Choose Your Slot</p>
-                      <p className="text-sm text-muted-foreground">Pick a date and time that works for you</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-accent/20">
-                        <span className="text-xs font-semibold text-accent">3</span>
-                      </div>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Confirm Your Details</p>
-                      <p className="text-sm text-muted-foreground">Provide your contact information</p>
-                    </div>
-                  </div>
-                </div>
-
-                <Button 
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground flex items-center justify-center gap-2"
-                  onClick={() => navigate("/booking")}
-                >
-                  Book a Consultation
-                  <ArrowRight className="w-4 h-4" />
-                </Button>
+                <ContactForm />
               </Card>
             </div>
           </div>

@@ -352,3 +352,10 @@ Complete website migration and rebuild for a mediation and social work practice.
 ## About Page Fixes
 - [x] Add navy background to CTA section at bottom before footer (matching service detail pages)
 - [x] Core Values & Approach icons are displaying correctly (verified in browser)
+
+## Contact Form with Email Integration
+- [x] Create contact form component with validation (name, email, subject, message)
+- [x] Add backend tRPC procedure to handle form submissions
+- [x] Set up email sending functionality using Manus built-in notification API
+- [x] Add success/error feedback messages to form
+- [x] Test form submission and email delivery (vitest unit tests created)

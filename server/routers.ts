@@ -1,6 +1,7 @@
 import { getSessionCookieOptions } from "./_core/cookies";
 import { COOKIE_NAME } from "@shared/const";
 import { systemRouter } from "./_core/systemRouter";
+import { contactRouter } from "./routers/contact";
 import { publicProcedure, protectedProcedure, router } from "./_core/trpc";
 import { z } from "zod";
 import { createBooking, getBookings, getBookingById, updateBookingStatus, getAvailability, getAvailabilityByDate, createAvailability, updateAvailability, getUserBookings, getAllUsers, getBookingStats, updateUser, getUserById, createOnlineConsultationSubmission, getOnlineConsultationSubmissions, getOnlineConsultationSubmissionById, updateOnlineConsultationSubmissionStatus, createConsultationTimeSlot, getConsultationTimeSlotsBySubmissionId, updateConsultationTimeSlotStatus, deleteConsultationTimeSlots } from "./db";
@@ -9,6 +10,7 @@ import { sendSubmissionNotificationToCornelia, sendSubmissionConfirmationToClien
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
   system: systemRouter,
+  contact: contactRouter,
   auth: router({
     me: publicProcedure.query(opts => opts.ctx.user),
     logout: publicProcedure.mutation(({ ctx }) => {
