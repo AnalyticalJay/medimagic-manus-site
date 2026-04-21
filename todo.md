@@ -359,3 +359,6 @@ Complete website migration and rebuild for a mediation and social work practice.
 - [x] Set up email sending functionality using Manus built-in notification API
 - [x] Add success/error feedback messages to form
 - [x] Test form submission and email delivery (vitest unit tests created)
+
+## About Page - Core Values Icons Fixed
+- [x] Fix missing icons in Core Values & Approach section (Compassion & Care, Collaboration, Clarity, Support, Integrated Approach) - Created new professional icons and updated About.tsx

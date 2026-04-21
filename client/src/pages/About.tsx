@@ -109,7 +109,7 @@ export default function About() {
               <div className="grid md:grid-cols-5 gap-6">
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/compassion-care-icon_c2b8f2c7.png" alt="Compassion & Care" className="w-24 h-24" />
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/compassion-care-icon-BqmfSeNeqBzzBDpXMaVpzA.webp" alt="Compassion & Care" className="w-24 h-24" />
                   </div>
                   <h3 className="font-bold text-foreground mb-2">Compassion & Care</h3>
                   <p className="text-sm text-muted-foreground">Genuine empathy and respect for each person's unique journey and emotional experience.</p>
@@ -117,7 +117,7 @@ export default function About() {
 
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/collaboration-icon_2c7a9c5c.png" alt="Collaboration" className="w-24 h-24" />
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/collaboration-icon-Mvz4Wa3ggT884iQSJpyRkS.webp" alt="Collaboration" className="w-24 h-24" />
                   </div>
                   <h3 className="font-bold text-foreground mb-2">Collaboration</h3>
                   <p className="text-sm text-muted-foreground">Working together with all parties to find solutions that honour everyone's needs and values.</p>
@@ -125,7 +125,7 @@ export default function About() {
 
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/clarity-icon_a1c8f3e2.png" alt="Clarity" className="w-24 h-24" />
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/clarity-icon-D9hZyZye4ipfRceMVgQAdv.webp" alt="Clarity" className="w-24 h-24" />
                   </div>
                   <h3 className="font-bold text-foreground mb-2">Clarity</h3>
                   <p className="text-sm text-muted-foreground">Clear communication and transparent processes that help people understand their options and outcomes.</p>
@@ -133,7 +133,7 @@ export default function About() {
 
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/support-icon_f4b9d2a1.png" alt="Support" className="w-24 h-24" />
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/support-icon-nNfygtZtPWSAHdVWXGBSUt.webp" alt="Support" className="w-24 h-24" />
                   </div>
                   <h3 className="font-bold text-foreground mb-2">Support</h3>
                   <p className="text-sm text-muted-foreground">Holistic support that addresses both practical decisions and emotional wellbeing throughout transitions.</p>
@@ -141,7 +141,7 @@ export default function About() {
 
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
-                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/integrated-approach-icon_e3d7c1b5.png" alt="Integrated Approach" className="w-24 h-24" />
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663346956907/m34URbdUs5hQJ7HCnuFYLq/integrated-approach-icon-SgaGh34MM4Ri2ETxjsSEMp.webp" alt="Integrated Approach" className="w-24 h-24" />
                   </div>
                   <h3 className="font-bold text-foreground mb-2">Integrated Approach</h3>
                   <p className="text-sm text-muted-foreground">A balanced approach that supports clear, practical decisions while also caring for the people navigating them.</p>
